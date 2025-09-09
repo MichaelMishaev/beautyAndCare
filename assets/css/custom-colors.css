@@ -1,0 +1,212 @@
+/* Custom Blue Color Scheme from colors.md */
+:root {
+    /* Primary Blue Colors */
+    --neon-blue: #5465ff;
+    --neon-blue-100: #000743;
+    --neon-blue-200: #000d87;
+    --neon-blue-300: #0014ca;
+    --neon-blue-400: #0e26ff;
+    --neon-blue-500: #5465ff;
+    --neon-blue-600: #7482ff;
+    --neon-blue-700: #97a1ff;
+    --neon-blue-800: #bac1ff;
+    --neon-blue-900: #dce0ff;
+    
+    --cornflower-blue: #788bff;
+    --cornflower-blue-100: #000a4b;
+    --cornflower-blue-200: #001497;
+    --cornflower-blue-300: #001ee2;
+    --cornflower-blue-400: #2f4bff;
+    --cornflower-blue-500: #788bff;
+    --cornflower-blue-600: #95a3ff;
+    --cornflower-blue-700: #afbaff;
+    --cornflower-blue-800: #cad1ff;
+    --cornflower-blue-900: #e4e8ff;
+    
+    --jordy-blue: #9bb1ff;
+    --jordy-blue-100: #001252;
+    --jordy-blue-200: #0023a3;
+    --jordy-blue-300: #0035f5;
+    --jordy-blue-400: #476fff;
+    --jordy-blue-500: #9bb1ff;
+    --jordy-blue-600: #adbfff;
+    --jordy-blue-700: #c2cfff;
+    --jordy-blue-800: #d6dfff;
+    --jordy-blue-900: #ebefff;
+    
+    --periwinkle: #bfd7ff;
+    --periwinkle-100: #002159;
+    --periwinkle-200: #0041b1;
+    --periwinkle-300: #0b65ff;
+    --periwinkle-400: #649dff;
+    --periwinkle-500: #bfd7ff;
+    --periwinkle-600: #caddff;
+    --periwinkle-700: #d7e6ff;
+    --periwinkle-800: #e4eeff;
+    --periwinkle-900: #f2f7ff;
+    
+    --light-cyan: #e2fdff;
+    --light-cyan-100: #005960;
+    --light-cyan-200: #00b3c0;
+    --light-cyan-300: #21f0ff;
+    --light-cyan-400: #81f7ff;
+    --light-cyan-500: #e2fdff;
+    --light-cyan-600: #e7fdff;
+    --light-cyan-700: #edfeff;
+    --light-cyan-800: #f3feff;
+    --light-cyan-900: #f9ffff;
+}
+
+/* Override Idiology template colors with blue scheme */
+.bg-primary,
+.bg-color-primary {
+    background-color: var(--neon-blue) !important;
+}
+
+.text-primary,
+.text-color-primary {
+    color: var(--neon-blue) !important;
+}
+
+.btn-primary {
+    background-color: var(--neon-blue) !important;
+    border-color: var(--neon-blue) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--neon-blue-400) !important;
+    border-color: var(--neon-blue-400) !important;
+}
+
+/* Custom gradient backgrounds */
+.custom-hero-bg,
+.custom-stop-color-1 {
+    stop-color: var(--neon-blue);
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(135deg, var(--neon-blue) 0%, var(--cornflower-blue) 50%, var(--jordy-blue) 100%);
+}
+
+.bg-gradient-blue-light {
+    background: linear-gradient(135deg, var(--cornflower-blue) 0%, var(--jordy-blue) 50%, var(--periwinkle) 100%);
+}
+
+.bg-gradient-blue-soft {
+    background: linear-gradient(135deg, var(--jordy-blue) 0%, var(--periwinkle) 50%, var(--light-cyan) 100%);
+}
+
+/* Override section backgrounds */
+.bg-color-dark {
+    background-color: var(--neon-blue-100) !important;
+}
+
+.bg-color-grey {
+    background-color: var(--periwinkle-900) !important;
+}
+
+.bg-light {
+    background-color: var(--light-cyan-900) !important;
+}
+
+/* Links and interactive elements */
+a {
+    color: var(--neon-blue);
+}
+
+a:hover {
+    color: var(--neon-blue-400);
+}
+
+/* Navigation */
+.header-nav-main-square .header-nav-main > ul > li > a:hover,
+.header-nav-main-square .header-nav-main > ul > li.dropdown:hover > a {
+    background-color: var(--neon-blue);
+}
+
+/* Service boxes */
+.dn-service-box .dn-iconbox-icon {
+    background-color: var(--jordy-blue-900);
+    color: var(--neon-blue);
+}
+
+.dn-service-box:hover .dn-iconbox-icon {
+    background-color: var(--neon-blue);
+    color: white;
+}
+
+/* Counters */
+.counter strong {
+    color: var(--neon-blue);
+}
+
+/* Buttons */
+.dn-link-btn {
+    color: var(--neon-blue);
+}
+
+.dn-link-btn:hover {
+    color: var(--neon-blue-400);
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--neon-blue);
+}
+
+.btn-white:hover {
+    background-color: var(--periwinkle-900);
+}
+
+/* Project overlays */
+.dn-project-box:hover .dn-project-thumb::after {
+    background: linear-gradient(180deg, transparent 0%, var(--neon-blue-600) 100%);
+}
+
+/* Loading overlay */
+.loading-overlay {
+    background: var(--neon-blue);
+}
+
+.cssload-pulse-loader {
+    border-color: white;
+}
+
+/* Testimonials */
+.testimonial-style-2 blockquote {
+    border-left-color: var(--cornflower-blue);
+}
+
+/* Footer */
+footer.bg-color-dark {
+    background-color: var(--neon-blue-200) !important;
+}
+
+.footer-bottom.has-border {
+    border-top-color: var(--neon-blue-300);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 0 0.25rem rgba(84, 101, 255, 0.25);
+}
+
+/* Owl Carousel Navigation */
+.owl-theme.nav-dark .owl-nav [class*="owl-"]:hover {
+    background-color: var(--neon-blue);
+}
+
+/* Custom animations with blue theme */
+.appear-animation.animated {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Blue-themed scrollbar */
+::-webkit-scrollbar-thumb {
+    background: var(--cornflower-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-blue);
+}
