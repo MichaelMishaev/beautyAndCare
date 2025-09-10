@@ -1,0 +1,476 @@
+{
+  "catalog_metadata": {
+    "source": "https://nubway.co.il/%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d/",
+    "extraction_date": "2025-09-10",
+    "total_products": 9,
+    "currency": "ILS",
+    "company": "NUBWAY - Medical Aesthetic Equipment"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Vacuum Cavitation Machine",
+      "model": "NBW-S200",
+      "category": "Vacuum Ultrasound Machine",
+      "product_url": "https://nubway.co.il/products/vacuum-cavitation-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/s200-vacuum-cavitation-machine.jpg",
+      "pricing": "Contact for quote",
+      "technical_specifications": {
+        "voltage": "220V/110V",
+        "power": "500W",
+        "vacuum": "82KP",
+        "rf_frequency": "1MHz/5MHz/8MHz",
+        "rf_power": "300W",
+        "screen": "12.1-inch touch screen",
+        "handles": 7
+      },
+      "key_features": [
+        "Four Advanced Technologies: Ultrasonic Cavitation, Radio Frequency (RF), Infrared (IR), Vacuum",
+        "SMC Solenoid Valve (Japan)",
+        "Coherent Infrared Diode Laser (USA)",
+        "Triple Frequency RF Power Supply (Japan)",
+        "Italian Air Pump"
+      ],
+      "specialized_handles": [
+        "Vacuum RF Handle",
+        "Multi-Polar RF Handle",
+        "Ultrasonic Cavitation Handle"
+      ],
+      "treatment_applications": [
+        "Fat reduction",
+        "Body contouring",
+        "Skin tightening",
+        "Wrinkle reduction",
+        "Facial and body treatments",
+        "Skin rejuvenation"
+      ],
+      "benefits": [
+        "Non-invasive treatment",
+        "Precise energy delivery",
+        "Comfortable and safe",
+        "Versatile treatment options",
+        "Quick results"
+      ],
+      "customization": "Available in multiple colors/variations at no extra cost",
+      "warranty": "Not specified"
+    },
+    {
+      "id": 2,
+      "name": "PDT Led Light Therapy Machine",
+      "model": "LP100S",
+      "category": "LED Light Therapy",
+      "product_url": "https://nubway.co.il/products/pdt-led-light-therapy-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/pdt-led-light-therapy-machine.jpg",
+      "pricing": "Contact for quote",
+      "technical_specifications": {
+        "diodes": 3000,
+        "power": "800W",
+        "diode_power": "100mW per diode",
+        "wavelength": "400-700nm",
+        "led_colors": ["Red", "Blue", "Yellow", "Orange", "Cyan", "Purple", "White"],
+        "screen": "8-inch Touch Screen",
+        "operation_modes": ["Pulse", "Continuous Mode"]
+      },
+      "treatment_applications": [
+        "Accelerate wound healing",
+        "Acne treatment",
+        "Skin renewal",
+        "Hair growth stimulation",
+        "Improve local blood circulation",
+        "Photodynamic therapy",
+        "Pain and muscle stiffness relief"
+      ],
+      "benefits": [
+        "Cellular repair and renewal",
+        "Increased blood circulation",
+        "Collagen production stimulation",
+        "Skin tone and texture improvement",
+        "Reduces fine lines and wrinkles",
+        "Increases cellular energy (ATP)",
+        "Skin tightening",
+        "Natural skin hydration",
+        "Serotonin production"
+      ],
+      "key_features": [
+        "7 different color light therapy options",
+        "High energy density",
+        "Non-invasive treatment",
+        "No side effects",
+        "Safe for immediate return to daily activities"
+      ],
+      "warranty": "Not specified"
+    },
+    {
+      "id": 3,
+      "name": "VelaShape Slimming Machine",
+      "model": "VS II",
+      "category": "VelaShape Body Contouring",
+      "product_url": "https://nubway.co.il/products/velashape-slimming-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/velashape-slimming-machine.jpg",
+      "pricing": "Multiple payment plan options",
+      "technical_specifications": {
+        "rf_power": "800W",
+        "rf_frequency": "2 MHz",
+        "infrared_laser_power": "20W",
+        "infrared_laser_wavelength": "940nm",
+        "ultrasonic_power": "200W",
+        "vacuum_pressure": "10-90 Kpa",
+        "dimensions": "470*500*1330mm",
+        "weight": "50 KG"
+      },
+      "key_features": [
+        "5 integrated technologies: RF, Vacuum Pressure, Infrared Laser, Mechanical Rollers, Ultrasonic Cavitation",
+        "4 different treatment handles",
+        "6 body treatment areas",
+        "Imported German motor for quiet operation",
+        "Japanese flow valve and negative pressure pump"
+      ],
+      "treatment_details": {
+        "session_duration": "45-60 minutes (full body), 15 minutes (targeted area)",
+        "recommended_sessions": 10,
+        "expected_results": {
+          "thigh_reduction": "1-5 cm",
+          "waist_reduction": "2-6 cm",
+          "skin_improvement": "50-75%",
+          "timeline": "1-2 months"
+        }
+      },
+      "unique_selling_points": [
+        "Comprehensive body contouring and slimming solution",
+        "Stable power output",
+        "Precise control",
+        "Low engine noise",
+        "Long equipment lifespan"
+      ],
+      "customization": "Color/variant selection without additional cost",
+      "warranty": "Not specified"
+    },
+    {
+      "id": 4,
+      "name": "5D HIFU Machine",
+      "model": "SMASFOCUS II",
+      "category": "HIFU Skin Tightening",
+      "product_url": "https://nubway.co.il/products/5d-hifu-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/5d-hifu-machine.jpg",
+      "pricing": "Contact for quote",
+      "technical_specifications": {
+        "power": "1200W",
+        "frequency": "4-7 MHz",
+        "width": "Adjustable 1-10 mm",
+        "length": "Adjustable 5-25 mm",
+        "energy_output": "0.2-2J/cm²",
+        "shots_per_cartridge": "20,000 lines",
+        "standard_cartridges": ["1.5mm", "3.0mm", "4.5mm", "8.0mm"],
+        "optional_cartridges": ["6.0mm", "10.0mm", "13.0mm", "16.0mm"]
+      },
+      "key_features": [
+        "Non-invasive skin tightening technology",
+        "Targets SMAS layer without damaging surrounding tissues",
+        "Uses focused ultrasound energy",
+        "Creates heat points at three different depths",
+        "Stimulates natural collagen and elastin production"
+      ],
+      "treatment_applications": [
+        "Eyebrow lifting",
+        "Chin reshaping",
+        "Smoothing nasolabial folds",
+        "Eye area rejuvenation",
+        "Overall facial skin renewal"
+      ],
+      "benefits": [
+        "Significant lifting effect after single treatment",
+        "Results last 12-18 months",
+        "No recovery time required",
+        "Immediate return to normal activities",
+        "Precise targeting of skin layers"
+      ],
+      "warranty": "Not specified"
+    },
+    {
+      "id": 5,
+      "name": "Plasma Machine",
+      "model": "PLASMA II",
+      "category": "Plasma Treatment",
+      "product_url": "https://nubway.co.il/products/plasma-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/plasma-machine.jpg",
+      "pricing": "Custom color options available without additional cost",
+      "technical_specifications": {
+        "power_output": "300W",
+        "cooling_handle_power": "50W",
+        "energy_levels": "1-8",
+        "screen_size": "12.1 inches",
+        "working_modes": ["Short pulse", "Continuous"],
+        "pulse_modes": 4,
+        "dimensions": "330*321*330 mm",
+        "packaging_size": "430*440*415 mm",
+        "voltage": "AC220V±10% 10A 50HZ / 110v±10% 10A 60HZ"
+      },
+      "unique_handles": [
+        {
+          "name": "Surgical Plasma Handle",
+          "features": ["Ceramic electrode", "Reusable after alcohol disinfection", "No consumable parts"]
+        },
+        {
+          "name": "Plasma Shower Handle",
+          "features": ["4 standard silver sterling needles", "Ultra-thin 0.03mm needle diameter", "Less painful and invasive"]
+        },
+        {
+          "name": "Cooling Handle",
+          "features": ["Advanced cooling technology", "Quick cooling with high stability", "Can operate simultaneously with other handles"]
+        }
+      ],
+      "treatment_applications": [
+        "Wrinkle removal",
+        "Skin tightening",
+        "Acne and acne scar treatment",
+        "Skin tag/mole removal",
+        "TDDS system application"
+      ],
+      "benefits": [
+        "Improves skin tissue",
+        "Treats acne without damaging healthy cells",
+        "Provides antiseptic, anti-bacterial effects",
+        "Reduces inflammation",
+        "Skin brightening",
+        "Improves skin firmness"
+      ],
+      "warranty": "Not specified"
+    },
+    {
+      "id": 6,
+      "name": "IPL Skin Rejuvenation Machine",
+      "model": "ESHR50",
+      "category": "IPL Hair Removal & Skin Rejuvenation",
+      "product_url": "https://nubway.co.il/products/ipl-skin-rejuvenation-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/ipl-skin-rejuvenation-machine.jpg",
+      "pricing": "Contact for quote",
+      "technical_specifications": {
+        "power": "2000W",
+        "wavelengths": {
+          "sr": "560–950 nm",
+          "hr": "640–950 nm",
+          "multi_functional": ["430", "530", "560", "640", "690", "755 nm"]
+        },
+        "operating_modes": ["IPL", "SHR", "E-light"],
+        "ipl_energy": "10–60 J/cm²",
+        "light_spot_size": "15×50 mm",
+        "shr_energy": "3–15 J/cm²",
+        "shr_frequency": "1-10Hz",
+        "rf_power": "160W",
+        "screen_size": "12.1 inches",
+        "voltage": "AC220V±10% or 110V±10%"
+      },
+      "key_features": [
+        "3 high-capacity capacitors",
+        "9mm xenon lamp with million-pulse lifespan",
+        "Silver-coated chamber",
+        "Quartz crystal light guide",
+        "Advanced 108W cooling chip",
+        "Multi-layer cooling system (air, water, semiconductor)"
+      ],
+      "benefits": [
+        "Fast treatments with large light spot",
+        "Comfortable with sapphire crystal contact cooling",
+        "Safe low-energy technology",
+        "Effective energy penetration",
+        "Versatile (hair removal, skin rejuvenation, acne treatment)",
+        "Suitable for all skin and hair types"
+      ],
+      "treatment_applications": [
+        "Hair removal",
+        "Skin texture improvement",
+        "Pigmentation reduction",
+        "Redness reduction",
+        "Acne treatment",
+        "Anti-aging"
+      ],
+      "unique_selling_points": [
+        "High-frequency SHR technology",
+        "Minimal pain",
+        "Quick treatment times",
+        "Comprehensive skin solution"
+      ],
+      "warranty": "Not specified"
+    },
+    {
+      "id": 7,
+      "name": "Cryolipolysis Slimming Machine",
+      "model": "C8",
+      "category": "Cryolipolysis Fat Reduction",
+      "product_url": "https://nubway.co.il/products/cryolipolysis-slimming-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/cryolipolysis-slimming-machine.jpg",
+      "pricing": "Custom quote (varies by configuration)",
+      "technical_specifications": {
+        "temperature_range": "-10°C to 5°C (adjustable)",
+        "power": "2500W",
+        "cooling_power": "2000W",
+        "vacuum": "0-100Kpa",
+        "touchscreen": "10.4\" main screen, 3.5\" handle screen",
+        "voltage": "110V/50Hz, 220V/50Hz",
+        "net_weight": "60 kg",
+        "dimensions": "400x500x1200mm"
+      },
+      "handle_details": {
+        "standard_handles": 4,
+        "handle_a": "235x65x47mm, 255x65x55mm",
+        "handle_b": "Multiple sizes from 180x65x50mm to 220x65x80mm",
+        "handle_c": "Multiple sizes from 125x50x45mm to 145x50x70mm",
+        "handle_d": "83x30x50mm"
+      },
+      "key_features": [
+        "Non-invasive fat reduction treatment",
+        "360° cooling handles",
+        "100% cooling efficiency",
+        "Precise fat cell targeting",
+        "Easy to operate",
+        "Minimal staff intervention required"
+      ],
+      "treatment_principle": "Cryolipolysis technology utilizes triglycerides in body fat, freezing them at 5°C and causing targeted destruction of fat cells.",
+      "benefits": [
+        "Reduces 2-6 cm from waistline in one treatment",
+        "Permanent fat cell reduction",
+        "No recovery time",
+        "Safe and painless",
+        "Cost-effective for clinics"
+      ],
+      "warranty": "Not specified"
+    },
+    {
+      "id": 8,
+      "name": "Face Skin Analyzer Machine",
+      "model": "QSPC-02",
+      "category": "Skin Analysis Equipment",
+      "product_url": "https://nubway.co.il/products/face-skin-analyzer-machine/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/face-skin-analyzer-machine.jpg",
+      "pricing": {
+        "price": "25,690 ILS",
+        "financing": "Available",
+        "warranty": "5 years"
+      },
+      "technical_specifications": {
+        "resolution": "20 megapixels",
+        "camera_brand": "Canon",
+        "supported_systems": ["Android", "Windows"],
+        "device_size": "416x414x513 mm",
+        "net_weight": "10 kg"
+      },
+      "key_features": [
+        "3D Ultra HD Camera",
+        "Adjustable Face Stand",
+        "Light-Blocking Head Cover",
+        "Touch Switch",
+        "Modular Light Source Design"
+      ],
+      "imaging_capabilities": {
+        "smart_imaging_modes": 8,
+        "spectrum_options": [
+          "RGB Light",
+          "Polarized Cross Light",
+          "UV Light",
+          "Parallel Polarized Light"
+        ]
+      },
+      "advanced_analysis_features": [
+        "Multi-layer Skin Detection",
+        "30-Dimensional Symptom Analysis",
+        "Advanced UV Imaging",
+        "Infrared Imaging",
+        "Cloud Storage (VIP Version)",
+        "Aging Simulation (VIP Version)"
+      ],
+      "benefits": [
+        "Comprehensive skin condition assessment",
+        "Detailed skin aging analysis",
+        "Personalized treatment recommendations",
+        "Intuitive visual comparisons",
+        "Secure cloud data storage"
+      ],
+      "included_extras": [
+        "Free electric table",
+        "Personal business and marketing support"
+      ],
+      "warranty": "5 years"
+    },
+    {
+      "id": 9,
+      "name": "Multi Spot Size Diode Laser",
+      "model": "VL8",
+      "category": "Diode Laser Hair Removal",
+      "product_url": "https://nubway.co.il/products/%d7%9c%d7%99%d7%99%d7%96%d7%a8-%d7%93%d7%99%d7%95%d7%93%d7%94-%d7%91%d7%92%d7%95%d7%93%d7%9c-%d7%a8%d7%91-%d7%a0%d7%a7%d7%95%d7%93%d7%95%d7%aa/",
+      "main_image": "https://nubway.co.il/wp-content/uploads/2023/08/multi-spot-diode-laser.jpg",
+      "pricing": {
+        "original_price": "108,563 ILS",
+        "promotional_price": "85,309 ILS",
+        "financing": "Available (up to 60 payments)"
+      },
+      "technical_specifications": {
+        "power": "3000 watts",
+        "handpiece_power": "2000W",
+        "wavelengths": ["808nm", "755nm", "940nm", "1064nm (optional)"],
+        "pulse_width": "1-200 milliseconds",
+        "spot_sizes": {
+          "standard": ["Φ8mm", "12*14mm", "12*40mm"],
+          "optional": "Other sizes available"
+        },
+        "frequency": "1-20 Hz",
+        "cooling_system": "Compressor cooling",
+        "voltage": "AC220V±10% 10A 50HZ, 110V±10% 10A 60HZ"
+      },
+      "key_features": [
+        "Collimator lens for precise light path",
+        "360° Peltier cooling (108W)",
+        "AI Diode hair detection technology",
+        "Multiple power and spot size options",
+        "1.54\" OLED touchscreen on handpiece",
+        "Android-based smart system with Wi-Fi/Bluetooth"
+      ],
+      "benefits": [
+        "Precise hair removal targeting hair follicles",
+        "Minimal damage to surrounding tissues",
+        "90% permanent hair reduction within 9-12 months",
+        "Intelligent parameter recommendations",
+        "Comfortable treatment (surface temperature around 30°C)"
+      ],
+      "unique_selling_points": [
+        "American Coherent laser",
+        "Four wavelengths",
+        "13-inch screen",
+        "Android operating system",
+        "Five functions in one handpiece",
+        "Powerful cooling system",
+        "Hair follicle analyzer"
+      ],
+      "warranty": "5 years"
+    }
+  ],
+  "summary_statistics": {
+    "product_categories": {
+      "Body Contouring & Slimming": 3,
+      "Skin Treatment & Rejuvenation": 3,
+      "Hair Removal": 1,
+      "Skin Analysis": 1,
+      "Light Therapy": 1
+    },
+    "price_range": {
+      "budget": "Contact for quote (most products)",
+      "mid_range": "25,690 ILS (Skin Analyzer)",
+      "premium": "85,309 ILS (Diode Laser)"
+    },
+    "warranty_info": {
+      "specified": 2,
+      "unspecified": 7,
+      "standard_warranty": "5 years (where specified)"
+    },
+    "key_technologies": [
+      "IPL (Intense Pulsed Light)",
+      "RF (Radio Frequency)",
+      "HIFU (High-Intensity Focused Ultrasound)",
+      "Cryolipolysis",
+      "Diode Laser",
+      "LED Light Therapy",
+      "Plasma Technology",
+      "Vacuum Cavitation",
+      "Skin Analysis"
+    ]
+  }
+}
