@@ -1,0 +1,240 @@
+/* RTL Support for Hebrew Language */
+
+/* Base RTL Styles */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Text Alignment */
+.rtl .text-left {
+    text-align: right !important;
+}
+
+.rtl .text-right {
+    text-align: left !important;
+}
+
+.rtl .text-center {
+    text-align: center !important;
+}
+
+/* Flexbox */
+.rtl .d-flex:not(.flex-column) {
+    flex-direction: row-reverse;
+}
+
+.rtl .justify-content-start {
+    justify-content: flex-end !important;
+}
+
+.rtl .justify-content-end {
+    justify-content: flex-start !important;
+}
+
+/* Margins and Paddings */
+.rtl .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+.rtl .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Navigation */
+.rtl .header-nav {
+    float: left;
+}
+
+.rtl .header-logo {
+    float: right;
+}
+
+.rtl .dropdown-menu {
+    text-align: right;
+    left: auto;
+    right: 0;
+}
+
+.rtl .nav-item {
+    float: right;
+}
+
+/* Forms */
+.rtl input,
+.rtl textarea,
+.rtl select,
+.rtl .form-control {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Lists */
+.rtl ul,
+.rtl ol {
+    padding-right: 40px;
+    padding-left: 0;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.rtl .language-switcher {
+    right: auto;
+    left: 20px;
+}
+
+.language-switcher .lang-btn {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.language-switcher .lang-btn:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.language-switcher .lang-btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.language-switcher .flag-icon {
+    font-size: 20px;
+}
+
+.language-switcher.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Floats */
+.rtl .float-left {
+    float: right !important;
+}
+
+.rtl .float-right {
+    float: left !important;
+}
+
+/* Padding utilities */
+.rtl .pl-1 { padding-left: 0 !important; padding-right: 0.25rem !important; }
+.rtl .pl-2 { padding-left: 0 !important; padding-right: 0.5rem !important; }
+.rtl .pl-3 { padding-left: 0 !important; padding-right: 1rem !important; }
+.rtl .pl-4 { padding-left: 0 !important; padding-right: 1.5rem !important; }
+.rtl .pl-5 { padding-left: 0 !important; padding-right: 3rem !important; }
+
+.rtl .pr-1 { padding-right: 0 !important; padding-left: 0.25rem !important; }
+.rtl .pr-2 { padding-right: 0 !important; padding-left: 0.5rem !important; }
+.rtl .pr-3 { padding-right: 0 !important; padding-left: 1rem !important; }
+.rtl .pr-4 { padding-right: 0 !important; padding-left: 1.5rem !important; }
+.rtl .pr-5 { padding-right: 0 !important; padding-left: 3rem !important; }
+
+/* Margin utilities */
+.rtl .ml-1 { margin-left: 0 !important; margin-right: 0.25rem !important; }
+.rtl .ml-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+.rtl .ml-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+.rtl .ml-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+.rtl .ml-5 { margin-left: 0 !important; margin-right: 3rem !important; }
+
+.rtl .mr-1 { margin-right: 0 !important; margin-left: 0.25rem !important; }
+.rtl .mr-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
+.rtl .mr-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+.rtl .mr-4 { margin-right: 0 !important; margin-left: 1.5rem !important; }
+.rtl .mr-5 { margin-right: 0 !important; margin-left: 3rem !important; }
+
+/* Icons and Buttons */
+.rtl .btn i:first-child {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.rtl .btn i:last-child {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+/* Cards */
+.rtl .card {
+    text-align: right;
+}
+
+/* Footer */
+.rtl footer {
+    text-align: right;
+}
+
+.rtl .social-icons li {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Tables */
+.rtl table,
+.rtl th,
+.rtl td {
+    text-align: right;
+}
+
+/* Breadcrumbs */
+.rtl .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0;
+    padding-left: 0.5rem;
+}
+
+/* Pagination */
+.rtl .pagination {
+    flex-direction: row-reverse;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+        padding: 8px;
+    }
+    
+    .rtl .language-switcher {
+        right: auto;
+        left: 10px;
+    }
+    
+    .language-switcher .lang-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .language-switcher .lang-name {
+        display: none;
+    }
+}

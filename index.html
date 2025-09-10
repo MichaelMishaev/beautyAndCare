@@ -10,10 +10,10 @@
 		<meta name="author" content="DesignsNinja">
 		<meta name="robots" content="INDEX,FOLLOW">
 
-		<title>Idiology | Creative & Corporate - Multipurpose HTML5 Template</title>	
+		<title data-i18n="page.title">Davidov Beauty Care - Professional Equipment for Clinics</title>	
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+		<link rel="shortcut icon" href="assets/images/logo.png" type="image/svg+xml">
 		<link rel="apple-touch-icon" href="assets/images/logo.png">
 
 		<!-- Viewport -->
@@ -31,9 +31,18 @@
 		<link rel="stylesheet" href="assets/css/digital-agency.css">
 		<link rel="stylesheet" href="assets/css/animate.compat.css">
 		<link rel="stylesheet" href="assets/css/custom-colors.css">
+		<link rel="stylesheet" href="assets/css/language-switcher.css">
+		<link rel="stylesheet" href="assets/css/language-switcher-menu.css">
+		<link rel="stylesheet" href="assets/css/logo-enhancements.css">
+		<link rel="stylesheet" href="assets/css/typography-system.css">
+		<link rel="stylesheet" href="assets/css/font-overrides.css">
+
+		<!-- i18n Script - Load before body to prevent FOUC -->
+		<script src="assets/js/i18n.js"></script>
 
 	</head>
 	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-cursor-effect data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}">
+		
 		<div class="loading-overlay">
 			<div class="bounce-loader">
 				<div class="wrapper-pulse">
@@ -45,14 +54,15 @@
 		<div class="body">
 
 			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="medical-header-accent"></div>
 				<div class="header-body border-top-0 header-body-bottom-border">
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
-											<img alt="logo" width="150" height="50" data-sticky-width="150" data-sticky-height="50" src="assets/images/logo.png">
+										<a href="index.html" aria-label="Davidov Beauty Care - Professional Medical Equipment">
+											<div class="medical-quality-badge"></div>
 										</a>
 									</div>
 								</div>
@@ -64,62 +74,65 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="index.html">Home</a>
+														<a class="dropdown-item dropdown-toggle" href="index.html" data-i18n="nav.home">Home</a>
 														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="index.html">Digital Agency</a></li>
-															<li><a class="dropdown-item" href="creative-agency.html">Creative Agency</a></li>
-															<li><a class="dropdown-item" href="design-studio.html">Design Studio</a></li>
-															<li><a class="dropdown-item" href="startup-agency.html">Startup Agency</a></li>
-															<li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
-															<li><a class="dropdown-item" href="modern-agency.html">Modern Agency</a></li>
-															<li><a class="dropdown-item" href="creative-studio.html">Creative Studio</a></li>
-															<li><a class="dropdown-item" href="personal-portfolio.html">Personal Portfolio</a></li>
-															<li><a class="dropdown-item" href="photography.html">Photography</a></li>
+															<li><a class="dropdown-item" href="index.html" data-i18n="nav.digitalAgency">Digital Agency</a></li>
+															<li><a class="dropdown-item" href="creative-agency.html" data-i18n="nav.creativeAgency">Creative Agency</a></li>
+															<li><a class="dropdown-item" href="design-studio.html" data-i18n="nav.designStudio">Design Studio</a></li>
+															<li><a class="dropdown-item" href="startup-agency.html" data-i18n="nav.startupAgency">Startup Agency</a></li>
+															<li><a class="dropdown-item" href="digital-marketing.html" data-i18n="nav.digitalMarketing">Digital Marketing</a></li>
+															<li><a class="dropdown-item" href="modern-agency.html" data-i18n="nav.modernAgency">Modern Agency</a></li>
+															<li><a class="dropdown-item" href="creative-studio.html" data-i18n="nav.creativeStudio">Creative Studio</a></li>
+															<li><a class="dropdown-item" href="personal-portfolio.html" data-i18n="nav.personalPortfolio">Personal Portfolio</a></li>
+															<li><a class="dropdown-item" href="photography.html" data-i18n="nav.photography">Photography</a></li>
 														</ul>
 													</li>
+													<li>
+														<a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">Pages</a>
+														<a class="dropdown-item dropdown-toggle" href="#" data-i18n="nav.pages">Pages</a>
 														<ul class="dropdown-menu">
 															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#">About Pages <i class="fas fa-chevron-down"></i></a>
+																<a class="dropdown-item" href="#" data-i18n="nav.aboutPages">About Pages <i class="fas fa-chevron-down"></i></a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="about-us.html">About</a></li>
-																	<li><a class="dropdown-item" href="about-us-2.html">About 02</a></li>
+																	<li><a class="dropdown-item" href="about-us.html" data-i18n="nav.about">About</a></li>
+																	<li><a class="dropdown-item" href="about-us-2.html" data-i18n="nav.about02">About 02</a></li>
 																</ul>
 															</li>
 															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#">Services Pages <i class="fas fa-chevron-down"></i></a>
+																<a class="dropdown-item" href="#" data-i18n="nav.servicesPages">Services Pages <i class="fas fa-chevron-down"></i></a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="services.html">Services</a></li>
-																	<li><a class="dropdown-item" href="services-details.html">Services Details</a></li>
+																	<li><a class="dropdown-item" href="services.html" data-i18n="nav.services">Services</a></li>
+																	<li><a class="dropdown-item" href="services-details.html" data-i18n="nav.servicesDetails">Services Details</a></li>
 																</ul>
 															</li>
-															<li><a class="dropdown-item" href="team.html">Our Team</a></li>
-															<li><a class="dropdown-item" href="team-details.html">Team Details</a></li>
-															<li><a class="dropdown-item" href="pricing.html">Pricing Table</a></li>
-															<li><a class="dropdown-item" href="faq.html">FAQs Page</a></li>
-															<li><a class="dropdown-item" href="404-error.html">404 Error Page</a></li>
+															<li><a class="dropdown-item" href="team.html" data-i18n="nav.team">Our Team</a></li>
+															<li><a class="dropdown-item" href="team-details.html" data-i18n="nav.teamDetails">Team Details</a></li>
+															<li><a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">Pricing Table</a></li>
+															<li><a class="dropdown-item" href="faq.html" data-i18n="nav.faq">FAQs Page</a></li>
+															<li><a class="dropdown-item" href="404-error.html" data-i18n="nav.errorPage">404 Error Page</a></li>
 														</ul>
 													</li>
 													
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="blogs.html">Blogs</a>
+														<a class="dropdown-item dropdown-toggle" href="blogs.html" data-i18n="nav.blogs">Blogs</a>
 														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-															<li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+															<li><a class="dropdown-item" href="blogs.html" data-i18n="nav.blogs">Blogs</a></li>
+															<li><a class="dropdown-item" href="blog-details.html" data-i18n="nav.blogDetails">Blog Details</a></li>
 														</ul>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="project-digital.html">Projects</a>
+														<a class="dropdown-item dropdown-toggle" href="project-digital.html" data-i18n="nav.projects">Projects</a>
 														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="project-digital.html">Creative Agency</a></li>
-															<li><a class="dropdown-item" href="project-digital.html">Digital Agency</a></li>
-															<li><a class="dropdown-item" href="project-studio.html">Digital Studio</a></li>
-															<li><a class="dropdown-item" href="project-details.html">Project Details</a></li>
+															<li><a class="dropdown-item" href="project-digital.html" data-i18n="nav.creativeAgency">Creative Agency</a></li>
+															<li><a class="dropdown-item" href="project-digital.html" data-i18n="nav.digitalAgency">Digital Agency</a></li>
+															<li><a class="dropdown-item" href="project-studio.html" data-i18n="nav.digitalStudio">Digital Studio</a></li>
+															<li><a class="dropdown-item" href="project-details.html" data-i18n="nav.projectDetails">Project Details</a></li>
 														</ul>
 													</li>
 													<li>
-														<a href="contact.html">Contact</a>
+														<a href="contact.html" data-i18n="nav.contact">Contact</a>
 													</li>
 												</ul>
 											</nav>
@@ -129,13 +142,18 @@
 										</button>
 									</div>
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+										<!-- Language Switcher Integration -->
+										<div class="header-nav-feature language-switcher-header d-inline-flex">
+											<div class="language-switcher-menu"></div>
+										</div>
+										
 										<div class="header-nav-feature header-nav-features-search d-inline-flex">
 											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
 											<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
-												<form role="search" action="#" method="get">
+												<form role="search" action="catalog.html" method="get">
 													<div class="simple-search input-group">
-														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-														<button class="btn" type="submit" aria-label="Search">
+														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search equipment, treatments..." data-i18n-placeholder="search.placeholder">
+														<button class="btn btn-medical" type="submit" aria-label="Search Equipment">
 															<i class="fas fa-search header-nav-top-icon"></i>
 														</button>
 													</div>
@@ -152,53 +170,37 @@
 
 			<div role="main" class="main">
 				<section id="home" class="p-relative border-0 bg-light overflow-hidden m-0">
-					<div class="custom-hero-bg">
-						<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-							<defs>
-								<radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
-									<animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-									<stop offset="0%" class="custom-stop-color-1"></stop>
-									<stop offset="100%" class="custom-stop-color-1" stop-opacity="0"></stop>
-								</radialGradient>
-							</defs>
-							<rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
-								<animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-								<animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-								<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform>
-							</rect>
-						</svg>
-					</div>
 					<div class="container p-relative z-index-3 banner-style-one">
 						<div class="row min-vh-100 align-items-center pd-t-100 pd-b-100">
 							<div class="col-lg-8 text-center text-lg-start">
 								<div class="overflow-hidden mb-1">
 									<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-										<h1 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0">Creativity Without the Pretentiousness</h1>
+										<h1 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="hero.subtitle">Professional Beauty Equipment</h1>
 									</div>
 								</div>
 								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h1 class="text-color-dark font-weight-bold custom-hero-font-1 pb-2 mb-4">Ideas So Good They Should Be Illegal</h1>
+									<h1 class="text-color-dark font-weight-bold custom-hero-font-1 pb-2 mb-4" data-i18n="hero.title">Advanced Technology for Your Clinic</h1>
 								</div>
-								<div class="main-content"><p class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic.</p></div>
+								<div class="main-content"><p class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850" data-i18n="hero.description">Transform your clinic with professional beauty equipment. Transparent pricing, local support, and technology that grows with your business.</p></div>
 							</div>
 							<div class="col-lg-3 offset-lg-1">
 								<div class="banner-style-one-right">
 									<div class="dn-top">
 										<ul class="list-style-two">
-											<li>$10M+ Spend in marketing</li>
-											<li>1st ambassador partner for marketing in USA</li>
-											<li>10+ passionate partner</li>
+											<li data-i18n="heroStats.marketingSpend">$10M+ Spend in marketing</li>
+											<li data-i18n="heroStats.ambassadorPartner">1st ambassador partner for marketing in USA</li>
+											<li data-i18n="heroStats.passionatePartner">10+ passionate partner</li>
 										</ul>
 									</div>
 									<div class="dn-user-card">
 										<div class="dn-thumb">
-											<img src="assets/images/avatars/client-1-sm.jpg" alt="avatar-1">
-											<img src="assets/images/avatars/client-2-sm.jpg" alt="avatar-2">
-											<img src="assets/images/avatars/client-3-sm.jpg" alt="avatar-3">
+											<img src="assets/images/client-testimonial-1.jpg" alt="Satisfied Clinic Owner">
+											<img src="assets/images/client-testimonial-1.jpg" alt="Happy Beauty Therapist">
+											<img src="assets/images/client-testimonial-1.jpg" alt="Professional Client">
 											<a href="services.html" data-discover="true"><i class="fas fa-plus"></i></a>
 										</div>
 										<div class="dn-info">
-											<p>We have 20k+ <br> clients world wide</p>
+											<p data-i18n="hero.clients">We have 500+ satisfied clinics in Israel</p>
 										</div>
 									</div>
 								</div>
@@ -207,14 +209,14 @@
 					</div>
 				</section>
 
-				<section class="parallax section section-text-light section-parallax section-center py-0 my-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 10, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}" data-image-src="assets/images/backgrounds/bg-parallax-1.jpg">
+				<section class="parallax section section-text-light section-parallax section-center py-0 my-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 10, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}" data-image-src="assets/images/hero-clinic.jpg">
 					<div class="d-flex justify-content-center">
 						<div class="scrollable-parallax-wrapper">
 							<div class="container py-5 my-5">
 								<div class="row justify-content-center py-5 my-5">
 									<div class="col-lg-12 py-5 my-5">
-										<h1 class="mb-3 font-weight-bold custom-hero-font-2">Let's Make Something Remarkable Together</h1>
-										<h4 class="mb-0 font-weight-semi-bold custom-hero-font-5">Your vision deserves world-class execution. Contact us now, and let's turn your ideas into unforgettable experiences.</h4>
+										<h1 class="mb-3 font-weight-bold custom-hero-font-2" data-i18n="cta.remarkable">Let's Make Something Remarkable Together</h1>
+										<h4 class="mb-0 font-weight-semi-bold custom-hero-font-5" data-i18n="cta.remarkableDesc">Your vision deserves world-class execution. Contact us now, and let's turn your ideas into unforgettable experiences.</h4>
 									</div>
 								</div>
 							</div>
@@ -228,14 +230,14 @@
 							<div class="col-lg-10 col-xl-9 col-xxl-10">
 								<div class="dn-about-content text-left">
 									<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-										<h2 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0">Great brands don't happen by accident they're built with intention. Whether you're launching a startup, refreshing your identity, or craving campaigns that actually convert, our team blends strategic thinking with boundary-pushing creativity to deliver results that matter. We're not just designers, writers, or marketers; we're your partners in crafting unforgettable experiences.</h2>
+										<h2 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="about.mainHeading">Great brands don't happen by accident they're built with intention. Whether you're launching a startup, refreshing your identity, or craving campaigns that actually convert, our team blends strategic thinking with boundary-pushing creativity to deliver results that matter. We're not just designers, writers, or marketers; we're your partners in crafting unforgettable experiences.</h2>
 									</div>
 									
 									<div class="dn-about-info mrt-60">
-										<p class="font-size-20 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Your brand is more than colors and logos it's the soul of your business. We specialize in crafting distinctive identities that tell your story, connect with your audience, and drive real results. From startups to established companies, we build brands that stand the test of time. Ready to make your mark? Let's begin your brand transformation today.</p>
+										<p class="font-size-20 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850" data-i18n="about.description">Your brand is more than colors and logos it's the soul of your business. We specialize in crafting distinctive identities that tell your story, connect with your audience, and drive real results. From startups to established companies, we build brands that stand the test of time. Ready to make your mark? Let's begin your brand transformation today.</p>
 										<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
 											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-												<a class="dn-link-btn" href="about-us.html">More About Us <span>
+												<a class="dn-link-btn" href="about-us.html" data-i18n="about.moreAboutUs">More About Us <span>
 													<i class="fa-solid fa-arrow-right arry1"></i>
 													<i class="fa-solid fa-arrow-right arry2"></i>
 													</span>
@@ -252,26 +254,26 @@
 								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
 									<div class="counter counter-primary">
 										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="12" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20">Years of experience</label>
+										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.yearsExperience">Years of experience</label>
 									</div>
 								</div>
 								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
 									<div class="counter counter-primary">
 										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="225" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20">Successfully projects</label>
+										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.successfulProjects">Successfully projects</label>
 									</div>
 								</div>
 								<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
 									<div class="counter counter-primary">
 										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="42" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20">International team members</label>
+										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.teamMembers">International team members</label>
 									</div>
 								</div>
 								<div class="col-sm-6 col-lg-3">
 									<div class="counter counter-with-unit counter-primary">
 										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="98">0</strong>
 										<strong class="font-weight-semi-bold text-color-dark font-unbounded">%</strong>
-										<label class="text-color-dark font-unbounded mrt-20">Clients satisfied & retention</label>
+										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.clientSatisfaction">Clients satisfied & retention</label>
 									</div>
 								</div>
 						</div>
@@ -287,10 +289,10 @@
 											<div class="block-appear-animation-wrapper">
 												<a href="project-digital.html">
 													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-1.png" alt="project-1">
+														<img class="w-100" src="assets/images/device-main.png" alt="Professional Diode Laser Equipment">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Kinetic Sandscapes</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.kineticSandscapes">Kinetic Sandscapes</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -309,7 +311,7 @@
 														<img class="w-100" src="assets/images/projects/project-3.png" alt="project-2">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Brooklyn Brewery</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.brooklynBrewery">Brooklyn Brewery</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -328,7 +330,7 @@
 														<img class="w-100" src="assets/images/projects/project-5.png" alt="project-3">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Regenerative</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.regenerative">Regenerative</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -345,7 +347,7 @@
 								<div class="row">
 									<div class="col-12">
 										<div class="dn-header text-center text-md-end">
-                                            <a class="dn-link-btn btn-white" href="project-digital.html">View More Works <span>
+                                            <a class="dn-link-btn btn-white" href="project-digital.html" data-i18n="cta.viewMoreWorks">View More Works <span>
                                                 <i class="fa-solid fa-arrow-right arry1"></i>
                                                 <i class="fa-solid fa-arrow-right arry2"></i>
                                             	</span>
@@ -357,10 +359,10 @@
 											<div class="block-appear-animation-wrapper">
 												<a href="project-digital.html">
 													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-2.png" alt="project-4">
+														<img class="w-100" src="assets/images/treatment-room.jpg" alt="Modern Treatment Room">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Hopscotch Payments</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.hopscotchPayments">Hopscotch Payments</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -376,10 +378,10 @@
 											<div class="block-appear-animation-wrapper">
 												<a href="project-digital.html">
 													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-4.png" alt="project-5">
+														<img class="w-100" src="assets/images/service-consultation.jpg" alt="Professional Consultation">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Stories Worthwhile</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.storiesWorthwhile">Stories Worthwhile</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -398,7 +400,7 @@
 														<img class="w-100" src="assets/images/projects/project-6.png" alt="project-6">
 													</div>
 													<div class="dn-project-content">
-														<h4 class="text-color-light">Fintech Accelerator</h4>
+														<h4 class="text-color-light" data-i18n="portfolio.fintechAccelerator">Fintech Accelerator</h4>
 														<span class="dn-project-date text-color-light">
 															2025
 															<i class="bi bi-dash"></i>
@@ -420,7 +422,7 @@
 						<div class="row">
 							<div class="col-12 col-lg-9 col-xl-7 col-xxl-6">
 								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4">Where Conventional Thinking Ends</h3>
+									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="services.mainHeading">Complete Medical Equipment Solutions</h3>
 								</div>
 							</div>
 						</div>
@@ -431,14 +433,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-brush-fill"></i>
+												<i class="bi bi-tools"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>Brand Strategy</h4>
-													<p>We craft bold brand strategies that define your purpose, differentiate your presence, and
-														build loyalty at every touchpoint.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.installation">Equipment Installation & Training</h4>
+													<p data-i18n="services.installationDesc">Professional installation and comprehensive staff training for all medical equipment. We ensure your team is fully qualified to operate safely and effectively.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -456,14 +457,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-circle-half"></i>
+												<i class="bi bi-headset"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>Web Development</h4>
-													<p>From stunning landing pages to dynamic web apps, we code digital experiences that convert
-														and connect seamlessly.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.technicalSupport">Technical Support & Maintenance</h4>
+													<p data-i18n="services.technicalSupportDesc">24/7 technical support and scheduled maintenance services. Our certified technicians ensure maximum uptime and optimal performance for your equipment.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -481,14 +481,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-diamond-half"></i>
+												<i class="bi bi-credit-card"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>UI/UX Design</h4>
-													<p>We design intuitive, elegant interfaces that enhance usability and keep your users coming
-														back for more.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.financing">Equipment Financing Solutions</h4>
+													<p data-i18n="services.financingDesc">Flexible financing options and leasing programs to help clinics acquire professional equipment. Competitive rates with terms designed for medical practices.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -506,14 +505,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-droplet-half"></i>
+												<i class="bi bi-person-check"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>Digital Marketing</h4>
-													<p>We blend creativity with data to build campaigns that attract, engage, and convert across
-														all digital platforms.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.certification">Professional Certification Programs</h4>
+													<p data-i18n="services.certificationDesc">Comprehensive training and certification programs for medical aesthetics. Advance your skills with internationally recognized certifications.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -531,14 +529,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-camera2"></i>
+												<i class="bi bi-shield-check"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>Media Production</h4>
-													<p>From storyboarding to final cut, we create cinematic visuals and content that bring your
-														brand story to life.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.warranty">Extended Warranty & Service Plans</h4>
+													<p data-i18n="services.warrantyDesc">Comprehensive warranty coverage and service plans that protect your investment. Peace of mind with guaranteed equipment performance and support.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -556,14 +553,13 @@
 									<div class="block-appear-animation-wrapper">
 										<div class="dn-service-box">
 											<div class="dn-iconbox-icon">
-												<i class="bi bi-exclude"></i>
+												<i class="bi bi-clipboard-data"></i>
 											</div>
 											<div class="dn-iconbox-data">
 												<div class="dn-iconbox-data-wrapper">
-													<h4>Strategy & Consulting</h4>
-													<p>Need direction? We provide actionable insights, market positioning, and growth strategies
-														tailored for your brand.</p>
-													<a class="dn-link-btn" href="services.html">View Details <span>
+													<h4 data-i18n="services.consultation">Equipment Consultation & Planning</h4>
+													<p data-i18n="services.consultationDesc">Expert consultation to help you choose the right equipment for your clinic. Custom treatment room planning and workflow optimization services.</p>
+													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
 															<i class="fa-solid fa-arrow-right arry1"></i>
 															<i class="fa-solid fa-arrow-right arry2"></i>
 														</span>
@@ -583,7 +579,7 @@
 						<div class="row">
 							<div class="col-12 col-lg-9 col-xl-8 col-xxl-6">
 								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-light font-weight-bold custom-hero-font-2 pb-2 mb-4">Creativity Without the Pretentiousness</h3>
+									<h3 class="text-color-light font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="testimonials.mainHeading">Creativity Without the Pretentiousness</h3>
 								</div>
 							</div>
 						</div>
@@ -595,30 +591,30 @@
 									<div>
 										<div class="testimonial testimonial-style-2 mb-0">
 											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0">Working with this team was like finding the missing piece to our brand puzzle. They took our vague ideas and transformed them into a visual identity that feels unmistakably us. The website they built doesn't just look stunning it converts.</p>
+												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial1">Working with this team was like finding the missing piece to our brand puzzle. They took our vague ideas and transformed them into a visual identity that feels unmistakably us. The website they built doesn't just look stunning it converts.</p>
 											</blockquote>
 											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded">Jessica Doe</strong></p>
+												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client1">Jessica Doe</strong></p>
 											</div>
 										</div>
 									</div>
 									<div>
 										<div class="testimonial testimonial-style-2 mb-0">
 											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0">Most agencies talk about innovation these folks actually deliver it. They challenged our assumptions, pushed us out of our comfort zone, and designed a campaign that made our competitors look outdated. The best part? They're ridiculously easy to work with. </p>
+												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial2">Most agencies talk about innovation these folks actually deliver it. They challenged our assumptions, pushed us out of our comfort zone, and designed a campaign that made our competitors look outdated. The best part? They're ridiculously easy to work with. </p>
 											</blockquote>
 											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded">John Doe</strong></p>
+												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client2">John Doe</strong></p>
 											</div>
 										</div>
 									</div>
 									<div>
 										<div class="testimonial testimonial-style-2 mb-0">
 											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0">We've hired four agencies over the years. This is the first time we've walked away thinking, Damn, that was worth every penny. From branding to web design, their attention to detail is obsessive in the best way. </p>
+												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial3">We've hired four agencies over the years. This is the first time we've walked away thinking, Damn, that was worth every penny. From branding to web design, their attention to detail is obsessive in the best way. </p>
 											</blockquote>
 											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded">Eric Smith</strong></p>
+												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client3">Eric Smith</strong></p>
 											</div>
 										</div>
 									</div>
@@ -632,7 +628,7 @@
 				<div class="container py-1">
 					<div class="row pt-5 mt-3">
 						<div class="col text-center">
-							<h3 class="text-7 text-transform-none font-weight-semibold my-4 pt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Trusted by great companies like</h3>
+							<h3 class="text-7 text-transform-none font-weight-semibold my-4 pt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-i18n="companies.title">Trusted by great companies like</h3>
 						</div>
 					</div>
 				</div>
@@ -666,7 +662,7 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4">Breaking Creative Boundaries Daily</h3>
+									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="blog.title">Breaking Creative Boundaries Daily</h3>
 								</div>
 							</div>
 						</div>
@@ -677,14 +673,14 @@
 										<div class="dn-blog-box">
 											<div class="dn-blog-thumb">
 												<a href="blogs.html">
-													<img src="assets/images/blog/blog-1.jpg" alt="blog-1">
+													<img src="assets/images/training-session.jpg" alt="Professional Training">
 												</a>
 											</div>
 											<div class="dn-blog-content">
 												<h4 class="text-color-dark">
-													<a href="blog-details.html">Ready to transform your brand into something extraordinary</a>
+													<a href="blog-details.html" data-i18n="blog.article1">Ready to transform your brand into something extraordinary</a>
 												</h4>
-												<span class="dn-blog-date">June 2, 2025</span>
+												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
 											</div>
 										</div>
 									</div>
@@ -696,14 +692,14 @@
 										<div class="dn-blog-box">
 											<div class="dn-blog-thumb">
 												<a href="blogs.html">
-													<img src="assets/images/blog/blog-2.jpg" alt="blog-2">
+													<img src="assets/images/training-session.jpg" alt="blog-2">
 												</a>
 											</div>
 											<div class="dn-blog-content">
 												<h4 class="text-color-dark">
-													<a href="blog-details.html">Your vision deserves world-class execution</a>
+													<a href="blog-details.html" data-i18n="blog.article2">Your vision deserves world-class execution</a>
 												</h4>
-												<span class="dn-blog-date">June 2, 2025</span>
+												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
 											</div>
 										</div>
 									</div>
@@ -715,14 +711,14 @@
 										<div class="dn-blog-box">
 											<div class="dn-blog-thumb">
 												<a href="blogs.html">
-													<img src="assets/images/blog/blog-3.jpg" alt="blog-3">
+													<img src="assets/images/training-session.jpg" alt="blog-3">
 												</a>
 											</div>
 											<div class="dn-blog-content">
 												<h4 class="text-color-dark">
-													<a href="blog-details.html">Don't just compete—dominate. Partner with our creative team</a>
+													<a href="blog-details.html" data-i18n="blog.article3">Don't just compete—dominate. Partner with our creative team</a>
 												</h4>
-												<span class="dn-blog-date">June 2, 2025</span>
+												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
 											</div>
 										</div>
 									</div>
@@ -739,15 +735,15 @@
 								<div class="footer-widgets-wrapper pd-b-60">
 									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
 										<div class="footer-widgets contact text-color-light" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded">Contact</h4>
-											<p class="address">245 West 52nd Street, Apt 7B New York, NY 10019</p>
+											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.contactTitle">Contact</h4>
+											<p class="address" data-i18n="footer.address">245 West 52nd Street, Apt 7B New York, NY 10019</p>
 											<div class="contacts">
 												<ul class="custom-ul">
 													<li>
-														<a class="email" href="mailto:hello@yoursite.com">hello@yoursite.com</a>
+														<a class="email" href="mailto:hello@yoursite.com" data-i18n="footer.email">hello@yoursite.com</a>
 													</li>
 													<li>
-														<a class="mobile" href="tel:+18741467890">+1 874 414 7890</a>
+														<a class="mobile" href="tel:+18741467890" data-i18n="footer.phone">+1 874 414 7890</a>
 													</li>
 												</ul>
 											</div>
@@ -755,7 +751,7 @@
 									</div>
 									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
 										<div class="footer-widgets" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded">Agency</h4>
+											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.agency">Agency</h4>
 											<div class="widget-links">
 												<ul class="custom-ul">
 													<li>
@@ -774,7 +770,7 @@
 														<a href="blogs.html">Blogs</a>
 													</li>
 													<li>
-														<a href="contact.html">Contact</a>
+														<a href="contact.html" data-i18n="nav.contact">Contact</a>
 													</li>
 												</ul>
 											</div>
@@ -783,7 +779,7 @@
 									
 									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
 										<div class="footer-widgets" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded">Services</h4>
+											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.servicesFooter">Services</h4>
 											<div class="widget-links">
 												<ul class="custom-ul">
 													<li>
@@ -813,7 +809,7 @@
 														</a>
 													</li>
 													<li>
-														<a href="#">
+														<a href="https://www.facebook.com/profile.php?id=61580296752033" target="_blank" rel="noopener noreferrer">
 															<i class="bi bi-facebook"></i>
 														</a>
 													</li>
@@ -846,7 +842,7 @@
 								<div class="col-12">
 									<div class="footer-bottom-content pd-b-60">
 										<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-											<div class="copyright-text text-color-light" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">All rights reserved — 2025 © DesignsNinja</div>									
+											<div class="copyright-text text-color-light" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-i18n="footer.rightsReserved">All rights reserved — 2025 © DesignsNinja</div>									
 										</div>
 									</div>
 								</div>
@@ -866,5 +862,50 @@
 		<script src="assets/js/master.init.js"></script>
 		<script src="assets/js/digital-agency.js"></script>
 		<script src="assets/js/animations.js"></script>
+		
+		<!-- API Services -->
+		<script src="services/imageGeneration.js"></script>
+		<script src="services/beautyImageUpgrade.js"></script>
+		<script src="services/beautyImageGenerator.js"></script>
+		<script src="services/imageAutoLoader.js"></script>
+		<script src="services/nanoBanano.js"></script>
+		
+		<!-- Initialize Payment Button Example -->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				// Initialize crypto payment for equipment (disabled WebSocket for local dev)
+				if (window.nanoBananoPayment) {
+					window.nanoBananoPayment.init('nano').then(address => {
+						console.log('Payment system ready (offline mode):', address);
+					}).catch(err => {
+						console.log('Payment system running in demo mode');
+					});
+				}
+				
+				// Auto-generate missing images (disabled for local dev)
+				if (window.imageGenerator) {
+					console.log('Image generation service ready (demo mode)');
+					// Uncomment to enable auto-generation
+					// window.imageGenerator.replaceBrokenImages();
+				}
+				
+				// Initialize professional beauty image upgrade
+				if (window.beautyImageUpgrade) {
+					console.log('Beauty Image Upgrade Service available');
+					// Enable image upgrade service
+					window.beautyImageUpgrade.init();
+				}
+				
+				// Initialize comprehensive beauty image generator
+				if (window.beautyImageGenerator) {
+					console.log('Beauty Image Generator Service available');
+					// Auto-replace missing images
+					window.beautyImageGenerator.replaceBrokenImages();
+				}
+				
+				// i18n is auto-initialized with embedded translations
+				console.log('i18n ready with language:', window.i18n ? window.i18n.getCurrentLanguage() : 'en');
+			});
+		</script>
 	</body>
 </html>

@@ -1,0 +1,311 @@
+/**
+ * Professional Medical Beauty Typography System
+ * Optimized for readability, trust, and professional appearance
+ * Based on research for medical/healthcare typography best practices
+ */
+
+/* Google Fonts Integration */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+/* CSS Custom Properties for Typography */
+:root {
+  /* Primary Font Stack - Inter (Modern, Clean, Professional) */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Secondary Font Stack - Merriweather (Elegant, Readable Serif) */
+  --font-secondary: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  
+  /* Tertiary Font Stack - Source Sans Pro (Clean, Modern) */
+  --font-tertiary: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif;
+  
+  /* Font Sizes - Fluid Typography */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
+  --font-size-5xl: clamp(2.75rem, 2.35rem + 2vw, 4rem);
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+}
+
+/* Base Typography Reset */
+* {
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'pnum' 1, 'tnum' 0, 'onum' 1, 'lnum' 0, 'dlig' 0;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  color: #1f2937;
+}
+
+/* Headings - Using Primary Font (Inter) for Modern Professional Look */
+h1, .h1, .text-h1 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2, .text-h2 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: 1.25rem;
+}
+
+h3, .h3, .text-h3 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 1rem;
+}
+
+h4, .h4, .text-h4 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 0.875rem;
+}
+
+h5, .h5, .text-h5 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: 0.75rem;
+}
+
+h6, .h6, .text-h6 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Body Text - Using Primary Font for Consistency */
+p, .text-body, .text-p {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 1rem;
+}
+
+/* Large Body Text */
+.text-large, .text-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Small Text */
+.text-small, .text-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+.text-xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+}
+
+/* Specialized Typography Classes */
+.text-serif {
+  font-family: var(--font-secondary);
+}
+
+.text-professional {
+  font-family: var(--font-tertiary);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Medical/Professional Content Typography */
+.medical-heading {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: #1e40af;
+}
+
+.medical-subtitle {
+  font-family: var(--font-tertiary);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  color: #64748b;
+}
+
+.professional-quote, .testimonial-text {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Navigation Typography */
+.nav-link, .navigation-text {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Button Typography */
+.btn, .button-text {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+/* Form Typography */
+input, select, textarea {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+label {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Override Previous Inconsistent Font Applications */
+.font-unbounded,
+.custom-hero-font-1,
+.custom-hero-font-2,
+.custom-hero-font-5 {
+  font-family: var(--font-primary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  letter-spacing: var(--letter-spacing-tight) !important;
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --font-size-5xl: clamp(2rem, 1.8rem + 1vw, 2.5rem);
+    --font-size-4xl: clamp(1.75rem, 1.55rem + 1vw, 2.25rem);
+    --font-size-3xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+  }
+  
+  h1, .h1 {
+    margin-bottom: 1rem;
+  }
+  
+  h2, .h2 {
+    margin-bottom: 0.875rem;
+  }
+}
+
+/* RTL Support for Hebrew */
+[dir="rtl"] {
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3,
+[dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Professional Color Variants */
+.text-primary-medical {
+  color: #1e40af;
+}
+
+.text-secondary-medical {
+  color: #64748b;
+}
+
+.text-accent-medical {
+  color: #059669;
+}
+
+.text-neutral-medical {
+  color: #374151;
+}
+
+/* Print Styles */
+@media print {
+  * {
+    font-family: var(--font-primary) !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold) !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  body {
+    font-weight: var(--font-weight-medium);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-extrabold);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

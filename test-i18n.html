@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hebrew/RTL Test - Davidov Beauty Care</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <!-- i18n Script -->
+    <script src="assets/js/i18n.js"></script>
+    
+    <style>
+        body {
+            padding: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+        
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .navbar-test {
+            background: #007bff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .navbar-test a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .navbar-test a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .hero-test {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .hero-test h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero-test p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher"></div>
+    
+    <div class="container">
+        <h1>🧪 Hebrew/RTL Translation Test</h1>
+        <p>This page tests the Hebrew translation and RTL functionality.</p>
+        
+        <!-- Navigation Test -->
+        <div class="test-section">
+            <h3>📋 Navigation Test</h3>
+            <div class="navbar-test">
+                <a href="#" data-i18n="nav.home">Home</a>
+                <a href="#" data-i18n="nav.catalog">Catalog</a>
+                <a href="#" data-i18n="nav.services">Services</a>
+                <a href="#" data-i18n="nav.about">About</a>
+                <a href="#" data-i18n="nav.contact">Contact</a>
+            </div>
+            <p class="success">✅ Navigation should translate to Hebrew when language is switched</p>
+        </div>
+        
+        <!-- Hero Section Test -->
+        <div class="test-section">
+            <h3>🎯 Hero Section Test</h3>
+            <div class="hero-test">
+                <h1 data-i18n="hero.title">Advanced Technology for Your Clinic</h1>
+                <h2 data-i18n="hero.subtitle">Professional Beauty Equipment</h2>
+                <p data-i18n="hero.description">Transform your clinic with professional beauty equipment. Transparent pricing, local support, and technology that grows with your business.</p>
+                <p data-i18n="hero.clients">We have 500+ satisfied clinics in Israel</p>
+            </div>
+            <p class="success">✅ Hero content should translate and align RTL in Hebrew</p>
+        </div>
+        
+        <!-- Services Test -->
+        <div class="test-section">
+            <h3>🛠️ Services Test</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 data-i18n="services.webDesign">Web Design</h5>
+                            <p>Professional service description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 data-i18n="services.digitalMarketing">Digital Marketing</h5>
+                            <p>Professional service description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 data-i18n="services.branding">Branding</h5>
+                            <p>Professional service description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="success">✅ Service cards should translate and reorder RTL</p>
+        </div>
+        
+        <!-- Form Test -->
+        <div class="test-section">
+            <h3>📝 Form Test</h3>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="contact.name">Name</label>
+                            <input type="text" class="form-control" data-i18n-placeholder="contact.name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="contact.email">Email</label>
+                            <input type="email" class="form-control" data-i18n-placeholder="contact.email">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" data-i18n="contact.message">Message</label>
+                    <textarea class="form-control" rows="3" data-i18n-placeholder="contact.message"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+            </form>
+            <p class="success">✅ Form labels and placeholders should translate, inputs align RTL</p>
+        </div>
+        
+        <!-- Language Status -->
+        <div class="test-section">
+            <h3>🌐 Language Status</h3>
+            <div id="language-status">
+                <p><strong>Current Language:</strong> <span id="current-lang">Loading...</span></p>
+                <p><strong>RTL Mode:</strong> <span id="rtl-status">Loading...</span></p>
+                <p><strong>Translations Loaded:</strong> <span id="translations-status">Loading...</span></p>
+            </div>
+        </div>
+        
+        <!-- Instructions -->
+        <div class="test-section">
+            <h3>📖 Instructions</h3>
+            <ol>
+                <li>Click the language switcher (🇬🇧 English / 🇮🇱 עברית) in the top-right corner</li>
+                <li>Observe how all text translates to Hebrew</li>
+                <li>Notice how the layout switches to RTL (right-to-left)</li>
+                <li>Forms and inputs should align to the right</li>
+                <li>Navigation and content should reorder appropriately</li>
+            </ol>
+        </div>
+    </div>
+    
+    <script>
+        // Update language status
+        function updateLanguageStatus() {
+            if (window.i18n) {
+                document.getElementById('current-lang').textContent = window.i18n.getCurrentLanguage().toUpperCase();
+                document.getElementById('rtl-status').textContent = window.i18n.isRTL() ? 'Yes' : 'No';
+                document.getElementById('translations-status').textContent = 'Ready';
+            } else {
+                document.getElementById('current-lang').textContent = 'Not Available';
+                document.getElementById('rtl-status').textContent = 'Not Available';
+                document.getElementById('translations-status').textContent = 'Failed';
+            }
+        }
+        
+        // Listen for language changes
+        document.addEventListener('languageChanged', (e) => {
+            console.log('Language changed to:', e.detail.language);
+            updateLanguageStatus();
+        });
+        
+        // Initial status update
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(updateLanguageStatus, 1000);
+        });
+    </script>
+</body>
+</html>

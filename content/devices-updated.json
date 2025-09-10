@@ -1,0 +1,354 @@
+{
+  "devices": [
+    {
+      "id": "diode-laser-hair-removal",
+      "name": "Diode Laser Hair Removal System",
+      "slug": "diode-laser-hair-removal",
+      "category": "laser_hair_removal",
+      "manufacturer": "Davidov",
+      "model": "DL-Pro 2024",
+      "shortDescription": "Premium AI-powered diode laser system with transparent pricing and same-day service",
+      "longDescription": "Our flagship diode laser hair removal system features cutting-edge AI hair detection technology and premium components. Unlike Nubway (₪85,309 with hidden discounts), we offer transparent pricing and superior technology that justifies the premium investment.",
+      "benefits": [
+        "Advanced AI hair detection - superior to Nubway VL8",
+        "99.5% hair reduction vs industry standard 99%",
+        "Hebrew interface with local technical support",
+        "Same-day service in Tel Aviv area - not generic 24/7 claims",
+        "Extended 7-year warranty vs competitor's 5 years"
+      ],
+      "features": [
+        "Quad-wavelength system (755nm, 808nm, 940nm, 1064nm)",
+        "Advanced AI hair detection technology",
+        "Premium cooling system (-15°C vs competitor's -10°C)",
+        "High-speed treatment (12Hz vs competitor's 10Hz)",
+        "Hebrew language interface with voice guidance",
+        "Smart treatment protocols for different skin types"
+      ],
+      "specifications": {
+        "laser_type": "Quad Wavelength Diode with AI Detection",
+        "power_output": "Up to 3500W (vs Nubway's 3000W)",
+        "spot_sizes": ["6mm", "9mm", "12mm", "15mm", "20mm"],
+        "repetition_rate": "Up to 12Hz",
+        "cooling": "Contact cooling -15°C",
+        "display": "17 inch 4K touch screen",
+        "ai_features": "Hair detection, skin type recognition, treatment optimization"
+      },
+      "pricing": {
+        "basePrice": {
+          "amount": 195000,
+          "currency": "ILS", 
+          "displayText": "₪195,000 - שקוף ומיידי"
+        },
+        "competitiveAdvantage": {
+          "nubwayPrice": "₪85,309 (מחיר מבצע עם הנחות נסתרות)",
+          "valueJustification": "טכנולוגיה מתקדמת יותר + שירות מקומי + אחריות מורחבת",
+          "transparencyMessage": "מחיר שקוף מיד - לא שבועות של ממתינים לייעוץ"
+        },
+        "packages": [
+          {
+            "name": "Professional Package",
+            "price": 195000,
+            "included": ["Device", "5 handpieces", "AI training", "7 year warranty"],
+            "popular": false
+          },
+          {
+            "name": "Elite Package", 
+            "price": 245000,
+            "included": ["Device", "All handpieces", "Advanced AI training", "7 year warranty", "Marketing support", "Business consultation"],
+            "popular": true,
+            "savings": "Best value - includes everything"
+          },
+          {
+            "name": "Enterprise Package",
+            "price": 295000,
+            "included": ["Multiple devices", "Complete training program", "10 year warranty", "Dedicated account manager", "Performance guarantee"],
+            "popular": false
+          }
+        ],
+        "financing": {
+          "available": true,
+          "options": [
+            "72 months with 0% interest for first 12 months",
+            "60 months standard rate", 
+            "Trade-in credit up to ₪50,000 (better than Nubway)"
+          ],
+          "competitiveAdvantage": "Better terms than Nubway's 60 months standard"
+        },
+        "showPrice": true,
+        "priceOnRequest": false
+      },
+      "competitiveAnalysis": {
+        "vsNubway": {
+          "priceDifference": "128% premium justified by superior technology",
+          "technologyAdvantage": "AI detection, quad wavelength, superior cooling",
+          "serviceAdvantage": "Same-day service vs generic 24/7 claims",
+          "transparencyAdvantage": "Upfront pricing vs hidden promotional games"
+        }
+      },
+      "isActive": true,
+      "isFeatured": true,
+      "roi": {
+        "averageSessionPrice": 400,
+        "sessionsPerMonth": 120, 
+        "monthlyRevenue": 48000,
+        "paybackMonths": 4.1,
+        "competitiveAdvantage": "Faster ROI than Nubway due to premium pricing capability"
+      }
+    },
+
+    {
+      "id": "co2-fractional-laser",
+      "name": "CO₂ Fractional Resurfacing Laser",
+      "slug": "co2-fractional-laser",
+      "category": "skin_resurfacing", 
+      "manufacturer": "Davidov",
+      "model": "CF-Elite 2024",
+      "shortDescription": "Medical-grade CO₂ fractional laser with precision control and comprehensive training",
+      "longDescription": "Professional CO₂ fractional laser system with medical-grade precision. Unlike Nubway F9 (₪90,100 promotional pricing), our system offers superior technology with transparent pricing and comprehensive local support.",
+      "benefits": [
+        "Medical-grade precision control system",
+        "Comprehensive Hebrew training program included",
+        "Same-day technical support in Israel", 
+        "Advanced fractional patterns for optimal results",
+        "Extended warranty with local service guarantee"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 245000,
+          "currency": "ILS",
+          "displayText": "₪245,000 - טכנולוגיה רפואית מתקדמת"
+        },
+        "competitiveAdvantage": {
+          "nubwayPrice": "₪90,100 (מחיר השקה עם תנאים)",
+          "valueJustification": "רמה רפואית גבוהה יותר + הכשרה מקיפה + שירות מקומי",
+          "premiumJustified": "172% premium for medical-grade technology and comprehensive support"
+        },
+        "financing": {
+          "options": [
+            "60 months with trade-in credit up to ₪50,000",
+            "72 months for established clinics",
+            "Medical equipment financing programs"
+          ]
+        },
+        "showPrice": true
+      },
+      "roi": {
+        "averageSessionPrice": 1000,
+        "sessionsPerMonth": 50,
+        "monthlyRevenue": 50000,
+        "paybackMonths": 4.9
+      },
+      "isActive": true,
+      "isFeatured": true
+    },
+
+    {
+      "id": "hifu-anti-aging", 
+      "name": "HIFU Anti-Aging System",
+      "slug": "hifu-anti-aging",
+      "category": "anti_aging",
+      "manufacturer": "Davidov", 
+      "model": "HF-Pro 2024",
+      "shortDescription": "Advanced HIFU system with transparent pricing and comprehensive support",
+      "longDescription": "Premium HIFU anti-aging system with advanced cartridge technology. While Nubway SMASFOCUS II requires contact for pricing (estimated ₪80,000-120,000), we offer full transparency with superior technology and local support.",
+      "benefits": [
+        "Full pricing transparency - no hidden costs or consultations",
+        "Advanced cartridge technology with precision control",
+        "Local Hebrew support and training",
+        "Flexible financing for practices of all sizes",
+        "Performance guarantee with results tracking"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 180000,
+          "currency": "ILS",
+          "displayText": "₪180,000 - שקיפות מלאה במחירים"
+        },
+        "competitiveAdvantage": {
+          "nubwayApproach": "מסתירים מחירים - דורשים פנייה לייעוץ",
+          "davidovAdvantage": "שקיפות מלאה + טכנולוגיה מתקדמת + שירות מקומי",
+          "transparencyMessage": "מחיר מלא וברור - בניגוד למתחרים שמחביאים עלויות"
+        },
+        "financing": {
+          "options": [
+            "48 months for smaller clinics",
+            "72 months for larger practices",
+            "Flexible payment plans based on clinic revenue"
+          ]
+        },
+        "showPrice": true
+      },
+      "isActive": true,
+      "isFeatured": true
+    },
+
+    {
+      "id": "professional-skin-analyzer",
+      "name": "Professional Skin Analyzer", 
+      "slug": "professional-skin-analyzer",
+      "category": "skin_analysis",
+      "manufacturer": "Davidov",
+      "model": "SA-Advanced 2024",
+      "shortDescription": "Premium diagnostic system with Hebrew reporting and transparent pricing",
+      "longDescription": "Advanced skin analysis system with professional Hebrew reporting. Unlike Nubway QSPC-02 (contact required for pricing), we offer transparent pricing and superior diagnostic capabilities perfect for practices of all sizes.",
+      "benefits": [
+        "Professional Hebrew reporting system",
+        "Advanced diagnostic capabilities beyond competitor offerings",
+        "Perfect entry point for smaller practices",
+        "Transparent pricing vs competitor's hidden costs",
+        "Quick ROI through enhanced consultation value"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 58000,
+          "currency": "ILS", 
+          "displayText": "₪58,000 - נגיש לכל גודל קליניקה"
+        },
+        "competitiveAdvantage": {
+          "nubwayApproach": "מחירים נסתרים - דורשים יצירת קשר",
+          "davidovAdvantage": "שקיפות + יכולות מתקדמות + דיווח בעברית",
+          "smeAccessible": "מחיר נגיש במיוחד לקליניקות קטנות ובינוניות"
+        },
+        "financing": {
+          "options": [
+            "36 months - perfect for SME clinics", 
+            "24 months for quick payback",
+            "Lease-to-own options available"
+          ]
+        },
+        "showPrice": true
+      },
+      "roi": {
+        "averageSessionPrice": 150,
+        "sessionsPerMonth": 100,
+        "monthlyRevenue": 15000,
+        "paybackMonths": 3.9
+      },
+      "isActive": true,
+      "isFeatured": true
+    },
+
+    {
+      "id": "ems-rf-body-sculpting",
+      "name": "EMS+RF Body Sculpting System",
+      "slug": "ems-rf-body-sculpting", 
+      "category": "body_contouring",
+      "manufacturer": "Davidov",
+      "model": "BS-Elite 2024",
+      "shortDescription": "Enhanced EMS+RF system with superior power and precision control",
+      "longDescription": "Advanced EMS+RF body sculpting system with enhanced power output and precision control. Superior to Nubway CL10 (₪65,304) with advanced technology and comprehensive support that justifies the premium investment.",
+      "benefits": [
+        "Enhanced power output for superior results",
+        "Advanced precision control system", 
+        "Comprehensive training and business support",
+        "Performance guarantee with measurable results",
+        "Extended warranty with local service"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 89000,
+          "currency": "ILS",
+          "displayText": "₪89,000 - טכנולוגיה משופרת"
+        },
+        "competitiveAdvantage": {
+          "nubwayPrice": "₪65,304",
+          "premiumJustification": "36% premium for enhanced technology and guaranteed results",
+          "valueAdd": "Superior power + precision + training + guarantee"
+        },
+        "financing": {
+          "options": [
+            "60 months with performance guarantee",
+            "Trade-in credit available",
+            "Revenue-based payment plans"
+          ]
+        },
+        "showPrice": true
+      },
+      "isActive": true,
+      "isFeatured": true
+    },
+
+    {
+      "id": "q-switched-laser",
+      "name": "Q-Switched Nd:YAG Laser",
+      "slug": "q-switched-laser",
+      "category": "laser_treatment",
+      "manufacturer": "Davidov",
+      "model": "QS-Pro 2024", 
+      "shortDescription": "Enhanced precision Q-switched laser with local support and extended warranty",
+      "longDescription": "Professional Q-switched Nd:YAG laser with enhanced precision and local support. Superior to Nubway QL VII (₪32,506) with advanced technology and comprehensive local service that provides better value.",
+      "benefits": [
+        "Enhanced precision targeting system",
+        "Local Hebrew support and training",
+        "Extended warranty with same-day service",
+        "Superior technology for better results",
+        "Flexible financing for easy adoption"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 48000,
+          "currency": "ILS",
+          "displayText": "₪48,000 - טכנולוגיה משופרת עם שירות מקומי"
+        },
+        "competitiveAdvantage": {
+          "nubwayPrice": "₪32,506",
+          "premiumJustification": "48% premium for enhanced precision and local support",
+          "serviceAdvantage": "Same-day service vs generic international support"
+        },
+        "financing": {
+          "options": [
+            "24 months for easy adoption",
+            "36 months standard",
+            "Trade-in credit available"
+          ]
+        },
+        "showPrice": true
+      },
+      "isActive": true,
+      "isFeatured": false
+    }
+  ],
+
+  "competitive_positioning": {
+    "strategy": "Premium technology with transparent pricing",
+    "key_messages": [
+      "שקיפות מלאה במחירים - בניגוד למתחרים שמסתירים עלויות",
+      "טכנולוגיה מתקדמת שמצדיקה השקעה פרימיום",
+      "שירות מקומי אמיתי - לא מוקדי טלפונים בינלאומיים",
+      "אפשרויות מימון גמישות יותר מהמתחרים"
+    ],
+    "competitive_advantages": [
+      "Full pricing transparency vs Nubway's hidden pricing strategy",
+      "Superior technology justified premium pricing (30-70% above competition)",
+      "Local Hebrew service vs international call centers", 
+      "Extended financing terms (up to 72 months vs 60 months)",
+      "Same-day service guarantee in Tel Aviv area"
+    ]
+  },
+
+  "market_intelligence": {
+    "nubway_analysis": {
+      "disclosed_pricing": {
+        "entry_level": "₪32,000-35,000",
+        "mid_range": "₪65,000", 
+        "premium": "₪85,000-115,000"
+      },
+      "hidden_pricing_devices": [
+        "HIFU SMASFOCUS II",
+        "VelaShape VS II", 
+        "Cryolipolysis C8",
+        "IPL ESHR50",
+        "Skin Analyzer QSPC-02"
+      ],
+      "financing_terms": "60 months, no down payment",
+      "weaknesses": [
+        "Selective pricing disclosure creates trust issues",
+        "Generic international support model", 
+        "Limited financing flexibility",
+        "No premium technology differentiation"
+      ]
+    }
+  },
+
+  "lastUpdated": "2025-01-09T15:30:00Z"
+}

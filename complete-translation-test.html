@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Translation Coverage Test</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <!-- i18n Script -->
+    <script src="assets/js/i18n.js"></script>
+    
+    <style>
+        body {
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .warning {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+        
+        #untranslated-elements {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .element-info {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #dc3545;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher"></div>
+    
+    <div class="container">
+        <h1>🧪 Complete Translation Coverage Test</h1>
+        <p>This comprehensive test analyzes ALL text elements for translation coverage.</p>
+        
+        <!-- Translation Coverage Analysis -->
+        <div class="test-section">
+            <h3>📊 Translation Coverage Analysis</h3>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 id="total-elements" class="text-primary">-</h2>
+                            <p>Total Text Elements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 id="translated-elements" class="text-success">-</h2>
+                            <p>Translated Elements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 id="untranslated-elements" class="text-danger">-</h2>
+                            <p>Untranslated Elements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 id="coverage-percentage" class="text-info">-</h2>
+                            <p>Coverage %</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <button class="btn btn-primary" onclick="analyzeTranslationCoverage()">
+                    🔍 Analyze Translation Coverage
+                </button>
+                <button class="btn btn-success" onclick="autoTranslateElements()">
+                    🤖 Auto-Translate Missing Elements
+                </button>
+                <button class="btn btn-warning" onclick="testLanguageSwitching()">
+                    🌐 Test Language Switching
+                </button>
+            </div>
+        </div>
+        
+        <!-- Test Results -->
+        <div class="test-section">
+            <h3>📋 Test Results</h3>
+            <div id="test-results">
+                <p>Click "Analyze Translation Coverage" to see detailed results...</p>
+            </div>
+        </div>
+        
+        <!-- Untranslated Elements -->
+        <div class="test-section">
+            <h3>⚠️ Untranslated Elements</h3>
+            <div id="untranslated-elements">
+                <p>No analysis performed yet...</p>
+            </div>
+        </div>
+        
+        <!-- Navigation Test -->
+        <div class="test-section">
+            <h3>🧭 Navigation Translation Test</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#" data-i18n="nav.home">Home</a>
+                    <a class="nav-link" href="#" data-i18n="nav.catalog">Catalog</a>
+                    <a class="nav-link" href="#" data-i18n="nav.services">Services</a>
+                    <a class="nav-link" href="#" data-i18n="nav.about">About</a>
+                    <a class="nav-link" href="#" data-i18n="nav.contact">Contact</a>
+                </div>
+            </nav>
+            <p class="success mt-2">✅ Navigation should translate when switching to Hebrew</p>
+        </div>
+        
+        <!-- Content Samples -->
+        <div class="test-section">
+            <h3>📝 Content Translation Test</h3>
+            <h1 data-i18n="hero.title">Advanced Technology for Your Clinic</h1>
+            <p data-i18n="hero.description">Transform your clinic with professional beauty equipment.</p>
+            <h4 data-i18n="services.brandStrategy">Brand Strategy</h4>
+            <p data-i18n="services.brandStrategyDesc">We craft bold brand strategies that define your purpose.</p>
+            <p class="success">✅ Content should translate and align RTL in Hebrew</p>
+        </div>
+    </div>
+    
+    <script>
+        let translationData = {
+            totalElements: 0,
+            translatedElements: 0,
+            untranslatedElements: 0,
+            untranslatedList: []
+        };
+        
+        /**
+         * Analyze translation coverage across the entire page
+         */
+        function analyzeTranslationCoverage() {
+            const allTextElements = findAllTextElements();
+            const translatedElements = allTextElements.filter(el => el.hasAttribute('data-i18n'));
+            const untranslatedElements = allTextElements.filter(el => !el.hasAttribute('data-i18n'));
+            
+            translationData = {
+                totalElements: allTextElements.length,
+                translatedElements: translatedElements.length,
+                untranslatedElements: untranslatedElements.length,
+                untranslatedList: untranslatedElements
+            };
+            
+            updateStats();
+            displayUntranslatedElements();
+            
+            const coveragePercent = ((translatedElements.length / allTextElements.length) * 100).toFixed(1);
+            
+            document.getElementById('test-results').innerHTML = `
+                <div class="alert alert-info">
+                    <h5>Analysis Complete!</h5>
+                    <p><strong>Total Elements:</strong> ${allTextElements.length}</p>
+                    <p><strong>Translated:</strong> ${translatedElements.length}</p>
+                    <p><strong>Untranslated:</strong> ${untranslatedElements.length}</p>
+                    <p><strong>Coverage:</strong> ${coveragePercent}%</p>
+                    ${coveragePercent >= 90 ? 
+                        '<p class="success">✅ Excellent translation coverage!</p>' : 
+                        '<p class="warning">⚠️ More translation work needed.</p>'
+                    }
+                </div>
+            `;
+        }
+        
+        /**
+         * Find all elements containing user-visible text
+         */
+        function findAllTextElements() {
+            const textElements = [];
+            const walker = document.createTreeWalker(
+                document.body,
+                NodeFilter.SHOW_ELEMENT,
+                {
+                    acceptNode: function(node) {
+                        // Skip script, style, and other non-visible elements
+                        if (['SCRIPT', 'STYLE', 'META', 'LINK', 'NOSCRIPT'].includes(node.tagName)) {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+                        
+                        // Check if element contains direct text content
+                        const textContent = node.textContent.trim();
+                        const hasDirectText = Array.from(node.childNodes).some(child => 
+                            child.nodeType === Node.TEXT_NODE && child.textContent.trim().length > 0
+                        );
+                        
+                        // Include elements with meaningful text
+                        if (hasDirectText && textContent.length > 0 && textContent.length < 500) {
+                            return NodeFilter.FILTER_ACCEPT;
+                        }
+                        
+                        return NodeFilter.FILTER_SKIP;
+                    }
+                }
+            );
+            
+            let node;
+            while (node = walker.nextNode()) {
+                // Additional filtering for better results
+                const text = node.textContent.trim();
+                if (text.length > 2 && !/^[\d\s\-\+\(\)]+$/.test(text)) {
+                    textElements.push(node);
+                }
+            }
+            
+            return textElements;
+        }
+        
+        /**
+         * Update statistics display
+         */
+        function updateStats() {
+            document.getElementById('total-elements').textContent = translationData.totalElements;
+            document.getElementById('translated-elements').textContent = translationData.translatedElements;
+            document.getElementById('untranslated-elements').textContent = translationData.untranslatedElements;
+            document.getElementById('coverage-percentage').textContent = 
+                ((translationData.translatedElements / translationData.totalElements) * 100).toFixed(1) + '%';
+        }
+        
+        /**
+         * Display list of untranslated elements
+         */
+        function displayUntranslatedElements() {
+            const container = document.getElementById('untranslated-elements');
+            
+            if (translationData.untranslatedList.length === 0) {
+                container.innerHTML = '<p class="success">🎉 All elements have translation attributes!</p>';
+                return;
+            }
+            
+            let html = '<h5>Elements missing data-i18n attributes:</h5>';
+            translationData.untranslatedList.forEach((element, index) => {
+                const tagName = element.tagName.toLowerCase();
+                const textContent = element.textContent.trim().substring(0, 100);
+                const className = element.className || 'no-class';
+                
+                html += `
+                    <div class="element-info">
+                        <strong>${index + 1}. &lt;${tagName}&gt;</strong><br>
+                        <strong>Class:</strong> ${className}<br>
+                        <strong>Text:</strong> "${textContent}..."<br>
+                        <button class="btn btn-sm btn-outline-primary" onclick="highlightElement(${index})">
+                            📍 Highlight
+                        </button>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        /**
+         * Highlight a specific untranslated element
+         */
+        function highlightElement(index) {
+            // Remove previous highlights
+            document.querySelectorAll('.translation-highlight').forEach(el => {
+                el.classList.remove('translation-highlight');
+            });
+            
+            // Add highlight to target element
+            const element = translationData.untranslatedList[index];
+            if (element) {
+                element.style.backgroundColor = '#ffeb3b';
+                element.style.border = '2px solid #ff9800';
+                element.classList.add('translation-highlight');
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Remove highlight after 3 seconds
+                setTimeout(() => {
+                    element.style.backgroundColor = '';
+                    element.style.border = '';
+                    element.classList.remove('translation-highlight');
+                }, 3000);
+            }
+        }
+        
+        /**
+         * Auto-translate missing elements by adding data-i18n attributes
+         */
+        function autoTranslateElements() {
+            let addedCount = 0;
+            
+            translationData.untranslatedList.forEach(element => {
+                const text = element.textContent.trim();
+                
+                // Generate a translation key based on content
+                let translationKey = generateTranslationKey(text, element);
+                
+                if (translationKey) {
+                    element.setAttribute('data-i18n', translationKey);
+                    addedCount++;
+                }
+            });
+            
+            // Re-apply translations
+            if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
+                window.i18n.applyTranslations();
+            }
+            
+            // Re-analyze coverage
+            analyzeTranslationCoverage();
+            
+            alert(`✅ Added data-i18n attributes to ${addedCount} elements!\\n\\nNote: You'll need to add corresponding translations to the JSON files.`);
+        }
+        
+        /**
+         * Generate appropriate translation keys based on element content and context
+         */
+        function generateTranslationKey(text, element) {
+            const tagName = element.tagName.toLowerCase();
+            const className = element.className || '';
+            
+            // Navigation elements
+            if (className.includes('nav') || className.includes('menu')) {
+                if (text.toLowerCase().includes('home')) return 'nav.home';
+                if (text.toLowerCase().includes('about')) return 'nav.about';
+                if (text.toLowerCase().includes('service')) return 'nav.services';
+                if (text.toLowerCase().includes('contact')) return 'nav.contact';
+                if (text.toLowerCase().includes('blog')) return 'nav.blog';
+                return 'nav.' + text.toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Service elements
+            if (className.includes('service') || text.toLowerCase().includes('strategy')) {
+                if (text.toLowerCase().includes('brand')) return 'services.brandStrategy';
+                if (text.toLowerCase().includes('web')) return 'services.webDevelopment';
+                if (text.toLowerCase().includes('design')) return 'services.uiuxDesign';
+                if (text.toLowerCase().includes('marketing')) return 'services.digitalMarketing';
+                return 'services.' + text.toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Portfolio/project elements
+            if (className.includes('project') || className.includes('portfolio')) {
+                return 'portfolio.' + text.toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Footer elements
+            if (className.includes('footer')) {
+                return 'footer.' + text.toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Common buttons and CTAs
+            if (tagName === 'button' || className.includes('btn') || className.includes('cta')) {
+                if (text.toLowerCase().includes('view')) return 'cta.viewDetails';
+                if (text.toLowerCase().includes('learn')) return 'cta.learnMore';
+                if (text.toLowerCase().includes('contact')) return 'cta.contactUs';
+                return 'common.' + text.toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Headings
+            if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName)) {
+                if (className.includes('hero')) return 'hero.title';
+                if (className.includes('service')) return 'services.title';
+                if (className.includes('about')) return 'about.title';
+                return 'headings.' + text.substring(0, 20).toLowerCase().replace(/\\s+/g, '');
+            }
+            
+            // Generic fallback
+            return 'content.' + text.substring(0, 20).toLowerCase().replace(/[^a-z0-9]/g, '');
+        }
+        
+        /**
+         * Test language switching functionality
+         */
+        function testLanguageSwitching() {
+            if (!window.i18n) {
+                alert('❌ i18n system not available!');
+                return;
+            }
+            
+            const results = [];
+            const currentLang = window.i18n.getCurrentLanguage();
+            
+            // Test switching to Hebrew
+            results.push(`Current language: ${currentLang}`);
+            
+            if (currentLang === 'en') {
+                window.i18n.switchLanguage('he');
+                setTimeout(() => {
+                    const newLang = window.i18n.getCurrentLanguage();
+                    const isRTL = window.i18n.isRTL();
+                    results.push(`Switched to: ${newLang}`);
+                    results.push(`RTL mode: ${isRTL ? 'Yes' : 'No'}`);
+                    results.push(`HTML dir attribute: ${document.documentElement.dir}`);
+                    
+                    alert('🌐 Language Switch Test Results:\\n\\n' + results.join('\\n'));
+                }, 500);
+            } else {
+                window.i18n.switchLanguage('en');
+                setTimeout(() => {
+                    const newLang = window.i18n.getCurrentLanguage();
+                    const isRTL = window.i18n.isRTL();
+                    results.push(`Switched to: ${newLang}`);
+                    results.push(`RTL mode: ${isRTL ? 'Yes' : 'No'}`);
+                    results.push(`HTML dir attribute: ${document.documentElement.dir}`);
+                    
+                    alert('🌐 Language Switch Test Results:\\n\\n' + results.join('\\n'));
+                }, 500);
+            }
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                console.log('🧪 Translation Coverage Test initialized');
+                analyzeTranslationCoverage();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

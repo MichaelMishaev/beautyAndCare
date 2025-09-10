@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Demo - Davidov Beauty Care</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .api-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #e0e0e0 25%, #f5f5f5 25%, #f5f5f5 50%, #e0e0e0 50%, #e0e0e0 75%, #f5f5f5 75%);
+            background-size: 20px 20px;
+            animation: shimmer 1s linear infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0 0; }
+            100% { background-position: 20px 20px; }
+        }
+        .generate-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status-pending { background: #ffc107; color: white; }
+        .status-generating { background: #17a2b8; color: white; }
+        .status-success { background: #28a745; color: white; }
+        .status-error { background: #dc3545; color: white; }
+        .payment-demo {
+            padding: 30px;
+            background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+            border-radius: 10px;
+            color: white;
+        }
+        .device-card {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="text-center mb-5">🎨 API Integration Demo</h1>
+        
+        <!-- Image Generation Section -->
+        <div class="api-section">
+            <h2>📸 AI Image Generation <span class="status-badge status-pending">Ready</span></h2>
+            <p>Generate professional beauty equipment images using Imagine.art API</p>
+            
+            <div class="mb-3">
+                <label>Select Category:</label>
+                <select id="categorySelect" class="form-control">
+                    <option value="hero">Hero Images (1920x1080)</option>
+                    <option value="devices">Device Showcase (800x600)</option>
+                    <option value="services">Service Images (600x400)</option>
+                    <option value="trust">Trust Badges (200x200)</option>
+                </select>
+            </div>
+            
+            <button class="generate-btn" onclick="generateImages()">
+                Generate Images for Category
+            </button>
+            
+            <div id="imageGrid" class="image-grid">
+                <!-- Images will be generated here -->
+            </div>
+        </div>
+        
+        <!-- Nano/Banano Payment Section -->
+        <div class="api-section payment-demo">
+            <h2>💎 Crypto Payment Demo</h2>
+            <p>Accept instant, feeless payments with Nano/Banano</p>
+            
+            <div class="device-card">
+                <h4>Diode Laser Hair Removal System</h4>
+                <p class="mb-1"><strong>Model:</strong> DL-Pro 2024</p>
+                <p class="mb-3"><strong>Price:</strong> ₪180,000</p>
+                <button class="btn btn-primary" onclick="initPayment()">
+                    Pay with Nano/Banano
+                </button>
+            </div>
+            
+            <div id="paymentStatus" class="mt-3"></div>
+        </div>
+        
+        <!-- Language Switcher Demo -->
+        <div class="api-section">
+            <h2>🌐 Language Support</h2>
+            <p>Hebrew/English support with RTL layout</p>
+            
+            <div class="btn-group">
+                <button class="btn btn-outline-primary" onclick="switchLanguage('en')">
+                    🇬🇧 English
+                </button>
+                <button class="btn btn-outline-primary" onclick="switchLanguage('he')">
+                    🇮🇱 עברית
+                </button>
+            </div>
+            
+            <div class="mt-3">
+                <p data-i18n="hero.subtitle">Professional Beauty Equipment with Personal Service</p>
+                <ul>
+                    <li data-i18n="hero.bullet1">Transparent pricing - no hidden costs</li>
+                    <li data-i18n="hero.bullet2">Same-day service in Tel Aviv area</li>
+                    <li data-i18n="hero.bullet3">Professional training included</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- API Status Monitor -->
+        <div class="api-section">
+            <h2>📊 API Status Monitor</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Status</th>
+                        <th>Response Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Imagine.art API</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td id="imagineResponseTime">-</td>
+                    </tr>
+                    <tr>
+                        <td>Nano Network</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td id="nanoResponseTime">-</td>
+                    </tr>
+                    <tr>
+                        <td>i18n Service</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td>Instant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Load Services -->
+    <script src="services/imageGeneration.js"></script>
+    <script src="services/nanoBanano.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    
+    <script>
+        // Initialize services
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize image generator
+            if (window.imageGenerator) {
+                console.log('Image Generation Service initialized');
+            }
+            
+            // Initialize payment system
+            if (window.nanoBananoPayment) {
+                window.nanoBananoPayment.init('nano').then(address => {
+                    console.log('Payment system initialized:', address);
+                });
+            }
+        });
+        
+        // Generate Images Demo
+        async function generateImages() {
+            const category = document.getElementById('categorySelect').value;
+            const grid = document.getElementById('imageGrid');
+            
+            // Clear grid
+            grid.innerHTML = '';
+            
+            // Show placeholders
+            for (let i = 0; i < 3; i++) {
+                const card = document.createElement('div');
+                card.className = 'image-card';
+                card.innerHTML = `
+                    <div class="image-placeholder"></div>
+                    <div class="p-3">
+                        <p class="mb-0">Generating image ${i + 1}...</p>
+                        <small class="text-muted">Using Imagine.art API</small>
+                    </div>
+                `;
+                grid.appendChild(card);
+            }
+            
+            // Simulate image generation
+            const prompts = {
+                hero: [
+                    "Professional beauty clinic with laser equipment",
+                    "Modern treatment room with diode laser",
+                    "Happy client receiving treatment"
+                ],
+                devices: [
+                    "Diode laser hair removal machine closeup",
+                    "Professional handpiece with cooling",
+                    "Touch screen interface"
+                ],
+                services: [
+                    "Laser hair removal treatment",
+                    "Skin consultation",
+                    "Professional training"
+                ],
+                trust: [
+                    "24/7 support badge",
+                    "Transparent pricing icon",
+                    "Warranty seal"
+                ]
+            };
+            
+            const categoryPrompts = prompts[category] || prompts.hero;
+            
+            // Generate images (simulated for demo)
+            setTimeout(() => {
+                grid.innerHTML = '';
+                categoryPrompts.forEach((prompt, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'image-card';
+                    card.innerHTML = `
+                        <img src="assets/images/projects/project-${index + 1}.png" 
+                             alt="${prompt}" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="p-3">
+                            <p class="mb-0"><strong>Generated:</strong> ${prompt}</p>
+                            <small class="text-muted">Seed: ${index + 1} | Style: realistic</small>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+                
+                // Update response time
+                document.getElementById('imagineResponseTime').textContent = '1.2s';
+            }, 2000);
+        }
+        
+        // Initialize Payment Demo
+        function initPayment() {
+            const equipmentData = {
+                name: 'Diode Laser Hair Removal System',
+                model: 'DL-Pro 2024',
+                price: 180000
+            };
+            
+            if (window.nanoBananoPayment) {
+                window.nanoBananoPayment.createPaymentRequest(equipmentData).then(request => {
+                    window.nanoBananoPayment.showPaymentModal(request);
+                    
+                    // Update status
+                    document.getElementById('paymentStatus').innerHTML = `
+                        <div class="alert alert-info">
+                            <strong>Payment Request Created!</strong><br>
+                            Session ID: ${request.sessionId}<br>
+                            Nano Amount: ${request.paymentOptions.nano.amount}<br>
+                            Expires: ${new Date(request.expiresAt).toLocaleTimeString()}
+                        </div>
+                    `;
+                    
+                    // Update response time
+                    document.getElementById('nanoResponseTime').textContent = '0.3s';
+                });
+            }
+        }
+        
+        // Language Switcher Demo
+        function switchLanguage(lang) {
+            if (window.i18n) {
+                window.i18n.switchLanguage(lang);
+                
+                // Show notification
+                const message = lang === 'he' ? 'שפה שונתה לעברית' : 'Language changed to English';
+                alert(message);
+            }
+        }
+        
+        // Simulate API monitoring
+        setInterval(() => {
+            // Simulate random response times
+            const imagineTime = (Math.random() * 2 + 0.5).toFixed(1) + 's';
+            const nanoTime = (Math.random() * 0.5 + 0.1).toFixed(1) + 's';
+            
+            if (document.getElementById('imagineResponseTime').textContent !== '-') {
+                document.getElementById('imagineResponseTime').textContent = imagineTime;
+            }
+            if (document.getElementById('nanoResponseTime').textContent !== '-') {
+                document.getElementById('nanoResponseTime').textContent = nanoTime;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>

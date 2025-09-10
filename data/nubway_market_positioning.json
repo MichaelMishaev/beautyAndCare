@@ -1,0 +1,189 @@
+{
+  "market_positioning": {
+    "extraction_date": "2025-01-09",
+    "source": "https://nubway.co.il/",
+    "brand_positioning": {
+      "primary_message": "Professional medical devices for creating beauty",
+      "value_proposition": "Comprehensive aesthetic equipment solutions with advanced technology and professional support",
+      "market_focus": "B2B professional medical and aesthetic market",
+      "competitive_differentiation": [
+        "International manufacturing with local support",
+        "Comprehensive product portfolio",
+        "Strong technical R&D backing",
+        "Professional-grade equipment focus",
+        "End-to-end solution provider"
+      ]
+    },
+    "target_audience": {
+      "primary_segments": [
+        {
+          "segment": "Medical Clinics",
+          "characteristics": [
+            "Dermatology practices",
+            "Plastic surgery centers",
+            "Medical aesthetic clinics",
+            "Multi-specialty practices"
+          ],
+          "needs": [
+            "Medical-grade equipment",
+            "Safety and efficacy",
+            "Professional training",
+            "Ongoing technical support"
+          ]
+        },
+        {
+          "segment": "Aesthetic Centers",
+          "characteristics": [
+            "Medical spas",
+            "Beauty treatment centers",
+            "Wellness centers",
+            "High-end salons"
+          ],
+          "needs": [
+            "Advanced treatment capabilities",
+            "Client satisfaction results",
+            "Professional credibility",
+            "Business growth support"
+          ]
+        },
+        {
+          "segment": "Medical Professionals",
+          "characteristics": [
+            "Aesthetic doctors",
+            "Dermatologists",
+            "Trained technicians",
+            "Practice owners"
+          ],
+          "needs": [
+            "Reliable equipment performance",
+            "Professional education",
+            "Technical support",
+            "Practice growth solutions"
+          ]
+        }
+      ],
+      "language_approach": [
+        "Technical and professional terminology",
+        "Medical device positioning",
+        "Safety and efficacy emphasis",
+        "Innovation and technology focus",
+        "Professional credibility building"
+      ]
+    },
+    "messaging_strategy": {
+      "core_themes": [
+        {
+          "theme": "Advanced Technology",
+          "messages": [
+            "Cutting-edge technological innovation",
+            "Latest medical aesthetic technologies",
+            "Continuous R&D development",
+            "International technology standards"
+          ]
+        },
+        {
+          "theme": "Professional Expertise",
+          "messages": [
+            "Over 50 R&D engineers",
+            "10+ years international experience",
+            "Professional medical device focus",
+            "Comprehensive technical support"
+          ]
+        },
+        {
+          "theme": "Comprehensive Solutions",
+          "messages": [
+            "Complete equipment portfolio",
+            "End-to-end service support",
+            "Training and education programs",
+            "Ongoing maintenance and upgrades"
+          ]
+        },
+        {
+          "theme": "Quality and Safety",
+          "messages": [
+            "Medical-grade equipment standards",
+            "Professional safety protocols",
+            "Certified training programs",
+            "Reliable performance guarantee"
+          ]
+        }
+      ],
+      "tone_characteristics": [
+        "Professional and authoritative",
+        "Technical yet accessible",
+        "Confidence-building",
+        "Solution-oriented",
+        "Innovation-focused"
+      ]
+    },
+    "competitive_landscape": {
+      "market_position": "Established international provider with local presence",
+      "competitive_advantages": [
+        "Comprehensive product range",
+        "Strong manufacturing capabilities",
+        "Local showroom and support",
+        "Professional training programs",
+        "Trade-in and upgrade programs"
+      ],
+      "market_challenges": [
+        "Premium pricing expectations",
+        "Competition from established brands",
+        "Need for continuous innovation",
+        "Regulatory compliance requirements"
+      ]
+    },
+    "business_model": {
+      "sales_approach": "B2B direct sales with consultation-based process",
+      "pricing_strategy": "Quote-based professional pricing with trade-in options",
+      "support_model": "Comprehensive professional support with ongoing relationship focus",
+      "geographic_focus": "Israel and Middle East regional distribution",
+      "partnership_approach": "Long-term professional relationships with ongoing support"
+    },
+    "content_strategy": {
+      "content_pillars": [
+        {
+          "pillar": "Technical Education",
+          "focus": "Equipment specifications, capabilities, and applications"
+        },
+        {
+          "pillar": "Professional Development",
+          "focus": "Training, certification, and skill development"
+        },
+        {
+          "pillar": "Innovation Showcase",
+          "focus": "Latest technologies and advanced capabilities"
+        },
+        {
+          "pillar": "Success Stories",
+          "focus": "Professional results and business growth"
+        }
+      ],
+      "communication_channels": [
+        "Professional website with technical specifications",
+        "Showroom demonstrations and consultations",
+        "Direct professional communication (phone, email)",
+        "Professional training and education programs"
+      ]
+    },
+    "visual_identity": {
+      "color_scheme": {
+        "primary": "Professional blue",
+        "secondary": "Clean white",
+        "accent": "Medical/technical gray"
+      },
+      "design_approach": [
+        "Clean and professional",
+        "Technology-focused imagery",
+        "Medical device aesthetic",
+        "Technical specification emphasis"
+      ],
+      "imagery_style": [
+        "High-quality equipment photography",
+        "Professional clinical settings",
+        "Technical detail focus",
+        "Clean, modern presentation"
+      ]
+    }
+  }
+}

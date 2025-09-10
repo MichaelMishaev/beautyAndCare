@@ -1,0 +1,301 @@
+{
+  "product_intelligence": {
+    "extraction_date": "2025-01-09",
+    "source": "https://nubway.co.il/",
+    "company": "NUBWAY",
+    "equipment_categories": {
+      "laser_devices": {
+        "multi_spot_diode_laser": {
+          "model": "VL8",
+          "applications": [
+            "Hair removal",
+            "Skin rejuvenation",
+            "Vascular treatments"
+          ],
+          "features": [
+            "Multiple spot sizes",
+            "Variable pulse duration",
+            "Professional-grade diode technology"
+          ],
+          "target_treatments": [
+            "Permanent hair reduction",
+            "Pigmented lesion treatment",
+            "Vascular lesion treatment"
+          ]
+        },
+        "fractional_co2_laser": {
+          "model": "F9",
+          "applications": [
+            "Skin resurfacing",
+            "Wrinkle reduction",
+            "Scar treatment",
+            "Skin tightening"
+          ],
+          "features": [
+            "Fractional technology",
+            "Precise tissue ablation",
+            "Controlled thermal damage"
+          ],
+          "target_treatments": [
+            "Anti-aging treatments",
+            "Acne scar revision",
+            "Stretch mark improvement",
+            "Melasma treatment"
+          ]
+        },
+        "picosecond_laser": {
+          "model": "PS770",
+          "applications": [
+            "Tattoo removal",
+            "Pigmentation treatment",
+            "Skin rejuvenation"
+          ],
+          "features": [
+            "Ultra-short pulse duration",
+            "Minimal thermal damage",
+            "Multiple wavelengths"
+          ],
+          "target_treatments": [
+            "Professional tattoo removal",
+            "Melasma and hyperpigmentation",
+            "Age spot removal",
+            "Carbon peeling"
+          ]
+        },
+        "nd_yag_laser": {
+          "applications": [
+            "Vascular treatments",
+            "Hair removal",
+            "Pigmentation",
+            "Skin tightening"
+          ],
+          "features": [
+            "Long-pulse technology",
+            "Deep penetration",
+            "Versatile wavelength"
+          ],
+          "target_treatments": [
+            "Spider vein treatment",
+            "Deep hair follicle destruction",
+            "Nail fungus treatment",
+            "Skin rejuvenation"
+          ]
+        }
+      },
+      "body_contouring": {
+        "cryolipolysis_machine": {
+          "applications": [
+            "Fat reduction",
+            "Body contouring",
+            "Cellulite treatment"
+          ],
+          "features": [
+            "Controlled cooling technology",
+            "Multiple applicator sizes",
+            "Non-invasive fat elimination"
+          ],
+          "target_treatments": [
+            "Stubborn fat elimination",
+            "Body sculpting",
+            "Love handle reduction",
+            "Double chin treatment"
+          ]
+        },
+        "ems_rf_sculpting": {
+          "applications": [
+            "Muscle building",
+            "Fat reduction",
+            "Body contouring"
+          ],
+          "features": [
+            "Electromagnetic muscle stimulation",
+            "Radiofrequency heating",
+            "Dual-action technology"
+          ],
+          "target_treatments": [
+            "Muscle toning and building",
+            "Fat burning acceleration",
+            "Core strengthening",
+            "Buttock enhancement"
+          ]
+        },
+        "velashape_machine": {
+          "applications": [
+            "Cellulite reduction",
+            "Circumferential reduction",
+            "Skin tightening"
+          ],
+          "features": [
+            "Vacuum massage",
+            "Radiofrequency heating",
+            "Infrared light therapy"
+          ],
+          "target_treatments": [
+            "Cellulite improvement",
+            "Skin texture enhancement",
+            "Body circumference reduction",
+            "Skin firmness improvement"
+          ]
+        }
+      },
+      "skin_treatment_devices": {
+        "hydrafacial_machine": {
+          "model": "Vcsi",
+          "applications": [
+            "Deep cleansing",
+            "Exfoliation",
+            "Hydration",
+            "Extraction"
+          ],
+          "features": [
+            "Vortex-fusion technology",
+            "Multi-step treatment",
+            "Customizable serums"
+          ],
+          "target_treatments": [
+            "Facial cleansing and hydration",
+            "Pore extraction",
+            "Fine line reduction",
+            "Skin brightening"
+          ]
+        },
+        "ipl_rejuvenation": {
+          "applications": [
+            "Photorejuvenation",
+            "Hair removal",
+            "Pigmentation treatment",
+            "Vascular lesion treatment"
+          ],
+          "features": [
+            "Broad spectrum light",
+            "Multiple filters",
+            "Adjustable pulse duration"
+          ],
+          "target_treatments": [
+            "Sun damage repair",
+            "Age spot removal",
+            "Rosacea treatment",
+            "Hair growth reduction"
+          ]
+        },
+        "hifu_5d_machine": {
+          "applications": [
+            "Non-surgical face lift",
+            "Skin tightening",
+            "Wrinkle reduction"
+          ],
+          "features": [
+            "High-intensity focused ultrasound",
+            "5D technology",
+            "Precise depth targeting"
+          ],
+          "target_treatments": [
+            "Face and neck lifting",
+            "Eyebrow lifting",
+            "Skin tightening",
+            "Collagen stimulation"
+          ]
+        },
+        "rf_microneedling": {
+          "applications": [
+            "Skin resurfacing",
+            "Scar treatment",
+            "Pore reduction",
+            "Skin tightening"
+          ],
+          "features": [
+            "Vacuum-assisted delivery",
+            "Radiofrequency energy",
+            "Microneedling stimulation"
+          ],
+          "target_treatments": [
+            "Acne scar revision",
+            "Wrinkle reduction",
+            "Pore size reduction",
+            "Skin texture improvement"
+          ]
+        }
+      },
+      "specialized_equipment": {
+        "face_skin_analyzer": {
+          "applications": [
+            "Skin analysis",
+            "Treatment planning",
+            "Progress monitoring"
+          ],
+          "features": [
+            "Multi-spectral imaging",
+            "AI-powered analysis",
+            "Comprehensive skin assessment"
+          ],
+          "target_treatments": [
+            "Skin condition assessment",
+            "Treatment recommendation",
+            "Progress tracking",
+            "Client consultation enhancement"
+          ]
+        },
+        "pdt_led_therapy": {
+          "applications": [
+            "Acne treatment",
+            "Anti-aging",
+            "Wound healing",
+            "Pain relief"
+          ],
+          "features": [
+            "Multiple wavelength LEDs",
+            "Photodynamic therapy capability",
+            "Large treatment area coverage"
+          ],
+          "target_treatments": [
+            "Acne bacteria elimination",
+            "Collagen stimulation",
+            "Inflammation reduction",
+            "Skin rejuvenation"
+          ]
+        },
+        "plasma_machine": {
+          "applications": [
+            "Skin tightening",
+            "Wrinkle reduction",
+            "Pigmentation treatment"
+          ],
+          "features": [
+            "Plasma energy delivery",
+            "Precise skin ablation",
+            "Minimal downtime"
+          ],
+          "target_treatments": [
+            "Eyelid tightening",
+            "Neck wrinkle reduction",
+            "Age spot removal",
+            "Skin texture improvement"
+          ]
+        }
+      }
+    },
+    "technical_specifications": {
+      "power_requirements": "Professional-grade electrical specifications",
+      "safety_certifications": "Medical device compliance",
+      "wavelength_ranges": {
+        "diode_laser": "800-810nm typical",
+        "co2_laser": "10600nm",
+        "picosecond": "532nm, 755nm, 1064nm",
+        "nd_yag": "1064nm primary"
+      },
+      "treatment_parameters": {
+        "adjustable_settings": true,
+        "preset_protocols": true,
+        "customizable_treatments": true,
+        "safety_monitoring": true
+      }
+    },
+    "target_applications": [
+      "Medical aesthetic clinics",
+      "Dermatology practices",
+      "Medical spas",
+      "Plastic surgery centers",
+      "Beauty treatment centers"
+    ]
+  }
+}

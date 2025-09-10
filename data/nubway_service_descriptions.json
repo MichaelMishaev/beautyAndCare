@@ -1,0 +1,211 @@
+{
+  "service_descriptions": {
+    "extraction_date": "2025-01-09",
+    "source": "https://nubway.co.il/",
+    "treatment_categories": {
+      "hair_removal": {
+        "description": "Advanced laser hair removal using professional-grade diode and Nd:YAG technologies",
+        "benefits": [
+          "Permanent hair reduction",
+          "Suitable for all skin types",
+          "Minimal discomfort",
+          "Fast treatment sessions",
+          "Long-lasting results"
+        ],
+        "procedure_highlights": [
+          "Multiple spot size options for different body areas",
+          "Cooling technology for comfort",
+          "Customizable pulse duration",
+          "Safe for dark and light skin tones"
+        ],
+        "target_areas": [
+          "Face and neck",
+          "Arms and underarms",
+          "Legs and bikini area",
+          "Back and chest",
+          "Small facial areas"
+        ]
+      },
+      "skin_tightening": {
+        "description": "Non-invasive skin tightening and lifting using HIFU, RF, and CO2 laser technologies",
+        "benefits": [
+          "Non-surgical face lift results",
+          "Immediate skin tightening",
+          "Collagen stimulation",
+          "Natural-looking results",
+          "Minimal downtime"
+        ],
+        "procedure_highlights": [
+          "High-intensity focused ultrasound technology",
+          "Precise depth targeting",
+          "Comfortable treatment experience",
+          "Progressive improvement over time"
+        ],
+        "target_areas": [
+          "Face and jawline",
+          "Neck and décolletage",
+          "Around eyes and brows",
+          "Body areas with loose skin"
+        ]
+      },
+      "wrinkle_reduction": {
+        "description": "Advanced wrinkle reduction using fractional CO2 laser and HIFU technologies",
+        "benefits": [
+          "Significant wrinkle improvement",
+          "Skin texture enhancement",
+          "Collagen regeneration",
+          "Long-lasting anti-aging effects",
+          "Minimal scarring risk"
+        ],
+        "procedure_highlights": [
+          "Fractional technology for faster healing",
+          "Controlled thermal damage",
+          "Customizable treatment depth",
+          "Progressive skin improvement"
+        ],
+        "target_areas": [
+          "Forehead lines",
+          "Crow's feet",
+          "Nasolabial folds",
+          "Marionette lines",
+          "Overall facial rejuvenation"
+        ]
+      },
+      "body_shaping": {
+        "description": "Non-invasive body contouring using cryolipolysis, EMS+RF, and VelaShape technologies",
+        "benefits": [
+          "Fat reduction without surgery",
+          "Muscle toning and building",
+          "Cellulite improvement",
+          "Body circumference reduction",
+          "Improved skin texture"
+        ],
+        "procedure_highlights": [
+          "Controlled fat cell destruction",
+          "Muscle stimulation technology",
+          "Vacuum massage for circulation",
+          "Comfortable treatment sessions"
+        ],
+        "target_areas": [
+          "Abdomen and love handles",
+          "Thighs and buttocks",
+          "Arms and back",
+          "Double chin area",
+          "Post-pregnancy body concerns"
+        ]
+      },
+      "skin_rejuvenation": {
+        "description": "Comprehensive skin rejuvenation using IPL, HydraFacial, and LED light therapy",
+        "benefits": [
+          "Improved skin tone and texture",
+          "Reduced sun damage",
+          "Enhanced skin hydration",
+          "Minimized pore appearance",
+          "Overall skin brightness"
+        ],
+        "procedure_highlights": [
+          "Multi-step cleansing and hydration",
+          "Broad spectrum light therapy",
+          "Customizable serum infusion",
+          "Immediate visible results"
+        ],
+        "target_areas": [
+          "Full face treatment",
+          "Neck and chest",
+          "Hands and arms",
+          "Problem-specific areas"
+        ]
+      },
+      "pigmentation_treatment": {
+        "description": "Advanced pigmentation removal using picosecond laser and IPL technologies",
+        "benefits": [
+          "Effective pigment removal",
+          "Minimal skin damage",
+          "Fast treatment sessions",
+          "Suitable for various pigment types",
+          "Progressive clearing"
+        ],
+        "procedure_highlights": [
+          "Ultra-short pulse technology",
+          "Selective pigment targeting",
+          "Minimal thermal damage",
+          "Multiple wavelength options"
+        ],
+        "target_areas": [
+          "Age spots and sun damage",
+          "Melasma and hyperpigmentation",
+          "Tattoo removal",
+          "Birthmarks and lesions"
+        ]
+      },
+      "acne_scar_treatment": {
+        "description": "Comprehensive acne and scar treatment using fractional CO2 laser and RF microneedling",
+        "benefits": [
+          "Significant scar improvement",
+          "Active acne reduction",
+          "Skin texture smoothing",
+          "Pore size reduction",
+          "Enhanced skin quality"
+        ],
+        "procedure_highlights": [
+          "Fractional skin resurfacing",
+          "Collagen remodeling stimulation",
+          "Minimal downtime protocols",
+          "Progressive improvement"
+        ],
+        "target_areas": [
+          "Facial acne scars",
+          "Active acne treatment",
+          "Body acne and scarring",
+          "Texture irregularities"
+        ]
+      }
+    },
+    "service_positioning": {
+      "quality_assurance": [
+        "Professional medical-grade equipment",
+        "Certified technician training",
+        "Comprehensive safety protocols",
+        "Advanced technology integration"
+      ],
+      "customer_experience": [
+        "Personalized consultation",
+        "Customized treatment plans",
+        "Comfortable treatment environment",
+        "Progress monitoring and follow-up"
+      ],
+      "technical_expertise": [
+        "Over 50 R&D engineers",
+        "10+ years international experience",
+        "Continuous innovation focus",
+        "Professional training programs"
+      ],
+      "support_structure": [
+        "24/7 customer support",
+        "Technical assistance",
+        "Equipment maintenance",
+        "Ongoing professional education"
+      ]
+    },
+    "consultation_process": {
+      "initial_assessment": [
+        "Comprehensive skin analysis",
+        "Treatment goal discussion",
+        "Medical history review",
+        "Technology recommendation"
+      ],
+      "treatment_planning": [
+        "Customized protocol development",
+        "Timeline and expectation setting",
+        "Safety consideration review",
+        "Progress milestone definition"
+      ],
+      "ongoing_support": [
+        "Regular progress evaluation",
+        "Protocol adjustments as needed",
+        "Technical support availability",
+        "Equipment optimization guidance"
+      ]
+    }
+  }
+}

@@ -1,0 +1,273 @@
+/**
+ * Font Override System
+ * Ensures consistent professional typography across all elements
+ * Overrides any previous font declarations for unified appearance
+ */
+
+/* Global Font Reset and Professional Standards */
+*,
+*::before,
+*::after {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Body and Base Elements */
+body,
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Headings - Professional Medical Beauty Styling */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.25 !important;
+}
+
+/* Hero and Large Display Text */
+.custom-hero-font-1,
+.custom-hero-font-2,
+.custom-hero-font-5,
+.text-color-dark.font-weight-bold,
+.font-weight-bold {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Navigation Elements */
+.nav-link,
+.dropdown-item,
+.header-nav a,
+.navbar-nav .nav-link {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.015em !important;
+  font-size: 0.95rem !important;
+}
+
+/* Button Elements */
+.btn,
+.dn-link-btn,
+.btn-primary,
+.btn-secondary,
+button {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.025em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Form Elements */
+input,
+textarea,
+select,
+.form-control,
+.form-select {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Labels and Form Text */
+label,
+.form-label,
+.input-group-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Body Text and Paragraphs */
+p,
+.text-body,
+.lead,
+li,
+td,
+th {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Service and Feature Cards */
+.dn-service-box h4,
+.dn-iconbox-data h4,
+.card-title,
+.widget-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* Testimonials - Using Serif for Elegance */
+.testimonial p,
+.testimonial blockquote,
+.client-quote {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Testimonial Author Names */
+.testimonial-author strong,
+.client-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* Footer Elements */
+footer,
+.footer-widgets,
+.copyright-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.footer-widgets h4,
+.widget-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Blog and Article Elements */
+.dn-blog-box h4,
+.blog-title,
+.article-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Dates and Meta Information */
+.dn-blog-date,
+.date-meta,
+.post-meta {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Statistics and Counter Elements */
+.counter strong,
+.stats-number,
+.number-display {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.counter label,
+.stats-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segone UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.025em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Project and Portfolio Elements */
+.dn-project-content h4,
+.portfolio-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+}
+
+.dn-project-date,
+.portfolio-date {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Eliminate Problematic Font Declarations */
+.font-unbounded,
+[class*="font-unbounded"] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Responsive Typography Improvements */
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem) !important;
+  }
+  
+  h2, .h2 {
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2rem) !important;
+  }
+  
+  h3, .h3 {
+    font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.5rem) !important;
+  }
+}
+
+/* Medical/Professional Content Styling */
+.medical-content,
+.professional-content,
+.clinic-info {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0.005em !important;
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  body {
+    font-weight: 500 !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 800 !important;
+  }
+}
+
+/* RTL (Hebrew) Typography Adjustments */
+[dir="rtl"] * {
+  letter-spacing: 0 !important;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2, 
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  letter-spacing: 0 !important;
+}
+
+/* Print Styles */
+@media print {
+  * {
+    font-family: 'Inter', Arial, sans-serif !important;
+    color: #000 !important;
+    background: transparent !important;
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "pricing_intelligence": {
+    "company": "NUBWAY",
+    "analysis_date": "2025-01-09",
+    "pricing_strategy": {
+      "model": "B2B_QUOTE_BASED",
+      "transparency": "LOW",
+      "approach": "RELATIONSHIP_DRIVEN"
+    },
+    "pricing_indicators": {
+      "launch_pricing": {
+        "available": true,
+        "products": [
+          {
+            "name": "Multi spot size diode laser",
+            "model": "VL8",
+            "status": "launch_price_available"
+          },
+          {
+            "name": "Fractional CO2 Laser Machine",
+            "model": "F9",
+            "status": "launch_price_available"
+          },
+          {
+            "name": "Picosecond Pro 770 Laser Machine",
+            "model": "PS770",
+            "status": "launch_price_available"
+          }
+        ]
+      },
+      "promotional_offers": {
+        "trade_in_program": {
+          "available": true,
+          "description": "Amazing Trade-In Offer",
+          "hebrew_text": "מבצע טרייד אין מדהים"
+        }
+      }
+    },
+    "pricing_contact_methods": [
+      {
+        "type": "phone",
+        "value": "077-7909936"
+      },
+      {
+        "type": "email",
+        "value": "sales@nubway.co.il"
+      },
+      {
+        "type": "whatsapp",
+        "value": "054-8290022"
+      }
+    ],
+    "pricing_strategy_insights": {
+      "consultation_required": true,
+      "customized_quotes": true,
+      "no_public_pricing": true,
+      "relationship_building_focus": true,
+      "trade_in_incentives": true,
+      "launch_discounts": true
+    },
+    "competitive_implications": {
+      "barriers_to_comparison": "HIGH",
+      "sales_process_complexity": "MEDIUM_TO_HIGH",
+      "negotiation_potential": "HIGH",
+      "price_transparency": "LOW"
+    },
+    "market_positioning": {
+      "price_segment": "PREMIUM_PROFESSIONAL",
+      "target_customers": "B2B_CLINICS_MEDICAL_CENTERS",
+      "financing_approach": "TRADE_IN_AND_UPGRADE_PATH"
+    },
+    "differentiation_opportunities": {
+      "transparent_pricing": {
+        "opportunity": "HIGH",
+        "description": "Provide more transparent pricing structure than competitor"
+      },
+      "package_deals": {
+        "opportunity": "MEDIUM",
+        "description": "Clear package pricing vs quote-only approach"
+      },
+      "financing_options": {
+        "opportunity": "MEDIUM",
+        "description": "More flexible financing beyond trade-in"
+      }
+    }
+  }
+}

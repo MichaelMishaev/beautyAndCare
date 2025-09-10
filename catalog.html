@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Browse our comprehensive catalog of professional beauty care equipment and devices. Premium laser hair removal systems, body contouring equipment, and advanced aesthetic technology for clinics and medical spas.">
+		<meta name="keywords" content="beauty equipment catalog, laser hair removal, body contouring, aesthetic devices, medical spa equipment, professional beauty technology">
+		<meta name="author" content="Davidov Beauty Care">
+		<meta name="robots" content="INDEX,FOLLOW">
+
+		<title>Equipment Catalog | Davidov Beauty Care</title>	
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+		<link rel="apple-touch-icon" href="assets/images/logo.png">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- All CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+		<link rel="stylesheet" href="assets/css/master.css">
+		<link rel="stylesheet" href="assets/css/digital-agency.css">
+		<link rel="stylesheet" href="assets/css/animate.compat.css">
+		<link rel="stylesheet" href="assets/css/custom-colors.css">
+
+		<!-- Custom Catalog Styles -->
+		<style>
+			.catalog-hero {
+				background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+				padding: 150px 0 100px;
+			}
+			
+			.catalog-filters {
+				background: white;
+				border-radius: 15px;
+				padding: 25px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+				margin-bottom: 50px;
+				position: sticky;
+				top: 100px;
+				z-index: 10;
+			}
+			
+			.filter-tag {
+				display: inline-block;
+				padding: 8px 20px;
+				background: #f0f0f0;
+				border-radius: 25px;
+				margin: 5px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+			
+			.filter-tag:hover {
+				background: var(--primary-color);
+				color: white;
+			}
+			
+			.filter-tag.active {
+				background: var(--primary-color);
+				color: white;
+			}
+			
+			.device-card {
+				background: white;
+				border-radius: 20px;
+				overflow: hidden;
+				box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+				transition: all 0.4s ease;
+				margin-bottom: 30px;
+				height: 100%;
+			}
+			
+			.device-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+			}
+			
+			.device-image {
+				width: 100%;
+				height: 300px;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.device-badge {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				background: rgba(255,255,255,0.95);
+				padding: 8px 15px;
+				border-radius: 20px;
+				font-size: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			
+			.device-content {
+				padding: 30px;
+			}
+			
+			.device-title {
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 15px;
+				color: #2c3e50;
+			}
+			
+			.device-description {
+				color: #6c757d;
+				margin-bottom: 20px;
+				line-height: 1.6;
+			}
+			
+			.device-features {
+				list-style: none;
+				padding: 0;
+				margin: 20px 0;
+			}
+			
+			.device-features li {
+				padding: 8px 0;
+				color: #495057;
+				position: relative;
+				padding-left: 25px;
+			}
+			
+			.device-features li:before {
+				content: "✓";
+				position: absolute;
+				left: 0;
+				color: var(--primary-color);
+				font-weight: bold;
+			}
+			
+			.device-price {
+				font-size: 32px;
+				font-weight: 700;
+				color: var(--primary-color);
+				margin: 20px 0;
+			}
+			
+			.device-price .currency {
+				font-size: 20px;
+			}
+			
+			.device-price .note {
+				display: block;
+				font-size: 14px;
+				color: #6c757d;
+				font-weight: 400;
+				margin-top: 5px;
+			}
+			
+			.device-actions {
+				display: flex;
+				gap: 15px;
+				margin-top: 25px;
+			}
+			
+			.btn-catalog {
+				flex: 1;
+				padding: 12px 20px;
+				border-radius: 25px;
+				font-weight: 600;
+				text-align: center;
+				transition: all 0.3s ease;
+				text-decoration: none;
+			}
+			
+			.btn-primary-catalog {
+				background: var(--primary-color);
+				color: white;
+			}
+			
+			.btn-primary-catalog:hover {
+				background: var(--dark-color);
+				color: white;
+				transform: translateY(-2px);
+			}
+			
+			.btn-outline-catalog {
+				border: 2px solid var(--primary-color);
+				color: var(--primary-color);
+			}
+			
+			.btn-outline-catalog:hover {
+				background: var(--primary-color);
+				color: white;
+			}
+			
+			.catalog-search {
+				position: relative;
+			}
+			
+			.catalog-search input {
+				width: 100%;
+				padding: 15px 50px 15px 20px;
+				border: 2px solid #e0e0e0;
+				border-radius: 30px;
+				font-size: 16px;
+				transition: all 0.3s ease;
+			}
+			
+			.catalog-search input:focus {
+				outline: none;
+				border-color: var(--primary-color);
+			}
+			
+			.catalog-search .search-icon {
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #999;
+			}
+			
+			.comparison-badge {
+				background: #fff3cd;
+				color: #856404;
+				padding: 10px 15px;
+				border-radius: 10px;
+				font-size: 14px;
+				margin-top: 15px;
+			}
+			
+			.specs-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 15px;
+				margin-top: 20px;
+				padding-top: 20px;
+				border-top: 1px solid #e0e0e0;
+			}
+			
+			.spec-item {
+				font-size: 14px;
+			}
+			
+			.spec-label {
+				color: #6c757d;
+				margin-bottom: 5px;
+			}
+			
+			.spec-value {
+				font-weight: 600;
+				color: #2c3e50;
+			}
+		</style>
+
+		<!-- i18n Script -->
+		<script src="assets/js/i18n.js"></script>
+	</head>
+	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-cursor-effect data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}">
+		<!-- Language Switcher -->
+		
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="wrapper-pulse">
+					<div class="cssload-pulse-loader"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 header-body-bottom-border">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="index.html">
+											<img alt="logo" width="150" height="50" data-sticky-width="150" data-sticky-height="50" src="assets/images/logo.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li><a href="index.html" data-i18n="nav.home">Home</a></li>
+													<li class="active"><a href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
+													<li><a href="services.html" data-i18n="nav.services">Services</a></li>
+													<li><a href="about-us.html" data-i18n="nav.about">About</a></li>
+													<li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<!-- Hero Section -->
+				<section class="catalog-hero">
+					<div class="container">
+			<div class="hero-image-backdrop">
+				<img src="assets/images/hero-clinic.jpg" alt="Professional Beauty Clinic" class="hero-bg-image">
+			</div>
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h1 class="text-color-dark font-weight-bold custom-hero-font-1 mb-3" data-i18n="catalog.hero.title">Professional Beauty Equipment</h1>
+								<p class="text-4 text-color-dark opacity-7" data-i18n="catalog.hero.subtitle">Premium technology for clinics and medical spas</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Catalog Section -->
+				<section class="pd-t-0 pd-b-100">
+					<div class="container">
+						<!-- Search and Filters -->
+						<div class="catalog-filters">
+							<div class="row align-items-center">
+								<div class="col-lg-6">
+									<div class="catalog-search">
+										<input type="text" id="catalogSearch" placeholder="Search equipment..." data-i18n-placeholder="catalog.search.placeholder">
+										<i class="fas fa-search search-icon"></i>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="filter-tags" id="categoryFilters">
+										<span class="filter-tag active" data-category="all" data-i18n="catalog.filter.all">All Equipment</span>
+										<span class="filter-tag" data-category="laser_hair_removal" data-i18n="catalog.filter.laser">Laser Hair Removal</span>
+										<span class="filter-tag" data-category="body_contouring" data-i18n="catalog.filter.body">Body Contouring</span>
+										<span class="filter-tag" data-category="skin_treatment" data-i18n="catalog.filter.skin">Skin Treatment</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Products Grid -->
+						<div class="row" id="catalogGrid">
+							<!-- Products will be loaded here dynamically -->
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<footer class="pd-t-100 pd-b-100 bg-color-dark footer-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-widgets-wrapper pd-b-60">
+								<div class="footer-widgets contact text-color-light">
+									<h4 class="widget-title text-color-light font-unbounded">Contact</h4>
+									<p class="address">Tel Aviv, Israel</p>
+									<div class="contacts">
+										<ul class="custom-ul">
+											<li><a class="email" href="mailto:info@davidovbeauty.com">info@davidovbeauty.com</a></li>
+											<li><a class="mobile" href="tel:+972501234567">+972 50 123 4567</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom has-border">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="footer-bottom-content pd-b-60">
+										<div class="copyright-text text-color-light">All rights reserved — 2025 © Davidov Beauty Care</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="assets/js/plugins.min.js"></script>
+		<script src="assets/js/gsap.min.js"></script>
+		<script src="assets/js/ScrollTrigger.min.js"></script>
+		<script src="assets/js/master.js"></script>
+		<script src="assets/js/master.init.js"></script>
+		<script src="assets/js/digital-agency.js"></script>
+		<script src="assets/js/animations.js"></script>
+
+		<!-- Image Generation Service -->
+		<script src="services/beautyImageGenerator.js"></script>
+
+		<!-- Catalog Script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', async () => {
+				let allDevices = [];
+				let filteredDevices = [];
+				let currentCategory = 'all';
+
+				// Load device data
+				async function loadDeviceData() {
+					try {
+						const response = await fetch('/content/devices-updated.json');
+						const data = await response.json();
+						allDevices = data.devices || [];
+						filteredDevices = [...allDevices];
+						
+						// Generate images for all devices
+						if (window.beautyImageGenerator) {
+							console.log('Generating images for catalog devices...');
+							const deviceImages = await window.beautyImageGenerator.generateCatalogImages(allDevices);
+							
+							// Map generated images back to devices
+							deviceImages.forEach(item => {
+								const device = allDevices.find(d => d.id === item.deviceId);
+								if (device) {
+									device.generatedImage = item.imageUrl;
+								}
+							});
+						}
+						
+						renderDevices();
+					} catch (error) {
+						console.error('Error loading device data:', error);
+						// Fallback to show error message
+						document.getElementById('catalogGrid').innerHTML = `
+							<div class="col-12 text-center">
+								<p class="text-danger">Error loading catalog. Please refresh the page.</p>
+							</div>
+						`;
+					}
+				}
+
+				// Render devices to grid
+				function renderDevices() {
+					const grid = document.getElementById('catalogGrid');
+					
+					if (filteredDevices.length === 0) {
+						grid.innerHTML = `
+							<div class="col-12 text-center">
+								<p class="text-muted">No devices found matching your criteria.</p>
+							</div>
+						`;
+						return;
+					}
+
+					grid.innerHTML = filteredDevices.map(device => `
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div class="device-card">
+								<div class="device-image" style="background-image: ${device.generatedImage ? `url('${device.generatedImage}')` : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}; background-size: cover; background-position: center;">
+									<div class="device-badge">${device.category.replace(/_/g, ' ').toUpperCase()}</div>
+									${!device.generatedImage ? `<i class="fas fa-${getDeviceIcon(device.category)} text-white" style="font-size: 80px;"></i>` : ''}
+								</div>
+								<div class="device-content">
+									<h3 class="device-title">${device.name}</h3>
+									<p class="device-description">${device.shortDescription}</p>
+									
+									${device.features ? `
+										<ul class="device-features">
+											${device.features.slice(0, 3).map(feature => `<li>${feature}</li>`).join('')}
+										</ul>
+									` : ''}
+									
+									${device.pricing ? `
+										<div class="device-price">
+											<span class="currency">₪</span>${formatPrice(device.pricing.basePrice.amount)}
+											<span class="note">${device.pricing.basePrice.displayText || ''}</span>
+										</div>
+									` : ''}
+									
+									${device.pricing?.competitiveAdvantage ? `
+										<div class="comparison-badge">
+											<i class="fas fa-info-circle"></i> ${device.pricing.competitiveAdvantage.transparencyMessage}
+										</div>
+									` : ''}
+									
+									<div class="specs-grid">
+										${device.specifications ? Object.entries(device.specifications).slice(0, 4).map(([key, value]) => `
+											<div class="spec-item">
+												<div class="spec-label">${formatSpecLabel(key)}</div>
+												<div class="spec-value">${formatSpecValue(value)}</div>
+											</div>
+										`).join('') : ''}
+									</div>
+									
+									<div class="device-actions">
+										<a href="#" class="btn-catalog btn-primary-catalog" onclick="requestQuote('${device.id}'); return false;">
+											<i class="fas fa-envelope"></i> Get Quote
+										</a>
+										<a href="#" class="btn-catalog btn-outline-catalog" onclick="viewDetails('${device.id}'); return false;">
+											<i class="fas fa-info-circle"></i> Details
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					`).join('');
+				}
+
+				// Helper functions
+				function getDeviceIcon(category) {
+					const icons = {
+						'laser_hair_removal': 'bolt',
+						'body_contouring': 'spa',
+						'skin_treatment': 'magic',
+						'default': 'star'
+					};
+					return icons[category] || icons.default;
+				}
+
+				function formatPrice(price) {
+					return price.toLocaleString('he-IL');
+				}
+
+				function formatSpecLabel(key) {
+					return key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+				}
+
+				function formatSpecValue(value) {
+					if (Array.isArray(value)) {
+						return value.slice(0, 3).join(', ') + (value.length > 3 ? '...' : '');
+					}
+					return value;
+				}
+
+				// Category filter handling
+				document.getElementById('categoryFilters').addEventListener('click', (e) => {
+					if (e.target.classList.contains('filter-tag')) {
+						// Update active state
+						document.querySelectorAll('.filter-tag').forEach(tag => tag.classList.remove('active'));
+						e.target.classList.add('active');
+						
+						// Filter devices
+						currentCategory = e.target.dataset.category;
+						if (currentCategory === 'all') {
+							filteredDevices = [...allDevices];
+						} else {
+							filteredDevices = allDevices.filter(device => device.category === currentCategory);
+						}
+						
+						// Apply search filter if active
+						const searchTerm = document.getElementById('catalogSearch').value.toLowerCase();
+						if (searchTerm) {
+							filteredDevices = filteredDevices.filter(device => 
+								device.name.toLowerCase().includes(searchTerm) ||
+								device.shortDescription.toLowerCase().includes(searchTerm)
+							);
+						}
+						
+						renderDevices();
+					}
+				});
+
+				// Search handling
+				document.getElementById('catalogSearch').addEventListener('input', (e) => {
+					const searchTerm = e.target.value.toLowerCase();
+					
+					// Start with category filtered devices
+					if (currentCategory === 'all') {
+						filteredDevices = [...allDevices];
+					} else {
+						filteredDevices = allDevices.filter(device => device.category === currentCategory);
+					}
+					
+					// Apply search filter
+					if (searchTerm) {
+						filteredDevices = filteredDevices.filter(device => 
+							device.name.toLowerCase().includes(searchTerm) ||
+							device.shortDescription.toLowerCase().includes(searchTerm) ||
+							(device.features && device.features.some(f => f.toLowerCase().includes(searchTerm)))
+						);
+					}
+					
+					renderDevices();
+				});
+
+				// Global functions for device actions
+				window.requestQuote = function(deviceId) {
+					const device = allDevices.find(d => d.id === deviceId);
+					if (device) {
+						// Navigate to contact page with device info
+						window.location.href = `contact.html?device=${encodeURIComponent(device.name)}&id=${deviceId}`;
+					}
+				};
+
+				window.viewDetails = function(deviceId) {
+					const device = allDevices.find(d => d.id === deviceId);
+					if (device) {
+						// For now, show alert with details - can be expanded to modal or detail page
+						alert(`${device.name}\n\n${device.longDescription || device.shortDescription}\n\nContact us for more information!`);
+					}
+				};
+
+				// Initialize
+				await loadDeviceData();
+			});
+		</script>
+	</body>
+</html>

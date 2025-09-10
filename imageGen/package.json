@@ -1,0 +1,30 @@
+{
+  "name": "davidov-beauty-image-generator",
+  "version": "1.0.0",
+  "description": "Professional beauty equipment image generation using Gemini nano-banana",
+  "type": "module",
+  "main": "generate.js",
+  "scripts": {
+    "gen": "node generate.js",
+    "edit": "node edit.js",
+    "batch": "node batchGenerate.js",
+    "test": "node test.js",
+    "setup": "npm install && mkdir -p out in"
+  },
+  "keywords": [
+    "image-generation",
+    "beauty-equipment",
+    "gemini",
+    "nano-banana",
+    "ai"
+  ],
+  "author": "Davidov Beauty Care",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
