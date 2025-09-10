@@ -1,0 +1,709 @@
+{
+  "extraction_summary": {
+    "source": "https://nubway.co.il/",
+    "extraction_date": "2025-01-09",
+    "extraction_type": "Ultra-deep competitive intelligence drilling",
+    "pricing_strategy": "Contact for pricing with selective disclosure",
+    "key_findings": {
+      "direct_pricing_found": 6,
+      "hidden_pricing_found": 0,
+      "financing_universal": true,
+      "trade_in_program": true,
+      "promotional_pricing": true
+    }
+  },
+  
+  "devices": [
+    {
+      "name": "Multi spot size diode laser",
+      "model": "VL8", 
+      "category": "Laser Hair Removal",
+      "description": "Advanced diode laser system with AI hair detection technology and multiple spot sizes for optimal hair removal efficiency",
+      "specifications": {
+        "power": "3000W (Handpiece: 2000W)",
+        "wavelengths": "808nm, 755nm, 940nm, 1064nm",
+        "pulse_width": "1-200 milliseconds",
+        "spot_sizes": "8mm, 12x14mm, 12x40mm (standard)",
+        "frequency": "1-20 Hz",
+        "cooling": "Compressor cooling system",
+        "voltage": "AC220V or 110V",
+        "screen": "1.54 OLED touchscreen",
+        "system": "Android with Wi-Fi/Bluetooth"
+      },
+      "pricing": {
+        "found": true,
+        "original_amount": "108,563",
+        "promotional_amount": "85,309", 
+        "currency": "ILS",
+        "discount": "15% (15,055 ILS savings)",
+        "type": "promotional_pricing",
+        "source": "product page with explicit pricing",
+        "notes": "Launch pricing promotion active"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 monthly payments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No credit line impact"
+      },
+      "promotions": "Launch pricing (מחיר השקה) - 15% discount",
+      "target_market": "Professional aesthetic clinics, dermatology practices",
+      "benefits": [
+        "AI hair detection technology",
+        "Multiple power and spot size options", 
+        "360° Peltier cooling",
+        "Smart Android control system",
+        "Collimator lens for precise light path"
+      ],
+      "roi_indicators": "5-year warranty included",
+      "warranty": "5 years"
+    },
+    
+    {
+      "name": "Fractional CO2 Laser Machine",
+      "model": "F9",
+      "category": "Fractional Laser Treatment",
+      "description": "Professional CO2 fractional laser for skin resurfacing, wrinkle reduction, and vaginal rejuvenation treatments",
+      "specifications": {
+        "laser_type": "CO2 Fractional (10600nm)",
+        "power_input": "1000W",
+        "laser_power": "1-70W (adjustable)",
+        "pulse_width": "0.1-10ms",
+        "spot_distance": "0.1mm-2.6mm",
+        "treatment_modes": "3 modes: Fractional, Normal, Virginal",
+        "rf_tube_lifespan": "Up to 20,000 working hours"
+      },
+      "pricing": {
+        "found": true,
+        "original_amount": "105,999",
+        "promotional_amount": "90,100",
+        "currency": "ILS", 
+        "discount": "15,899 ILS savings",
+        "type": "promotional_pricing",
+        "source": "product page with explicit pricing",
+        "notes": "Current promotional pricing"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 monthly payments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No credit line impact",
+        "payment_method": "Bank direct debit"
+      },
+      "promotions": "Launch pricing with free vaginal handpiece",
+      "target_market": "Medical aesthetic clinics, gynecology practices",
+      "benefits": [
+        "3 treatment modes",
+        "Stable non-polarized laser",
+        "Precise 7-joint laser arm",
+        "Nano sensor technology from USA",
+        "Free vaginal handpiece included"
+      ],
+      "roi_indicators": "Professional business and marketing support included",
+      "warranty": "5 years"
+    },
+    
+    {
+      "name": "Picosecond Pro 770 Laser Machine", 
+      "model": "PS770",
+      "category": "Picosecond Laser Treatment",
+      "description": "Advanced picosecond laser for pigmentation removal, tattoo removal, and skin rejuvenation with minimal thermal damage",
+      "specifications": {
+        "wavelengths": "1064nm, 532nm (585nm, 650nm, 755nm optional)",
+        "energy": "1500mj (1064nm); 800mj (532nm)",
+        "peak_power": "1064nm 1.33GW; 532nm 0.67GW",
+        "frequency": "1~10Hz",
+        "spot_size": "2-10 mm adjustable",
+        "pulse_width": "450ps",
+        "beam_profile": "Top Hat Beam",
+        "articulated_arm": "7-joint Korean design"
+      },
+      "pricing": {
+        "found": true,
+        "original_amount": "112,645",
+        "promotional_amount": "95,748",
+        "currency": "ILS",
+        "discount": "16,897 ILS savings",
+        "type": "promotional_pricing", 
+        "source": "product page with explicit pricing",
+        "notes": "Launch pricing promotion"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 payments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No credit line usage"
+      },
+      "promotions": "Free bonus: Double rod and double lamp",
+      "target_market": "Aesthetic clinics, dermatology practices, tattoo removal centers",
+      "benefits": [
+        "Treats pigmentation, sun spots, age spots, melasma, acne scars",
+        "Minimal thermal damage to surrounding tissues", 
+        "Uniform energy distribution",
+        "Versatile treatment capabilities"
+      ],
+      "roi_indicators": "Multi-condition treatment capability increases revenue potential",
+      "warranty": "5 years"
+    },
+    
+    {
+      "name": "Nd Yag Laser Machine",
+      "model": "QL VII", 
+      "category": "Q-Switched Laser Treatment",
+      "description": "Professional Q-switched Nd:YAG laser for tattoo removal, pigmentation treatment, and skin rejuvenation",
+      "specifications": {
+        "power": "800W",
+        "energy_range": "300-1000 mJ",
+        "pulse_frequency": "1-6 Hz",
+        "screen_size": "8 inches",
+        "wavelengths": "532 nm, 1064 nm, 1320 nm",
+        "cooling_system": "Air + Water cooling",
+        "voltage": "AC220V±10% 10A 50HZ, 110V±10% 10A 60HZ"
+      },
+      "pricing": {
+        "found": true,
+        "amount": "32,506",
+        "currency": "ILS",
+        "type": "exact",
+        "source": "product page with explicit pricing",
+        "notes": "Complete system price"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 monthly payments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No credit line impact",
+        "payment_method": "Bank direct debit"
+      },
+      "promotions": "Free electric display/work table (black/white color options)",
+      "target_market": "Aesthetic clinics, tattoo removal centers, dermatology practices",
+      "benefits": [
+        "Precise pigment breakdown",
+        "High comfort level during treatment",
+        "Maximized safety",
+        "Multiple treatment capabilities"
+      ],
+      "roi_indicators": "Tattoo removal and skin rejuvenation dual revenue streams",
+      "warranty": "5 years"
+    },
+    
+    {
+      "name": "EMS+RF Sculpting Machine",
+      "model": "CL10",
+      "category": "Body Contouring/Muscle Building",
+      "description": "High-intensity electromagnetic stimulation combined with radiofrequency for body sculpting and muscle building",
+      "specifications": {
+        "power": "5000 Watts",
+        "rf_power": "800W",
+        "pulse_width": "310us±10%",
+        "frequency": "1-150 Hz", 
+        "screen": "12.4-inch hard screen",
+        "voltage": "AC220V or 110V",
+        "cooling": "Air cooling",
+        "strength": "7 Tesla",
+        "handles": "4 simultaneous handles"
+      },
+      "pricing": {
+        "found": true,
+        "amount": "65,304",
+        "currency": "ILS",
+        "type": "exact",
+        "source": "product page with explicit pricing",
+        "notes": "Complete system with 4 handles"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 monthly payments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No bank credit line impact",
+        "payment_method": "Bank direct debit"
+      },
+      "promotions": "30% discount on PELVIC CHAIR with combined purchase",
+      "target_market": "Aesthetic clinics, fitness centers, body contouring specialists",
+      "benefits": [
+        "Reduces fat by ~30%",
+        "Increases muscle by ~25%",
+        "Non-invasive",
+        "No recovery period",
+        "Targets muscle depth up to 7 cm",
+        "Activates ~100% muscle fiber vs ~20% in regular exercise"
+      ],
+      "roi_indicators": "High-demand body sculpting treatments with measurable results",
+      "warranty": "Not specified"
+    },
+    
+    {
+      "name": "Hydrafacial Skin Care Machine",
+      "model": "VCSI",
+      "category": "Facial Treatment/Hydradermabrasion", 
+      "description": "Professional hydrafacial system for deep cleansing, exfoliation, and hydration treatments",
+      "specifications": "Complete hydrafacial system with multiple treatment heads",
+      "pricing": {
+        "found": true,
+        "amount": "32,379",
+        "currency": "ILS",
+        "type": "exact",
+        "source": "product page with explicit pricing",
+        "notes": "Prices do not include VAT"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Up to 60 payment installments",
+        "initial_payment": "No initial capital required",
+        "credit_impact": "No credit line impact",
+        "payment_method": "Bank direct debit"
+      },
+      "promotions": "Free bonus: 4 liters of facial cleansing and disinfection liquid",
+      "target_market": "Aesthetic clinics, spas, dermatology practices",
+      "benefits": [
+        "Deep skin cleansing and hydration",
+        "Non-invasive treatment",
+        "Suitable for all skin types",
+        "Immediate visible results"
+      ],
+      "roi_indicators": "High-frequency facial treatment revenue potential",
+      "warranty": "5 years"
+    },
+
+    {
+      "name": "VelaShape Slimming Machine",
+      "model": "VS II",
+      "category": "Body Contouring/Cellulite Treatment",
+      "description": "Multi-technology platform combining RF, infrared laser, ultrasonic, and vacuum for body contouring",
+      "specifications": {
+        "rf_power": "800W",
+        "rf_frequency": "2 MHz", 
+        "infrared_laser_power": "20W",
+        "ultrasonic_power": "200W",
+        "vacuum_pressure": "10-90 KPa"
+      },
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Variety of payment plans mentioned"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Variety of payment plans (מגוון מסלולי תשלום)",
+        "color_selection": "No additional payment for color selection"
+      },
+      "promotions": "Amazing trade-in offer (מבצע טרייד אין מדהים)",
+      "target_market": "Aesthetic clinics, weight loss centers, spas",
+      "benefits": [
+        "Thigh circumference reduction: 1-5 cm",
+        "Waist circumference reduction: 2-6 cm (average 2-3 cm)",
+        "Skin texture improvement: 50-75%",
+        "Full body treatment: 45-60 minutes",
+        "Targeted area treatment: ~15 minutes"
+      ],
+      "roi_indicators": "10-session treatment packages - high revenue per client",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Cryolipolysis Slimming Machine", 
+      "model": "C8",
+      "category": "Fat Freezing/Body Contouring",
+      "description": "Professional cryolipolysis system for non-invasive fat reduction through controlled cooling",
+      "specifications": {
+        "handles": "4 standard handles",
+        "temperature_range": "-10°C to 5°C",
+        "power": "2500W",
+        "cooling_power": "2000W",
+        "vacuum": "0-100Kpa",
+        "touch_screen": "10.4 inch main screen, 3.5 inch handle screen",
+        "net_weight": "60 kg",
+        "dimensions": "400*500*1200mm"
+      },
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required", 
+        "source": "product page - no explicit pricing",
+        "notes": "Variety of payment plans available"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Variety of payment plans (מגוון מסלולי תשלום)",
+        "color_selection": "No additional payment for color selection"
+      },
+      "promotions": "Amazing trade-in promotion (מבצע טרייד אין מדהים)",
+      "target_market": "Aesthetic clinics, weight loss centers, body contouring specialists",
+      "benefits": [
+        "Non-invasive treatment",
+        "Targeted fat reduction",
+        "Professional usability",
+        "Multiple handle operation"
+      ],
+      "roi_indicators": "High-demand fat reduction treatments",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "IPL Skin Rejuvenation Machine",
+      "model": "ESHR50", 
+      "category": "IPL/Hair Removal/Skin Treatment",
+      "description": "Multi-function IPL system for hair removal, skin rejuvenation, and pigmentation treatment",
+      "specifications": {
+        "power": "2000W",
+        "wavelengths_sr": "560–950 nm",
+        "wavelengths_hr": "640–950 nm", 
+        "work_modes": "IPL, SHR, E-light",
+        "ipl_energy": "10–60 J/cm²",
+        "light_spot_size": "15×50 mm",
+        "rf_power": "160W"
+      },
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing", 
+        "notes": "Variety of payment plans mentioned"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Variety of payment plans (מגוון מסלולי תשלום)",
+        "color_selection": "No additional cost for color/shade selection"
+      },
+      "promotions": "Amazing trade-in promotion (מבצע טרייד אין מדהים)",
+      "target_market": "Aesthetic clinics, hair removal centers, dermatology practices",
+      "benefits": [
+        "Multi-function capability",
+        "Hair removal and skin treatment",
+        "Large treatment spot size",
+        "Multiple energy settings"
+      ],
+      "roi_indicators": "Multiple treatment modalities increase revenue streams",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "5D HIFU Machine",
+      "model": "SMASFOCUS II",
+      "category": "HIFU/Face Lifting/Skin Tightening",
+      "description": "Advanced 5D HIFU system for non-invasive face lifting and skin tightening treatments",
+      "specifications": {
+        "power": "1200W",
+        "frequency": "4-7 MHz", 
+        "width": "Adjustable 1-10 mm",
+        "length": "Adjustable 5-25 mm",
+        "energy_output": "0.2-2J/cm²",
+        "cartridge_shots": "20,000 lines",
+        "cartridge_types_standard": "1.5mm, 3.0mm, 4.5mm, 8.0mm",
+        "cartridge_types_optional": "6.0mm, 10.0mm, 13.0mm, 16.0mm"
+      },
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Variety of payment plans available"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Variety of payment plans (מגוון מסלולי תשלום)",
+        "color_selection": "No additional payment for color/variant selection"
+      },
+      "promotions": "Trade-in promotion (מבצע טרייד אין מדהים)",
+      "target_market": "Aesthetic clinics, anti-aging centers, dermatology practices",
+      "benefits": [
+        "Non-invasive face lifting",
+        "Skin tightening treatments", 
+        "Adjustable treatment parameters",
+        "Multiple cartridge options"
+      ],
+      "roi_indicators": "High-demand anti-aging treatments with premium pricing potential",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Plasma Machine",
+      "model": "PLASMA II",
+      "category": "Plasma Treatment/Skin Tightening",
+      "description": "Professional plasma treatment system for skin tightening and rejuvenation",
+      "specifications": "Professional plasma generation system",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing", 
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Payment plans available"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Flexible payment options"
+      },
+      "promotions": "Trade-in program available",
+      "target_market": "Aesthetic clinics, dermatology practices",
+      "benefits": [
+        "Non-invasive skin tightening",
+        "Professional plasma technology", 
+        "Skin rejuvenation treatments"
+      ],
+      "roi_indicators": "Premium aesthetic treatment option",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Face Skin Analyzer Machine",
+      "model": "QSPC-02",
+      "category": "Skin Analysis/Diagnostic",
+      "description": "Advanced skin analysis system for detailed skin condition assessment and treatment planning",
+      "specifications": "Professional skin analysis with imaging technology",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS", 
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Payment plans available"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Flexible financing options"
+      },
+      "promotions": "Trade-in program available",
+      "target_market": "Aesthetic clinics, dermatology practices, spas",
+      "benefits": [
+        "Detailed skin analysis",
+        "Treatment planning support",
+        "Professional diagnostic capability"
+      ],
+      "roi_indicators": "Diagnostic tool enhances treatment credibility and pricing",
+      "warranty": "Not specified"  
+    },
+
+    {
+      "name": "PDT Led Light Therapy Machine",
+      "model": "LP100S",
+      "category": "LED Light Therapy",
+      "description": "Professional LED light therapy system for skin rejuvenation and acne treatment",
+      "specifications": "Multi-wavelength LED light therapy system",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Flexible payment options"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Payment plans available"
+      },
+      "promotions": "Trade-in program available", 
+      "target_market": "Aesthetic clinics, spas, dermatology practices",
+      "benefits": [
+        "Non-invasive light therapy",
+        "Skin rejuvenation treatments",
+        "Acne treatment capability"
+      ],
+      "roi_indicators": "Low-cost per treatment, high-frequency service option",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Skin Cooling Machine",
+      "model": "AC1",
+      "category": "Cooling/Support Equipment", 
+      "description": "Professional skin cooling system for enhanced patient comfort during laser treatments",
+      "specifications": "Professional cooling system for treatment support",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Support equipment pricing"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Payment options available"
+      },
+      "promotions": "Trade-in program available",
+      "target_market": "Aesthetic clinics using laser treatments",
+      "benefits": [
+        "Enhanced patient comfort",
+        "Supports laser treatments",
+        "Professional cooling capability"
+      ],
+      "roi_indicators": "Improves patient experience and treatment quality",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Vacuum RF Microneedling Machine",
+      "model": "VRF1", 
+      "category": "RF Microneedling",
+      "description": "Advanced radiofrequency microneedling system with vacuum technology for skin rejuvenation",
+      "specifications": "Professional RF microneedling with vacuum assistance",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Professional system pricing"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Flexible payment plans"
+      },
+      "promotions": "Trade-in program available",
+      "target_market": "Aesthetic clinics, dermatology practices, anti-aging centers",
+      "benefits": [
+        "Advanced skin rejuvenation",
+        "RF and microneedling combination",
+        "Vacuum-assisted treatment"
+      ],
+      "roi_indicators": "Premium aesthetic treatment with high client satisfaction",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Pelvic Chair", 
+      "model": "CLY-1",
+      "category": "Intimate Health/Pelvic Treatment",
+      "description": "Specialized electromagnetic stimulation chair for pelvic floor strengthening and intimate health treatments",
+      "specifications": "Professional pelvic floor treatment system",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required",
+        "source": "product page - no explicit pricing",
+        "notes": "Specialty equipment - 30% discount available with CL10 purchase"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Payment plans available"
+      },
+      "promotions": "30% discount when purchased with EMS+RF Sculpting Machine (CL10)",
+      "target_market": "Intimate health clinics, gynecology practices, wellness centers",
+      "benefits": [
+        "Pelvic floor strengthening",
+        "Non-invasive intimate health treatment",
+        "Professional therapeutic capability"
+      ],
+      "roi_indicators": "Specialized niche market with premium pricing potential",
+      "warranty": "Not specified"
+    },
+
+    {
+      "name": "Vacuum Cavitation Machine",
+      "model": "S200",
+      "category": "Body Contouring/Cavitation",
+      "description": "Professional ultrasonic cavitation system with vacuum technology for body contouring and fat reduction",
+      "specifications": "Ultrasonic cavitation with vacuum assistance",
+      "pricing": {
+        "found": false,
+        "amount": "Contact for pricing",
+        "currency": "ILS",
+        "type": "contact_required", 
+        "source": "product page - no explicit pricing",
+        "notes": "Body contouring system pricing"
+      },
+      "financing": {
+        "available": true,
+        "terms": "Flexible financing options"
+      },
+      "promotions": "Trade-in program available",
+      "target_market": "Aesthetic clinics, weight loss centers, body contouring specialists",
+      "benefits": [
+        "Non-invasive fat reduction",
+        "Body contouring treatments",
+        "Vacuum-assisted cavitation"
+      ],
+      "roi_indicators": "Popular body contouring treatment option",
+      "warranty": "Not specified"
+    }
+  ],
+
+  "competitive_intelligence": {
+    "pricing_strategy_analysis": {
+      "approach": "Selective disclosure with financing emphasis",
+      "pattern": "High-value items show pricing, mid-range requires contact",
+      "financing_universal": true,
+      "discount_strategy": "Launch pricing (מחיר השקה) for premium items",
+      "payment_flexibility": "Up to 60 months financing across all products"
+    },
+    
+    "price_range_analysis": {
+      "entry_level": "32,000-35,000 ILS (QL VII, VCSI)",
+      "mid_range": "65,000-70,000 ILS (CL10)",
+      "premium": "85,000-115,000 ILS (VL8, F9, PS770)",
+      "currency": "Israeli Shekels (ILS)",
+      "vat_status": "Prices typically exclude VAT"
+    },
+
+    "financing_intelligence": {
+      "universal_offering": "All devices offer financing",
+      "max_terms": "60 monthly payments", 
+      "down_payment": "No initial capital required",
+      "credit_impact": "No credit line impact claimed",
+      "payment_method": "Bank direct debit preferred",
+      "approval_process": "Simplified financing approach"
+    },
+
+    "promotional_strategy": {
+      "trade_in_program": "Universal trade-in promotion across all devices",
+      "launch_pricing": "Selected premium devices offer מחיר השקה discounts",
+      "bundle_discounts": "30% discount on Pelvic Chair with CL10 purchase",
+      "free_bonuses": "Additional equipment/consumables included with purchases",
+      "warranty": "5-year warranty on premium devices"
+    },
+
+    "market_positioning": {
+      "target_segments": [
+        "Professional aesthetic clinics",
+        "Dermatology practices", 
+        "Medical spas",
+        "Weight loss centers",
+        "Intimate health clinics"
+      ],
+      "value_proposition": "Professional equipment with flexible financing",
+      "differentiation": "Israeli market focus with Hebrew language support",
+      "service_emphasis": "Professional business and marketing support included"
+    },
+
+    "contact_strategy": {
+      "phone": "077-7909936",
+      "email": "sales@nubway.co.il", 
+      "whatsapp": "054-8290022",
+      "approach": "Multi-channel contact for pricing inquiries",
+      "sales_process": "Consultative approach with financing emphasis"
+    }
+  },
+
+  "davidov_strategic_implications": {
+    "price_positioning_opportunities": {
+      "premium_segment": "Can position 15-20% above Nubway disclosed prices",
+      "financing_competitive": "Match or exceed 60-month terms",
+      "value_differentiation": "Superior technology and service can justify premium",
+      "market_gaps": "Several devices with hidden pricing suggest price sensitivity"
+    },
+    
+    "competitive_advantages": {
+      "transparency": "Full pricing transparency vs. contact-required approach",
+      "technology": "More advanced technology can justify premium pricing",
+      "service": "Enhanced support and training programs", 
+      "financing": "More flexible terms or better rates",
+      "warranty": "Extended warranty options"
+    },
+
+    "pricing_recommendations": {
+      "laser_devices": "Position 10-15% above Nubway's 85,000-115,000 ILS range",
+      "body_contouring": "Premium positioning above 65,000 ILS baseline",
+      "entry_devices": "Competitive with 32,000-35,000 ILS range",
+      "financing": "Offer superior terms - longer periods or lower rates",
+      "bundling": "Create attractive package deals to compete with trade-in program"
+    }
+  }
+}

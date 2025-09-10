@@ -1,0 +1,215 @@
+{
+  "competitive_pricing_matrix": {
+    "analysis_date": "2025-01-09",
+    "primary_competitor": "Nubway",
+    "intelligence_source": "Deep web scraping extraction",
+    "strategy": "Premium positioning with full transparency"
+  },
+
+  "price_comparison": [
+    {
+      "category": "Diode Laser Hair Removal",
+      "nubway": {
+        "model": "VL8",
+        "original_price": 108563,
+        "promotional_price": 85309,
+        "currency": "ILS",
+        "discount": "15%",
+        "financing": "60 months, no down payment"
+      },
+      "davidov": {
+        "model": "DL-Pro 2024",
+        "recommended_price": 195000,
+        "positioning": "Premium technology with superior features",
+        "advantage": "128% price premium justified by advanced AI detection, Hebrew interface, same-day service",
+        "financing": "72 months with 0% for first 12 months",
+        "transparency": "Full upfront pricing vs Nubway's promotional pricing games"
+      }
+    },
+    {
+      "category": "CO₂ Fractional Laser",
+      "nubway": {
+        "model": "F9",
+        "original_price": 105999,
+        "promotional_price": 90100,
+        "currency": "ILS",
+        "discount": "15%"
+      },
+      "davidov": {
+        "model": "CF-Elite 2024", 
+        "recommended_price": 245000,
+        "positioning": "Medical-grade precision with comprehensive training",
+        "advantage": "172% price premium for superior technology and local support",
+        "financing": "60 months with trade-in credit up to ₪50,000"
+      }
+    },
+    {
+      "category": "HIFU Anti-Aging",
+      "nubway": {
+        "model": "SMASFOCUS II",
+        "pricing": "Contact required - hidden pricing",
+        "estimated_range": "80000-120000"
+      },
+      "davidov": {
+        "model": "HF-Pro 2024",
+        "recommended_price": 180000,
+        "positioning": "Transparent pricing in premium category",
+        "advantage": "Full pricing disclosure vs competitor's hidden pricing strategy",
+        "financing": "48 months for smaller clinics, 72 months for larger practices"
+      }
+    },
+    {
+      "category": "Professional Skin Analyzer",
+      "nubway": {
+        "model": "QSPC-02",
+        "pricing": "Contact required - hidden pricing",
+        "market_position": "Entry-level diagnostic"
+      },
+      "davidov": {
+        "model": "SA-Advanced 2024",
+        "recommended_price": 58000,
+        "positioning": "Premium diagnostic with Hebrew reporting",
+        "advantage": "Advanced features with transparent pricing",
+        "financing": "36 months, perfect for SME clinics"
+      }
+    },
+    {
+      "category": "EMS+RF Body Sculpting",
+      "nubway": {
+        "model": "CL10",
+        "price": 65304,
+        "currency": "ILS",
+        "power": "5000W with 4 handles"
+      },
+      "davidov": {
+        "model": "BS-Elite 2024",
+        "recommended_price": 89000,
+        "positioning": "Enhanced power and precision",
+        "advantage": "36% premium for superior results and training",
+        "financing": "60 months with performance guarantee"
+      }
+    },
+    {
+      "category": "Q-Switched Nd:YAG Laser",
+      "nubway": {
+        "model": "QL VII",
+        "price": 32506,
+        "currency": "ILS",
+        "positioning": "Entry-level laser treatment"
+      },
+      "davidov": {
+        "model": "QS-Pro 2024",
+        "recommended_price": 48000,
+        "positioning": "Enhanced precision with local support",
+        "advantage": "48% premium for better technology and service",
+        "financing": "24 months for easy adoption"
+      }
+    },
+    {
+      "category": "Hydrafacial System",
+      "nubway": {
+        "model": "VCSI",
+        "price": 32379,
+        "currency": "ILS",
+        "note": "Prices exclude VAT"
+      },
+      "davidov": {
+        "model": "HF-Advanced 2024",
+        "recommended_price": 42000,
+        "positioning": "Premium hydrafacial with advanced features",
+        "advantage": "30% premium for enhanced capabilities",
+        "financing": "18 months for quick ROI"
+      }
+    }
+  ],
+
+  "davidov_competitive_advantages": {
+    "pricing_strategy": {
+      "transparency": "Full upfront pricing vs Nubway's hidden/contact pricing",
+      "positioning": "Premium technology with justified value proposition",
+      "premium_range": "30-70% above Nubway disclosed prices",
+      "value_justification": "Superior technology, local service, comprehensive training"
+    },
+    
+    "financing_superiority": {
+      "extended_terms": "Up to 72 months vs Nubway's 60 months",
+      "flexible_options": "0% interest for first 12 months on premium devices", 
+      "trade_in_credits": "Up to ₪50,000 trade-in value",
+      "sme_friendly": "Shorter terms for smaller practices (18-36 months)"
+    },
+    
+    "service_differentiation": {
+      "same_day_service": "Tel Aviv area same-day service vs generic 24/7 claims",
+      "hebrew_interface": "All devices with Hebrew language interface",
+      "local_training": "On-site Hebrew training vs international generic training",
+      "warranty_superior": "Extended warranty options vs standard 5-year"
+    }
+  },
+
+  "market_positioning_strategy": {
+    "target_segments": {
+      "premium_clinics": "Position as technology leaders - 50-70% premium",
+      "established_practices": "Value-conscious premium positioning - 30-40% premium", 
+      "growing_clinics": "Financing-focused competitive pricing - 20-30% premium",
+      "new_practices": "Entry-level premium with growth path - 15-25% premium"
+    },
+    
+    "pricing_psychology": {
+      "transparency_advantage": "Build trust through upfront pricing",
+      "premium_justification": "Superior technology and service warrant higher prices",
+      "financing_accessibility": "Remove price barriers through superior financing",
+      "local_value": "Israeli market specialization commands premium"
+    }
+  },
+
+  "promotional_strategy": {
+    "launch_offers": {
+      "early_adopter": "15% discount for first 50 customers (matching Nubway discounts)",
+      "transparency_bonus": "Free extended warranty for choosing transparent pricing",
+      "trade_in_superior": "25% better trade-in values than Nubway",
+      "financing_promo": "First year 0% interest on premium devices"
+    },
+    
+    "competitive_messaging": {
+      "price_transparency": "See exact pricing now - no waiting for consultations",
+      "value_superiority": "Premium technology with transparent pricing",
+      "local_advantage": "Israeli expertise with international quality",
+      "service_promise": "Same-day service guarantee vs generic promises"
+    }
+  },
+
+  "roi_projections": {
+    "clinic_revenue_impact": {
+      "diode_laser": {
+        "average_session_price": 400,
+        "sessions_per_month": 120,
+        "monthly_revenue": 48000,
+        "payback_months": 4.1,
+        "advantage": "vs Nubway 6+ months payback"
+      },
+      "co2_fractional": {
+        "average_session_price": 1000,
+        "sessions_per_month": 50,
+        "monthly_revenue": 50000,
+        "payback_months": 4.9,
+        "advantage": "Higher session pricing due to premium positioning"
+      }
+    }
+  },
+
+  "implementation_recommendations": {
+    "immediate_actions": [
+      "Update all device pricing to premium levels with transparent display",
+      "Create financing calculator showing superior terms vs Nubway",
+      "Develop comparison charts highlighting technology advantages",
+      "Launch 'Pricing Transparency' campaign against hidden pricing"
+    ],
+    
+    "messaging_focus": [
+      "No hidden pricing - see exact costs immediately",
+      "Premium technology with justified value",
+      "Superior financing terms and trade-in values", 
+      "Local Israeli service vs international generic support"
+    ]
+  }
+}

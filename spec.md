@@ -1,117 +1,178 @@
+# Feature Specification: Davidov Beauty & Care Landing Page
 
-🌱 Spec Kit
-Build high-quality software faster.
-An effort to allow organizations to focus on product scenarios rather than writing undifferentiated code with the help of Spec-Driven Development.
+## Overview
 
-Release
+Build a high-conversion landing page for Davidov beauty & care, targeting clinic/spa/dermatology owners in Israel. The page will showcase clinic-grade beauty equipment sales with factory-direct reliability, local support, and compelling offers to drive conversions.
 
-Table of Contents
-🤔 What is Spec-Driven Development?
-⚡ Get started
-📚 Core philosophy
-🌟 Development phases
-🎯 Experimental goals
-🔧 Prerequisites
-📖 Learn more
-📋 Detailed process
-🔍 Troubleshooting
-👥 Maintainers
-💬 Support
-🙏 Acknowledgements
-📄 License
-🤔 What is Spec-Driven Development?
-Spec-Driven Development flips the script on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.
+## Business Context
 
-⚡ Get started
-1. Install Specify
-Initialize your project depending on the coding agent you're using:
+**Target Audience**: Clinic, spa, and dermatology practice owners in Israel
+**Primary Goal**: Generate high-quality leads for beauty equipment sales
+**Key Value Propositions**: 
+- Launch-price offers and flexible payment options
+- Factory-direct reliability and quality
+- Tel Aviv showroom for hands-on experience
+- 24/7 local support and service
 
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
-2. Create the spec
-Use the /specify command to describe what you want to build. Focus on the what and why, not the tech stack.
+## User Journeys
 
-/specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
-3. Create a technical implementation plan
-Use the /plan command to provide your tech stack and architecture choices.
+### 1. Product-Led Journey
+- User discovers flagship devices (Diode Laser, CO₂ Fractional, HIFU, Skin Analyzer)
+- Reads device benefits and technical specifications
+- Takes action: Request quote or book demo
 
-/plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
-4. Break down and implement
-Use /tasks to create an actionable task list, then ask your agent to implement the feature.
+### 2. Trust-Led Journey  
+- User views company credentials (factory size, export experience, service team)
+- Reads customer testimonials and success stories
+- Takes action: Schedule showroom visit in Tel Aviv
 
-For detailed step-by-step instructions, see our comprehensive guide.
+### 3. Offer-Led Journey
+- User discovers trade-in programs, flexible payments, or limited-time launch pricing
+- Evaluates financial incentives and urgency
+- Takes action: Submit lead form for immediate follow-up
 
-📚 Core philosophy
-Spec-Driven Development is a structured process that emphasizes:
+## Content Sections (Single Page Layout)
 
-Intent-driven development where specifications define the "what" before the "how"
-Rich specification creation using guardrails and organizational principles
-Multi-step refinement rather than one-shot code generation from prompts
-Heavy reliance on advanced AI model capabilities for specification interpretation
-🌟 Development phases
-Phase	Focus	Key Activities
-0-to-1 Development ("Greenfield")	Generate from scratch	
-Start with high-level requirements
-Generate specifications
-Plan implementation steps
-Build production-ready applications
-Creative Exploration	Parallel implementations	
-Explore diverse solutions
-Support multiple technology stacks & architectures
-Experiment with UX patterns
-Iterative Enhancement ("Brownfield")	Brownfield modernization	
-Add features iteratively
-Modernize legacy systems
-Adapt processes
-🎯 Experimental goals
-Our research and experimentation focus on:
+### Hero Section
+- **Bold benefit headline**: Emphasizing faster ROI and improved patient experience
+- **Supporting subheadline**: Highlighting clinic reputation enhancement
+- **3 hero bullets**: Key differentiators (factory-direct, local support, proven results)
+- **Trust badges**: Certifications, awards, industry recognition
+- **Primary CTA**: "Get Your Quote" button
 
-Technology independence
-Create applications using diverse technology stacks
-Validate the hypothesis that Spec-Driven Development is a process not tied to specific technologies, programming languages, or frameworks
-Enterprise constraints
-Demonstrate mission-critical application development
-Incorporate organizational constraints (cloud providers, tech stacks, engineering practices)
-Support enterprise design systems and compliance requirements
-User-centric development
-Build applications for different user cohorts and preferences
-Support various development approaches (from vibe-coding to AI-native development)
-Creative & iterative processes
-Validate the concept of parallel implementation exploration
-Provide robust iterative feature development workflows
-Extend processes to handle upgrades and modernization tasks
-🔧 Prerequisites
-Linux/macOS (or WSL2 on Windows)
-AI coding agent: Claude Code, GitHub Copilot, or Gemini CLI
-uv for package management
-Python 3.11+
-Git
-📖 Learn more
-Complete Spec-Driven Development Methodology - Deep dive into the full process
-Detailed Walkthrough - Step-by-step implementation guide
-📋 Detailed process
-Click to expand the detailed step-by-step walkthrough
-🔍 Troubleshooting
-Git Credential Manager on Linux
-If you're having issues with Git authentication on Linux, you can install Git Credential Manager:
+### Featured Devices Grid
+Each device card includes:
+- **High-quality product image**
+- **3 benefit bullets**: Patient outcomes, revenue potential, ease of use
+- **Price teaser**: "Starting from..." or "Special launch price"
+- **Device-specific CTA**: "Learn More" or "Request Quote"
 
-#!/usr/bin/env bash
-set -e
-echo "Downloading Git Credential Manager v2.6.1..."
-wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb
-echo "Installing Git Credential Manager..."
-sudo dpkg -i gcm-linux_amd64.2.6.1.deb
-echo "Configuring Git to use GCM..."
-git config --global credential.helper manager
-echo "Cleaning up..."
-rm gcm-linux_amd64.2.6.1.deb
-👥 Maintainers
-Den Delimarsky (@localden)
-John Lam (@jflam)
-💬 Support
-For support, please open a GitHub issue. We welcome bug reports, feature requests, and questions about using Spec-Driven Development.
+**Devices to feature**:
+- Diode Laser Hair Removal System
+- CO₂ Fractional Resurfacing Laser
+- HIFU (High-Intensity Focused Ultrasound)
+- Advanced Skin Analyzer
 
-🙏 Acknowledgements
-This project is heavily influenced by and based on the work and research of John Lam.
+### Why Choose Us (Credibility Section)
+- **Factory-direct**: No middlemen, better prices, direct quality control
+- **10+ years export experience**: Proven international track record
+- **Tel Aviv showroom**: Local presence, hands-on demonstrations
+- **24/7 support**: Local service engineers, immediate response
 
-📄 License
-This project is licensed under the terms of the MIT open source license. Please refer to the LICENSE file for the full terms.
+### Services Section
+- **Consultation**: Free needs assessment and equipment recommendation
+- **Training**: On-site and virtual training programs included
+- **Maintenance & spare parts**: Comprehensive service packages
+- **Installation**: Professional setup and commissioning
+
+### Promotions Section
+- **Launch pricing**: Limited-time introductory offers
+- **Trade-in programs**: Credit for existing equipment
+- **Flexible payment options**: Leasing, financing, payment plans
+- **Delivery bonus**: Free installation or extended warranty for early adopters
+
+### Social Proof Section
+- **Customer testimonials**: Success stories from Israeli clinics
+- **Performance statistics**: "Installed within 48 hours", "Chosen by X clinics"
+- **Before/after results**: Patient outcome photos (with permission)
+- **Clinic logos**: Recognizable local practices using the equipment
+
+### FAQ Section
+**Key questions to address**:
+- Service and repair coverage
+- Delivery timeframes
+- Training inclusion and duration
+- Warranty terms
+- Financing options
+- Trade-in evaluation process
+
+### Founder's Note
+- **Personal touch**: Local ownership and commitment
+- **Trustworthiness**: Face behind the brand
+- **Local understanding**: Knowledge of Israeli market needs
+- **Accessibility**: Direct contact information
+
+### Lead Capture
+- **Primary form**: Short form with essential fields (name, clinic, phone, equipment interest)
+- **Secondary contact**: WhatsApp button and phone number
+- **CTA options**: "Get Your Quote" and "Schedule a Demo"
+
+## Technical Requirements
+
+### Performance
+- **Mobile-first design**: Responsive layout optimized for mobile devices
+- **Fast loading**: Optimized images, minimal JavaScript
+- **Quick lead submission**: Streamlined form process
+
+### Tracking & Analytics
+- **CTA tracking**: All buttons and forms trackable via Google Analytics/Facebook Pixel
+- **Conversion optimization**: A/B testing capability for headlines and CTAs
+- **Lead attribution**: Source tracking for different user journeys
+
+### SEO Requirements
+- **Target keywords**: 
+  - "beauty equipment Israel"
+  - "laser hair removal machine"
+  - "CO2 fractional laser"
+  - "HIFU treatment equipment"
+  - "skin analyzer device"
+  - "clinic equipment financing"
+- **Meta optimization**: Title tags, descriptions, schema markup
+- **Content optimization**: Keyword-rich headings and body content
+
+## Success Criteria
+
+### Conversion Metrics
+- **Lead generation**: Minimum 3% conversion rate from traffic to leads
+- **Form completion**: <30 second completion time
+- **Mobile experience**: 90%+ mobile usability score
+
+### Content Quality
+- **Clarity**: Clear, skimmable copy with scannable bullet points
+- **Urgency**: Time-sensitive offers without being pushy
+- **Trust**: Credibility indicators throughout the page
+
+### Technical Performance
+- **Page speed**: <3 second load time
+- **Mobile optimization**: 95+ Google PageSpeed mobile score
+- **SEO readiness**: All on-page SEO elements implemented
+
+## Implementation Notes
+
+### Content Strategy
+- Focus on outcomes (ROI, patient satisfaction, clinic reputation)
+- Emphasize local presence and support
+- Balance urgency with professionalism
+- Use clinical language appropriate for medical professionals
+
+### Design Considerations
+- Clean, professional medical/clinical aesthetic
+- High-quality imagery of equipment and results
+- Clear visual hierarchy guiding users through conversion funnels
+- Trust-building elements prominently displayed
+
+### Technical Considerations
+- Form validation and error handling
+- Integration with CRM/lead management system
+- Analytics and tracking implementation
+- Responsive design testing across devices
+
+## Delivery Expectations
+
+1. **Single-page website** with all sections integrated seamlessly
+2. **Mobile-responsive design** optimized for all devices
+3. **Fast-loading performance** with optimized assets
+4. **Lead capture functionality** with backend form handling
+5. **Analytics integration** for conversion tracking
+6. **SEO optimization** for target keywords
+7. **Cross-browser compatibility** testing completed
+
+## Next Steps
+
+Upon approval of this specification:
+1. Create wireframes and mockups for visual approval
+2. Set up development environment and project structure
+3. Begin implementation of HTML/CSS/JavaScript
+4. Integrate lead capture and analytics systems
+5. Conduct testing and optimization
+6. Deploy to production environment

@@ -1,0 +1,256 @@
+{
+  "devices": [
+    {
+      "id": "diode-laser-hair-removal",
+      "name": "Diode Laser Hair Removal System",
+      "slug": "diode-laser-hair-removal",
+      "category": "laser_hair_removal",
+      "manufacturer": "Davidov",
+      "model": "DL-Pro 2024",
+      "shortDescription": "Professional diode laser system for all skin types with 99% hair reduction effectiveness",
+      "longDescription": "Our flagship diode laser hair removal system combines cutting-edge technology with user-friendly operation. Unlike competitors who hide pricing, we offer transparent costs and comprehensive support. Perfect for clinics of all sizes looking to offer premium hair removal services.",
+      "benefits": [
+        "99% hair reduction in 6-8 sessions across all skin types",
+        "Virtually painless treatment with integrated cooling system",
+        "Fast treatment times - full legs in under 45 minutes",
+        "Suitable for all skin types including tanned skin",
+        "Professional training and ongoing support included"
+      ],
+      "features": [
+        "Multi-spot size handpieces (9mm, 12mm, 20mm)",
+        "Advanced cooling system (-10°C contact cooling)",
+        "High-speed repetition rate up to 10Hz",
+        "Real-time skin temperature monitoring",
+        "Hebrew language interface"
+      ],
+      "specifications": {
+        "laser_type": "810nm + 940nm + 1064nm Triple Wavelength",
+        "power_output": "Up to 3000W",
+        "spot_sizes": ["9mm", "12mm", "20mm"],
+        "repetition_rate": "Up to 10Hz",
+        "cooling": "Contact cooling -10°C",
+        "display": "15 inch touch screen",
+        "power_supply": "220V, 50/60Hz"
+      },
+      "pricing": {
+        "basePrice": {
+          "amount": 180000,
+          "currency": "ILS",
+          "displayText": "החל מ-₪180,000"
+        },
+        "packages": [
+          {
+            "name": "Standard Package",
+            "price": 180000,
+            "included": ["Device", "3 handpieces", "Basic training", "1 year warranty"],
+            "popular": false
+          },
+          {
+            "name": "Professional Package", 
+            "price": 220000,
+            "included": ["Device", "5 handpieces", "Advanced training", "2 year warranty", "Marketing materials"],
+            "popular": true
+          },
+          {
+            "name": "Clinic Complete Package",
+            "price": 280000,
+            "included": ["Device", "All handpieces", "On-site training", "3 year warranty", "Marketing support", "Business development consultation"],
+            "popular": false
+          }
+        ],
+        "financing": {
+          "available": true,
+          "options": ["36 month lease", "60 month financing", "Trade-in credit available"]
+        },
+        "showPrice": true,
+        "priceOnRequest": false
+      },
+      "images": {
+        "main": "/images/devices/diode-laser-main.webp",
+        "gallery": ["/images/devices/diode-laser-1.webp", "/images/devices/diode-laser-2.webp"],
+        "beforeAfter": "/images/devices/diode-laser-results.webp"
+      },
+      "competitiveAdvantage": {
+        "vsNubway": "Transparent pricing vs hidden costs, local Hebrew support, faster installation",
+        "uniqueFeatures": ["Same-day service", "Hebrew interface", "SME-friendly packages"]
+      },
+      "isActive": true,
+      "isFeatured": true,
+      "isNew": false,
+      "marketingTags": ["best-seller", "clinic-favorite", "all-skin-types"],
+      "targetAudience": ["dermatology", "aesthetics", "medical_spa"],
+      "roi": {
+        "averageSessionPrice": 300,
+        "sessionsPerMonth": 150,
+        "monthlyRevenue": 45000,
+        "paybackMonths": 6
+      }
+    },
+    {
+      "id": "co2-fractional-laser",
+      "name": "CO₂ Fractional Resurfacing Laser",
+      "slug": "co2-fractional-laser", 
+      "category": "skin_resurfacing",
+      "manufacturer": "Davidov",
+      "model": "CF-Elite 2024",
+      "shortDescription": "Advanced CO₂ fractional laser for skin resurfacing, scar treatment, and anti-aging procedures",
+      "longDescription": "Professional-grade CO₂ fractional laser system that delivers exceptional results for skin resurfacing, acne scar treatment, and anti-aging procedures. Unlike competitors with hidden pricing, we provide transparent costs and comprehensive training for practices of all sizes.",
+      "benefits": [
+        "Dramatic skin resurfacing results in single session",
+        "Effective for acne scars, wrinkles, and sun damage",
+        "Minimal downtime with advanced fractional technology", 
+        "Suitable for face and body treatments",
+        "Complete training program included with purchase"
+      ],
+      "features": [
+        "Adjustable fractional density and depth control",
+        "Multiple treatment modes (normal, pulse, CW)",
+        "Real-time energy monitoring system", 
+        "Ergonomic lightweight handpiece",
+        "Pre-programmed treatment protocols"
+      ],
+      "specifications": {
+        "laser_type": "10,600nm CO₂ Fractional",
+        "power_output": "Up to 60W",
+        "pulse_duration": "0.1-2.0ms adjustable",
+        "spot_size": "0.12mm fractional spots",
+        "pattern_size": "15mm x 15mm treatment area",
+        "display": "12 inch color touch screen"
+      },
+      "pricing": {
+        "basePrice": {
+          "amount": 220000,
+          "currency": "ILS", 
+          "displayText": "החל מ-₪220,000"
+        },
+        "packages": [
+          {
+            "name": "Professional Package",
+            "price": 220000,
+            "included": ["Device", "Standard handpiece", "Professional training", "1 year warranty"],
+            "popular": false
+          },
+          {
+            "name": "Advanced Package",
+            "price": 270000, 
+            "included": ["Device", "2 handpieces", "Advanced training", "2 year warranty", "Marketing support"],
+            "popular": true
+          }
+        ],
+        "showPrice": true
+      },
+      "competitiveAdvantage": {
+        "vsNubway": "Upfront pricing transparency, local training support, faster service response"
+      },
+      "isActive": true,
+      "isFeatured": true,
+      "targetAudience": ["dermatology", "plastic_surgery", "aesthetics"],
+      "roi": {
+        "averageSessionPrice": 800,
+        "sessionsPerMonth": 60,
+        "monthlyRevenue": 48000,
+        "paybackMonths": 5
+      }
+    },
+    {
+      "id": "hifu-anti-aging",
+      "name": "HIFU Anti-Aging System", 
+      "slug": "hifu-anti-aging",
+      "category": "anti_aging",
+      "manufacturer": "Davidov",
+      "model": "HF-Pro 2024",
+      "shortDescription": "High-Intensity Focused Ultrasound system for non-invasive face and body lifting treatments",
+      "longDescription": "Advanced HIFU technology for non-surgical face lifting, skin tightening, and body contouring. Perfect for clinics wanting to offer premium anti-aging treatments without surgery. Transparent pricing and comprehensive support included.",
+      "benefits": [
+        "Non-invasive face and neck lifting results",
+        "Immediate skin tightening with continued improvement", 
+        "No downtime required for patients",
+        "Suitable for all ages and skin types",
+        "High patient satisfaction and repeat bookings"
+      ],
+      "features": [
+        "Multiple depth cartridges (1.5mm, 3.0mm, 4.5mm)",
+        "Real-time ultrasound imaging guidance",
+        "Precision temperature control system",
+        "Fast treatment protocols (30-60 minutes)",
+        "User-friendly interface with preset programs"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 160000,
+          "currency": "ILS",
+          "displayText": "החל מ-₪160,000"
+        },
+        "showPrice": true
+      },
+      "competitiveAdvantage": {
+        "vsNubway": "SME-accessible pricing, transparent costs, local Hebrew support"
+      },
+      "isActive": true,
+      "isFeatured": true,
+      "targetAudience": ["aesthetics", "medical_spa", "dermatology"],
+      "roi": {
+        "averageSessionPrice": 1200,
+        "sessionsPerMonth": 40,
+        "monthlyRevenue": 48000,
+        "paybackMonths": 4
+      }
+    },
+    {
+      "id": "professional-skin-analyzer",
+      "name": "Professional Skin Analyzer",
+      "slug": "professional-skin-analyzer", 
+      "category": "skin_analysis",
+      "manufacturer": "Davidov",
+      "model": "SA-Advanced 2024",
+      "shortDescription": "Advanced skin analysis system for treatment planning and client consultation enhancement",
+      "longDescription": "Professional skin analysis system that provides detailed skin assessment for treatment planning and client education. Perfect entry point for smaller practices to add professional credibility and enhance client consultations.",
+      "benefits": [
+        "Builds immediate client trust and credibility",
+        "Enhances treatment planning and results tracking",
+        "Professional consultation reports in Hebrew/English",
+        "Perfect for practices of all sizes",
+        "Quick ROI through enhanced service value"
+      ],
+      "features": [
+        "High-resolution skin imaging with UV analysis",
+        "Wrinkle, pigmentation, and pore analysis",
+        "Before/after comparison tracking",
+        "Professional reporting system",
+        "Compact design suitable for any clinic"
+      ],
+      "pricing": {
+        "basePrice": {
+          "amount": 45000,
+          "currency": "ILS",
+          "displayText": "החל מ-₪45,000"
+        },
+        "showPrice": true
+      },
+      "competitiveAdvantage": {
+        "vsNubway": "Perfect for SME practices, transparent entry-level pricing"
+      },
+      "isActive": true,
+      "isFeatured": true,
+      "targetAudience": ["aesthetics", "spa", "dermatology"],
+      "roi": {
+        "averageSessionPrice": 150,
+        "sessionsPerMonth": 100,
+        "monthlyRevenue": 15000,
+        "paybackMonths": 3
+      }
+    }
+  ],
+  "lastUpdated": "2024-01-09T12:00:00Z",
+  "competitiveIntelligence": {
+    "primaryCompetitor": "Nubway",
+    "keyDifferentiators": [
+      "Transparent pricing vs hidden costs",
+      "SME-friendly packages vs large clinic focus", 
+      "Local Hebrew support vs international call center",
+      "Same-day service vs generic 24/7 claims"
+    ],
+    "pricingStrategy": "transparency_advantage",
+    "targetMarket": "all_practice_sizes"
+  }
+}
