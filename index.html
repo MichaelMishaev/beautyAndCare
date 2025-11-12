@@ -4,7 +4,7 @@
 
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 		<meta name="description" content="Idiology is a versatile and modern multipurpose HTML5 template designed for creative agencies, corporate businesses, startups, and portfolios. Built with clean code, responsive design, and SEO-friendly structure, it's perfect for showcasing your brand and services with style.">
 		<meta name="keywords" content="Idiology HTML5 template, creative agency template, corporate website template, multipurpose HTML template, responsive business template, startup website design, portfolio HTML5 template, SEO-friendly template, modern web design, bootstrap HTML template">
 		<meta name="author" content="DesignsNinja">
@@ -13,11 +13,8 @@
 		<title data-i18n="page.title">Davidov Beauty Care - Professional Equipment for Clinics</title>	
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/logo.png" type="image/svg+xml">
+		<link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 		<link rel="apple-touch-icon" href="assets/images/logo.png">
-
-		<!-- Viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 		<!-- All CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -36,6 +33,8 @@
 		<link rel="stylesheet" href="assets/css/logo-enhancements.css">
 		<link rel="stylesheet" href="assets/css/typography-system.css">
 		<link rel="stylesheet" href="assets/css/font-overrides.css">
+		<link rel="stylesheet" href="assets/css/header-ux-fixes.css">
+		<link rel="stylesheet" href="assets/css/professional-cards.css">
 
 		<!-- i18n Script - Load before body to prevent FOUC -->
 		<script src="assets/js/i18n.js"></script>
@@ -53,112 +52,64 @@
 
 		<div class="body">
 
-			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-				<div class="medical-header-accent"></div>
-				<div class="header-body border-top-0 header-body-bottom-border">
+			<header id="header" class="header-transparent header-static">
+				<div class="header-body border-top-0">
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html" aria-label="Davidov Beauty Care - Professional Medical Equipment">
-											<div class="medical-quality-badge"></div>
+											<img src="assets/images/logo.png" alt="Davidov Beauty Care - Professional Medical Equipment" class="img-fluid" style="max-height: 60px;">
 										</a>
 									</div>
 								</div>
 							</div>
 							<div class="header-column justify-content-end">
-								<div class="header-row">
-									<div class="header-nav header-nav-links order-2 order-lg-1">
-										<div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-											<nav class="collapse">
-												<ul class="nav nav-pills" id="mainNav">
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="index.html" data-i18n="nav.home">Home</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="index.html" data-i18n="nav.digitalAgency">Digital Agency</a></li>
-															<li><a class="dropdown-item" href="creative-agency.html" data-i18n="nav.creativeAgency">Creative Agency</a></li>
-															<li><a class="dropdown-item" href="design-studio.html" data-i18n="nav.designStudio">Design Studio</a></li>
-															<li><a class="dropdown-item" href="startup-agency.html" data-i18n="nav.startupAgency">Startup Agency</a></li>
-															<li><a class="dropdown-item" href="digital-marketing.html" data-i18n="nav.digitalMarketing">Digital Marketing</a></li>
-															<li><a class="dropdown-item" href="modern-agency.html" data-i18n="nav.modernAgency">Modern Agency</a></li>
-															<li><a class="dropdown-item" href="creative-studio.html" data-i18n="nav.creativeStudio">Creative Studio</a></li>
-															<li><a class="dropdown-item" href="personal-portfolio.html" data-i18n="nav.personalPortfolio">Personal Portfolio</a></li>
-															<li><a class="dropdown-item" href="photography.html" data-i18n="nav.photography">Photography</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#" data-i18n="nav.pages">Pages</a>
-														<ul class="dropdown-menu">
-															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#" data-i18n="nav.aboutPages">About Pages <i class="fas fa-chevron-down"></i></a>
-																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="about-us.html" data-i18n="nav.about">About</a></li>
-																	<li><a class="dropdown-item" href="about-us-2.html" data-i18n="nav.about02">About 02</a></li>
-																</ul>
-															</li>
-															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#" data-i18n="nav.servicesPages">Services Pages <i class="fas fa-chevron-down"></i></a>
-																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="services.html" data-i18n="nav.services">Services</a></li>
-																	<li><a class="dropdown-item" href="services-details.html" data-i18n="nav.servicesDetails">Services Details</a></li>
-																</ul>
-															</li>
-															<li><a class="dropdown-item" href="team.html" data-i18n="nav.team">Our Team</a></li>
-															<li><a class="dropdown-item" href="team-details.html" data-i18n="nav.teamDetails">Team Details</a></li>
-															<li><a class="dropdown-item" href="pricing.html" data-i18n="nav.pricing">Pricing Table</a></li>
-															<li><a class="dropdown-item" href="faq.html" data-i18n="nav.faq">FAQs Page</a></li>
-															<li><a class="dropdown-item" href="404-error.html" data-i18n="nav.errorPage">404 Error Page</a></li>
-														</ul>
-													</li>
-													
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="blogs.html" data-i18n="nav.blogs">Blogs</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="blogs.html" data-i18n="nav.blogs">Blogs</a></li>
-															<li><a class="dropdown-item" href="blog-details.html" data-i18n="nav.blogDetails">Blog Details</a></li>
-														</ul>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="project-digital.html" data-i18n="nav.projects">Projects</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="project-digital.html" data-i18n="nav.creativeAgency">Creative Agency</a></li>
-															<li><a class="dropdown-item" href="project-digital.html" data-i18n="nav.digitalAgency">Digital Agency</a></li>
-															<li><a class="dropdown-item" href="project-studio.html" data-i18n="nav.digitalStudio">Digital Studio</a></li>
-															<li><a class="dropdown-item" href="project-details.html" data-i18n="nav.projectDetails">Project Details</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="contact.html" data-i18n="nav.contact">Contact</a>
-													</li>
-												</ul>
-											</nav>
-										</div>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-											<i class="fas fa-bars"></i>
-										</button>
+							<div class="header-row d-flex align-items-center">
+								<!-- Navigation Menu & Hamburger - Always First -->
+								<div class="header-nav header-nav-links order-1 ms-auto ms-lg-0">
+									<div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+										<nav class="collapse navbar-collapse show" id="navbarNav">
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="index.html" data-i18n="nav.home">Home</a>
+												</li>
+												<li>
+													<a href="catalog-enhanced.html" data-i18n="nav.catalog">Catalog</a>
+												</li>
+												<li>
+													<a href="contact.html" data-i18n="nav.contact">Contact</a>
+												</li>
+											</ul>
+										</nav>
 									</div>
-									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<!-- Language Switcher Integration -->
-										<div class="header-nav-feature language-switcher-header d-inline-flex">
-											<div class="language-switcher-menu"></div>
-										</div>
-										
-										<div class="header-nav-feature header-nav-features-search d-inline-flex">
-											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
-											<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
-												<form role="search" action="catalog.html" method="get">
-													<div class="simple-search input-group">
-														<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search equipment, treatments..." data-i18n-placeholder="search.placeholder">
-														<button class="btn btn-medical" type="submit" aria-label="Search Equipment">
-															<i class="fas fa-search header-nav-top-icon"></i>
-														</button>
-													</div>
-												</form>
-											</div>
+									<button class="btn header-btn-collapse-nav d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle Navigation">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+
+								<!-- Language Switcher & Search - After Menu -->
+								<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-2 d-flex align-items-center">
+									<!-- Language Switcher -->
+									<div class="header-nav-feature language-switcher-header d-inline-flex me-2">
+										<div class="language-switcher-menu"></div>
+									</div>
+
+									<!-- Search -->
+									<div class="header-nav-feature header-nav-features-search d-inline-flex">
+										<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search">
+											<i class="fas fa-search header-nav-top-icon"></i>
+										</a>
+										<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
+											<form role="search" action="catalog-enhanced.html" method="get">
+												<div class="simple-search input-group">
+													<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search equipment, treatments..." data-i18n-placeholder="search.placeholder">
+													<button class="btn btn-medical" type="submit" aria-label="Search Equipment">
+														<i class="fas fa-search header-nav-top-icon"></i>
+													</button>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -169,38 +120,39 @@
 			</header>
 
 			<div role="main" class="main">
-				<section id="home" class="p-relative border-0 bg-light overflow-hidden m-0">
+				<section id="home" class="p-relative border-0 bg-light overflow-hidden m-0" style="background-image: url('assets/images/cards/clinic-professional-card.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 					<div class="container p-relative z-index-3 banner-style-one">
 						<div class="row min-vh-100 align-items-center pd-t-100 pd-b-100">
 							<div class="col-lg-8 text-center text-lg-start">
 								<div class="overflow-hidden mb-1">
-									<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-										<h1 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="hero.subtitle">Professional Beauty Equipment</h1>
-									</div>
+									<h1 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="hero.subtitle">Professional Beauty Equipment</h1>
 								</div>
-								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
+								<div class="overflow-hidden">
 									<h1 class="text-color-dark font-weight-bold custom-hero-font-1 pb-2 mb-4" data-i18n="hero.title">Advanced Technology for Your Clinic</h1>
 								</div>
-								<div class="main-content"><p class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850" data-i18n="hero.description">Transform your clinic with professional beauty equipment. Transparent pricing, local support, and technology that grows with your business.</p></div>
+								<div class="main-content">
+									<p data-i18n="hero.description">Transform your clinic with professional beauty equipment. Transparent pricing, local support, and technology that grows with your business.</p>
+								</div>
 							</div>
-							<div class="col-lg-3 offset-lg-1">
+							<div class="col-lg-4 offset-lg-0">
 								<div class="banner-style-one-right">
-									<div class="dn-top">
-										<ul class="list-style-two">
-											<li data-i18n="heroStats.marketingSpend">$10M+ Spend in marketing</li>
-											<li data-i18n="heroStats.ambassadorPartner">1st ambassador partner for marketing in USA</li>
-											<li data-i18n="heroStats.passionatePartner">10+ passionate partner</li>
-										</ul>
-									</div>
-									<div class="dn-user-card">
-										<div class="dn-thumb">
-											<img src="assets/images/client-testimonial-1.jpg" alt="Satisfied Clinic Owner">
-											<img src="assets/images/client-testimonial-1.jpg" alt="Happy Beauty Therapist">
-											<img src="assets/images/client-testimonial-1.jpg" alt="Professional Client">
-											<a href="services.html" data-discover="true"><i class="fas fa-plus"></i></a>
+									<!-- Professional Cards Grid -->
+									<div class="row g-3">
+										<!-- Clinic Card -->
+										<div class="col-12">
+											<div class="professional-card clinic-card position-relative overflow-hidden rounded-4 shadow-lg">
+												<span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">PROFESSIONAL</span>
+												<span class="badge bg-danger position-absolute bottom-0 end-0 m-3 px-2 py-1 small">4K READY</span>
+											</div>
 										</div>
-										<div class="dn-info">
-											<p data-i18n="hero.clients">We have 500+ satisfied clinics in Israel</p>
+
+										<!-- Device Card -->
+										<div class="col-12">
+											<div class="professional-card device-card position-relative overflow-hidden rounded-4 shadow-lg">
+												<span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">PROFESSIONAL</span>
+												<img src="assets/images/cards/device-professional-card.png" alt="Professional Beauty Device" class="w-100 h-100 object-fit-cover" style="height: 300px;">
+												<span class="badge bg-danger position-absolute bottom-0 end-0 m-3 px-2 py-1 small">4K READY</span>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -856,56 +808,29 @@
 
 		<!-- JS -->
 		<script src="assets/js/plugins.min.js"></script>
-		<script src="assets/js/gsap.min.js"></script>
-		<script src="assets/js/ScrollTrigger.min.js"></script>
 		<script src="assets/js/master.js"></script>
-		<script src="assets/js/master.init.js"></script>
-		<script src="assets/js/digital-agency.js"></script>
-		<script src="assets/js/animations.js"></script>
-		
-		<!-- API Services -->
-		<script src="services/imageGeneration.js"></script>
-		<script src="services/beautyImageUpgrade.js"></script>
-		<script src="services/beautyImageGenerator.js"></script>
-		<script src="services/imageAutoLoader.js"></script>
-		<script src="services/nanoBanano.js"></script>
-		
-		<!-- Initialize Payment Button Example -->
+
+		<!-- Initialize with static header -->
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
-				// Initialize crypto payment for equipment (disabled WebSocket for local dev)
-				if (window.nanoBananoPayment) {
-					window.nanoBananoPayment.init('nano').then(address => {
-						console.log('Payment system ready (offline mode):', address);
-					}).catch(err => {
-						console.log('Payment system running in demo mode');
-					});
+				// Disable header sticky/shrink effects
+				const header = document.getElementById('header');
+				if (header) {
+					// Remove all dynamic data attributes
+					header.removeAttribute('data-plugin-options');
+					header.classList.remove('header-effect-shrink');
+
+					// Force static positioning
+					header.style.position = 'relative';
+					header.style.background = 'white';
 				}
-				
-				// Auto-generate missing images (disabled for local dev)
-				if (window.imageGenerator) {
-					console.log('Image generation service ready (demo mode)');
-					// Uncomment to enable auto-generation
-					// window.imageGenerator.replaceBrokenImages();
-				}
-				
-				// Initialize professional beauty image upgrade
-				if (window.beautyImageUpgrade) {
-					console.log('Beauty Image Upgrade Service available');
-					// Enable image upgrade service
-					window.beautyImageUpgrade.init();
-				}
-				
-				// Initialize comprehensive beauty image generator
-				if (window.beautyImageGenerator) {
-					console.log('Beauty Image Generator Service available');
-					// Auto-replace missing images
-					window.beautyImageGenerator.replaceBrokenImages();
-				}
-				
-				// i18n is auto-initialized with embedded translations
+
+				console.log('Static header initialized - no dynamic effects');
 				console.log('i18n ready with language:', window.i18n ? window.i18n.getCurrentLanguage() : 'en');
 			});
 		</script>
 	</body>
 </html>
+
+
+
