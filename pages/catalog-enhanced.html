@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Davidov Beauty & Care - קטלוג ציוד רפואי-אסתטי מתקדם עם פירוט מלא על כל מכשיר">
+    <meta name="keywords" content="ציוד רפואי אסתטי, מכשירי לייזר, קטלוג מוצרים, ציוד קליני מקצועי">
+    <meta name="author" content="Davidov Beauty & Care">
+
+    <title>קטלוג מוצרים מתקדם - Davidov Beauty & Care</title>
+
+    <!--Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts - Assistant (Hebrew-optimized) -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GLightbox for image galleries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Enhanced Catalog Styles -->
+    <link rel="stylesheet" href="assets/css/catalog-enhanced.css">
+</head>
+<body>
+
+    <!-- Fixed Contact Buttons -->
+    <a href="https://wa.me/972123456789"
+       class="fixed-contact fixed-contact--whatsapp"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="צור קשר בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+972123456789"
+       class="fixed-contact fixed-contact--phone"
+       aria-label="התקשר אלינו">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/images/logo.png" alt="Davidov Beauty & Care" width="230" height="60">
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="ניווט ראשי">
+                <ul class="nav-menu">
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="catalog-enhanced.html" class="active">קטלוג מוצרים</a></li>
+                    <li><a href="#services">שירותים</a></li>
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__mobile-toggle" id="mobileMenuToggle" aria-label="פתח תפריט" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="תפריט מובייל">
+        <button class="mobile-menu__close" id="mobileMenuClose" aria-label="סגור תפריט">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">בית</a></li>
+            <li><a href="catalog-enhanced.html">קטלוג מוצרים</a></li>
+            <li><a href="#services">שירותים</a></li>
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__overlay">
+            <div class="container">
+                <div class="hero__content fade-in">
+                    <h1 class="hero__title">קטלוג ציוד רפואי-אסתטי</h1>
+                    <p class="hero__subtitle">בחר קטגוריה וגלה את המכשירים המקצועיים שלנו עם כל המידע והפרטים הטכניים</p>
+                    <div class="hero__cta-group">
+                        <a href="#catalog" class="btn btn--gold btn--lg smooth-scroll">צפייה בקטלוג</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Catalog Section -->
+        <section class="product-catalog" id="catalog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">קטגוריות המוצרים שלנו</h2>
+                    <p class="section-subtitle">בחר קטגוריה כדי לצפות במכשירים המתאימים</p>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="product-grid" id="productGrid">
+                    <!-- Categories will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals Section -->
+        <section class="trust-section">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="trust-card__title">אחריות מורחבת</h3>
+                        <p class="trust-card__text">עד 10 שנות אחריות על כל המכשירים</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="trust-card__title">תקינה בינלאומית</h3>
+                        <p class="trust-card__text">תקני CE, FDA, ISO ואישורי משרד הבריאות</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="trust-card__title">תמיכה מקומית</h3>
+                        <p class="trust-card__text">שירות טכני באותו יום באזור תל אביב</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <div class="trust-card__icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="trust-card__title">מחירים שקופים</h3>
+                        <p class="trust-card__text">ללא עלויות נסתרות - מה שאתה רואה זה מה שאתה משלם</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">מעוניינים במידע נוסף על המכשירים?</h2>
+                    <p class="cta-text">צוות המומחים שלנו ישמח לספק ייעוץ מקצועי ולהדגים את המכשירים</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/972123456789" class="btn btn--gold btn--lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            שלח הודעה בוואטסאפ
+                        </a>
+                        <a href="tel:+972123456789" class="btn btn--outline btn--lg">
+                            <i class="fas fa-phone"></i>
+                            התקשר עכשיו
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__column">
+                    <img src="assets/images/logo.png" alt="Davidov Beauty & Care" class="footer__logo">
+                    <p class="footer__text">ציוד רפואי-אסתטי מתקדם לקליניקות ומרכזי יופי מובילים בישראל</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">קישורים מהירים</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">בית</a></li>
+                        <li><a href="catalog-enhanced.html">קטלוג מוצרים</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="#about">אודות</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">יצירת קשר</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-phone"></i> טלפון: 03-1234567</li>
+                        <li><i class="fas fa-mobile-alt"></i> נייד: 050-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@davidov.co.il</li>
+                        <li><i class="fas fa-map-marker-alt"></i> תל אביב, ישראל</li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">עקבו אחרינו</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GLightbox for image galleries -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Catalog Categories JavaScript -->
+    <script src="assets/js/catalog-categories.js"></script>
+
+</body>
+</html>

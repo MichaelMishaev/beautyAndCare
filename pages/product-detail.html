@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרטי מוצר - Davidov Beauty & Care</title>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/catalog-enhanced.css">
+</head>
+<body>
+    <!-- Fixed Contact Buttons -->
+    <a href="https://wa.me/972123456789" class="fixed-contact fixed-contact--whatsapp" target="_blank" rel="noopener noreferrer" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+972123456789" class="fixed-contact fixed-contact--phone">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/images/logo.png" alt="Davidov Beauty & Care" width="230" height="60">
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="catalog-enhanced.html" class="active">קטלוג מוצרים</a></li>
+                    <li><a href="#services">שירותים</a></li>
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+            <button class="header__mobile-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol>
+                    <!-- Will be populated by JavaScript -->
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="product-hero__grid">
+                <div class="product-hero__image">
+                    <img id="productHeroImage" src="" alt="" loading="lazy">
+                </div>
+                <div class="product-hero__content">
+                    <div class="product-hero__category" id="productHeroCategory"></div>
+                    <h1 class="product-hero__title" id="productHeroTitle"></h1>
+                    <div class="product-hero__price" id="productHeroPrice"></div>
+                    <p class="product-hero__description" id="productDescription"></p>
+
+                    <div class="product-hero__cta">
+                        <a href="#" class="btn btn--gold btn--lg" id="whatsappBtn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            שלח הודעה בוואטסאפ
+                        </a>
+                        <a href="tel:+972123456789" class="btn btn--navy btn--lg">
+                            <i class="fas fa-phone"></i>
+                            התקשר עכשיו
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Sections -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details__grid">
+
+                <!-- Features -->
+                <div class="product-details__card">
+                    <h2 class="product-details__title">
+                        <i class="fas fa-star"></i>
+                        תכונות עיקריות
+                    </h2>
+                    <ul class="product-details__list" id="productFeatures">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+
+                <!-- Specifications -->
+                <div class="product-details__card">
+                    <h2 class="product-details__title">
+                        <i class="fas fa-cogs"></i>
+                        מפרט טכני
+                    </h2>
+                    <div class="product-details__specs" id="productSpecs">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="product-details__card">
+                    <h2 class="product-details__title">
+                        <i class="fas fa-certificate"></i>
+                        אישורים ותקנים
+                    </h2>
+                    <div class="product-details__certs" id="productCerts">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">מעוניינים במידע נוסף?</h2>
+                <p class="cta-text">צוות המומחים שלנו ישמח לספק ייעוץ מקצועי ולהדגים את המכשיר</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn--gold btn--lg" id="whatsappBtn2">
+                        <i class="fab fa-whatsapp"></i>
+                        שלח הודעה בוואטסאפ
+                    </a>
+                    <a href="tel:+972123456789" class="btn btn--outline btn--lg">
+                        <i class="fas fa-phone"></i>
+                        התקשר עכשיו
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__column">
+                    <img src="assets/images/logo.png" alt="Davidov Beauty & Care" class="footer__logo">
+                    <p class="footer__text">ציוד רפואי-אסתטי מתקדם</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">קישורים מהירים</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">בית</a></li>
+                        <li><a href="catalog-enhanced.html">קטלוג מוצרים</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">יצירת קשר</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-phone"></i> טלפון: 03-1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@davidov.co.il</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/product-detail.js"></script>
+    <script>
+        // Sync WhatsApp button
+        window.addEventListener('DOMContentLoaded', function() {
+            const whatsappBtn2 = document.getElementById('whatsappBtn2');
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            if (whatsappBtn2 && whatsappBtn) {
+                whatsappBtn2.href = whatsappBtn.href;
+            }
+        });
+    </script>
+</body>
+</html>

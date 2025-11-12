@@ -1,0 +1,18 @@
+{
+  "name": "davidov-beauty-care",
+  "version": "1.0.0",
+  "description": "Davidov Beauty & Care - Professional Medical Equipment Website",
+  "scripts": {
+    "generate-image": "node generate-why-section-image.js",
+    "help": "cat README-IMAGE-GENERATION.md"
+  },
+  "keywords": [
+    "medical",
+    "aesthetic",
+    "equipment",
+    "beauty",
+    "clinic"
+  ],
+  "author": "Davidov Beauty & Care",
+  "license": "ISC"
+}

@@ -1,0 +1,120 @@
+/**
+ * Professional Cards Styling
+ * For hero section clinic and device cards
+ */
+
+.professional-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.1) 0%, rgba(138, 43, 226, 0.1) 100%);
+}
+
+.professional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.professional-card img {
+    transition: transform 0.5s ease;
+}
+
+.professional-card:hover img {
+    transform: scale(1.05);
+}
+
+.professional-card .card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+    transition: all 0.3s ease;
+}
+
+.professional-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.professional-card .btn {
+    color: #d946a6;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.professional-card .btn:hover {
+    background: linear-gradient(135deg, #d946a6 0%, #9333ea 100%);
+    color: white;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.professional-card .badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stats-card {
+    border: 1px solid #e5e7eb;
+}
+
+.stats-card h6 {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.stats-card li {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.stats-card .fa-check-circle {
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .professional-card img {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .professional-card img {
+        height: 200px !important;
+    }
+
+    .professional-card .btn {
+        padding: 0.5rem 1.5rem !important;
+        font-size: 0.9rem;
+    }
+
+    .professional-card .badge {
+        font-size: 0.6rem;
+        padding: 0.4rem 0.8rem !important;
+    }
+}
+
+/* Animation on scroll */
+.professional-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient overlay variations */
+.clinic-card {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+}
+
+.device-card {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(219, 39, 119, 0.15) 100%);
+}

@@ -1,836 +1,1605 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+<html lang="he" dir="rtl">
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="ציוד רפואי אסתטי מקצועי למרפאות ומכוני יופי - דוידוב ביוטי אנד קר. מכשירי הסרת שיער בלייזר, פיסול גוף, חידוש עור ועוד.">
+	<meta name="keywords" content="ציוד רפואי אסתטי, הסרת שיער בלייזר, פיסול גוף, חידוש עור, מכשירי יופי מקצועיים">
+	<meta name="author" content="Davidov Beauty & Care">
+	<meta name="robots" content="INDEX,FOLLOW">
 
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-		<meta name="description" content="Idiology is a versatile and modern multipurpose HTML5 template designed for creative agencies, corporate businesses, startups, and portfolios. Built with clean code, responsive design, and SEO-friendly structure, it's perfect for showcasing your brand and services with style.">
-		<meta name="keywords" content="Idiology HTML5 template, creative agency template, corporate website template, multipurpose HTML template, responsive business template, startup website design, portfolio HTML5 template, SEO-friendly template, modern web design, bootstrap HTML template">
-		<meta name="author" content="DesignsNinja">
-		<meta name="robots" content="INDEX,FOLLOW">
+	<title>דוידוב ביוטי אנד קר - ציוד רפואי אסתטי מקצועי</title>
 
-		<title data-i18n="page.title">Davidov Beauty Care - Professional Equipment for Clinics</title>	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+	<link rel="apple-touch-icon" href="assets/images/logo.png">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
-		<link rel="apple-touch-icon" href="assets/images/logo.png">
+	<!-- All CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/creative-agency.css">
+	<link rel="stylesheet" href="assets/css/animate.compat.css">
 
-		<!-- All CSS -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-		<link rel="stylesheet" href="assets/css/all.min.css">
-		<link rel="stylesheet" href="assets/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-		<link rel="stylesheet" href="assets/css/master.css">
-		<link rel="stylesheet" href="assets/css/digital-agency.css">
-		<link rel="stylesheet" href="assets/css/animate.compat.css">
-		<link rel="stylesheet" href="assets/css/custom-colors.css">
-		<link rel="stylesheet" href="assets/css/language-switcher.css">
-		<link rel="stylesheet" href="assets/css/language-switcher-menu.css">
-		<link rel="stylesheet" href="assets/css/logo-enhancements.css">
-		<link rel="stylesheet" href="assets/css/typography-system.css">
-		<link rel="stylesheet" href="assets/css/font-overrides.css">
-		<link rel="stylesheet" href="assets/css/header-ux-fixes.css">
-		<link rel="stylesheet" href="assets/css/professional-cards.css">
+	<!-- Custom Styles for Home2 -->
+	<style>
+		/* RTL Support */
+		body {
+			font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+			direction: rtl;
+			text-align: right;
+		}
 
-		<!-- i18n Script - Load before body to prevent FOUC -->
-		<script src="assets/js/i18n.js"></script>
+		/* Gradient System */
+		:root {
+			--gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			--gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+			--gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+			--gradient-gold: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+			--gradient-medical: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+		}
 
-	</head>
-	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-cursor-effect data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}">
-		
-		<div class="loading-overlay">
-			<div class="bounce-loader">
-				<div class="wrapper-pulse">
-					<div class="cssload-pulse-loader"></div>
+		/* Hero Section */
+		.hero-home2 {
+			min-height: 100vh;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			padding: 120px 0 80px;
+		}
+
+		.hero-home2::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+			pointer-events: none;
+		}
+
+		.hero-home2 .hero-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.hero-home2 h1 {
+			font-size: 4.5rem;
+			font-weight: 800;
+			color: #fff;
+			line-height: 1.2;
+			margin-bottom: 1.5rem;
+			text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+		}
+
+		.hero-home2 .hero-subtitle {
+			font-size: 1.5rem;
+			color: rgba(255,255,255,0.95);
+			margin-bottom: 2.5rem;
+			font-weight: 300;
+		}
+
+		.hero-home2 .cta-buttons {
+			display: flex;
+			gap: 1.5rem;
+			flex-wrap: wrap;
+		}
+
+		.btn-hero {
+			padding: 1rem 2.5rem;
+			font-size: 1.1rem;
+			font-weight: 600;
+			border-radius: 50px;
+			transition: all 0.3s ease;
+			text-decoration: none;
+			display: inline-block;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+		}
+
+		.btn-hero-primary {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.btn-hero-primary:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+			color: #667eea;
+		}
+
+		.btn-hero-outline {
+			background: transparent;
+			color: #fff;
+			border: 2px solid #fff;
+		}
+
+		.btn-hero-outline:hover {
+			background: #fff;
+			color: #667eea;
+			transform: translateY(-3px);
+		}
+
+		/* Floating Animation */
+		@keyframes float {
+			0%, 100% { transform: translateY(0px); }
+			50% { transform: translateY(-20px); }
+		}
+
+		.floating {
+			animation: float 6s ease-in-out infinite;
+		}
+
+		/* Categories Section */
+		.categories-section {
+			padding: 100px 0;
+			background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+		}
+
+		.categories-section .row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.categories-section .row > [class*='col-'] {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.section-title {
+			font-size: 3rem;
+			font-weight: 800;
+			color: #2d3748;
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+
+		.section-subtitle {
+			font-size: 1.25rem;
+			color: #718096;
+			text-align: center;
+			margin-bottom: 4rem;
+		}
+
+		/* Category Cards */
+		.category-card {
+			background: #fff;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+			transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			margin-bottom: 30px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		.category-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+		}
+
+		.category-card-image {
+			position: relative;
+			height: 280px;
+			min-height: 280px;
+			overflow: hidden;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			flex-shrink: 0;
+		}
+
+		.category-card-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.4s ease;
+		}
+
+		.category-card:hover .category-card-image img {
+			transform: scale(1.1);
+		}
+
+		.category-card-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.category-card:hover .category-card-overlay {
+			opacity: 1;
+		}
+
+		.category-icon {
+			font-size: 4rem;
+			color: #fff;
+		}
+
+		.category-card-content {
+			padding: 2rem;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		}
+
+		.category-title {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 0.75rem;
+		}
+
+		.category-count {
+			display: inline-block;
+			background: var(--gradient-primary);
+			color: #fff;
+			padding: 0.5rem 1.25rem;
+			border-radius: 50px;
+			font-size: 0.9rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+
+		.category-description {
+			color: #718096;
+			font-size: 1rem;
+			margin-bottom: 1.5rem;
+			flex-grow: 1;
+		}
+
+		.btn-category {
+			background: var(--gradient-primary);
+			color: #fff;
+			padding: 0.75rem 2rem;
+			border-radius: 50px;
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			border: none;
+			width: 100%;
+			text-align: center;
+			margin-top: auto;
+		}
+
+		.btn-category:hover {
+			transform: scale(1.05);
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+			color: #fff;
+		}
+
+		/* Stats Section */
+		.stats-section {
+			background: var(--gradient-primary);
+			padding: 80px 0;
+			color: #fff;
+		}
+
+		.stat-item {
+			text-align: center;
+			padding: 2rem;
+		}
+
+		.stat-number {
+			font-size: 3.5rem;
+			font-weight: 800;
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		.stat-label {
+			font-size: 1.25rem;
+			opacity: 0.95;
+			font-weight: 300;
+		}
+
+		/* Trust Signals Section */
+		.trust-section {
+			padding: 100px 0;
+			background: #fff;
+		}
+
+		.trust-card {
+			text-align: center;
+			padding: 3rem 2rem;
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+			transition: all 0.3s ease;
+			height: 100%;
+			border: 2px solid transparent;
+		}
+
+		.trust-card:hover {
+			transform: translateY(-5px);
+			border-color: #667eea;
+			box-shadow: 0 15px 50px rgba(102, 126, 234, 0.2);
+		}
+
+		.trust-icon {
+			width: 80px;
+			height: 80px;
+			background: var(--gradient-primary);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 1.5rem;
+			font-size: 2rem;
+			color: #fff;
+		}
+
+		.trust-title {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+
+		.trust-description {
+			color: #718096;
+			font-size: 1rem;
+			line-height: 1.7;
+		}
+
+		/* Why Choose Us Section */
+		.why-section {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		}
+
+		.feature-item {
+			display: flex;
+			align-items: start;
+			margin-bottom: 2.5rem;
+			padding: 2rem;
+			background: #fff;
+			border-radius: 15px;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+			transition: all 0.3s ease;
+		}
+
+		.feature-item:hover {
+			transform: translateX(-10px);
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+		}
+
+		.feature-icon {
+			width: 60px;
+			height: 60px;
+			background: var(--gradient-primary);
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 1.5rem;
+			flex-shrink: 0;
+			font-size: 1.75rem;
+			color: #fff;
+		}
+
+		.feature-content h4 {
+			font-size: 1.35rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 0.5rem;
+		}
+
+		.feature-content p {
+			color: #718096;
+			margin: 0;
+			line-height: 1.7;
+		}
+
+		/* CTA Section */
+		.cta-section {
+			background: var(--gradient-primary);
+			padding: 80px 0;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.cta-section::before {
+			content: '';
+			position: absolute;
+			top: -50%;
+			right: -10%;
+			width: 500px;
+			height: 500px;
+			background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+			border-radius: 50%;
+		}
+
+		.cta-section h2 {
+			font-size: 2.5rem;
+			font-weight: 800;
+			margin-bottom: 1.5rem;
+			position: relative;
+			z-index: 2;
+			color: #ffffff;
+			text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.cta-section p {
+			font-size: 1.25rem;
+			margin-bottom: 2.5rem;
+			opacity: 1;
+			position: relative;
+			z-index: 2;
+			color: rgba(255, 255, 255, 0.98);
+			text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 1.6;
+		}
+
+		.cta-buttons-group {
+			display: flex;
+			gap: 1.5rem;
+			justify-content: center;
+			flex-wrap: wrap;
+			position: relative;
+			z-index: 2;
+		}
+
+		.btn-cta {
+			padding: 1.25rem 3rem;
+			font-size: 1.2rem;
+			font-weight: 600;
+			border-radius: 50px;
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.75rem;
+			transition: all 0.3s ease;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+		}
+
+		.btn-cta-whatsapp {
+			background: #25D366;
+			color: #fff;
+		}
+
+		.btn-cta-whatsapp:hover {
+			background: #20BA5A;
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+			color: #fff;
+		}
+
+		.btn-cta-phone {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.btn-cta-phone:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(255,255,255,0.3);
+			color: #667eea;
+		}
+
+		/* Footer */
+		.footer-home2 {
+			background: #1a202c;
+			color: #fff;
+			padding: 60px 0 30px;
+		}
+
+		.footer-logo {
+			max-width: 150px;
+			margin-bottom: 1.5rem;
+		}
+
+		.footer-description {
+			color: #a0aec0;
+			line-height: 1.8;
+			margin-bottom: 2rem;
+		}
+
+		.footer-title {
+			font-size: 1.25rem;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+			color: #fff;
+		}
+
+		.footer-links {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.footer-links li {
+			margin-bottom: 0.75rem;
+		}
+
+		.footer-links a {
+			color: #a0aec0;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		.footer-links a:hover {
+			color: #fff;
+		}
+
+		.social-icons {
+			display: flex;
+			gap: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.social-icon {
+			width: 45px;
+			height: 45px;
+			background: rgba(255,255,255,0.1);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			font-size: 1.2rem;
+		}
+
+		.social-icon:hover {
+			background: var(--gradient-primary);
+			transform: translateY(-3px);
+			color: #fff;
+		}
+
+		.footer-bottom {
+			border-top: 1px solid rgba(255,255,255,0.1);
+			margin-top: 3rem;
+			padding-top: 2rem;
+			text-align: center;
+			color: #a0aec0;
+		}
+
+		/* Header Updates */
+		.header-home2 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: rgba(26, 32, 44, 0.95);
+			backdrop-filter: blur(10px);
+			padding: 1rem 0;
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header-home2.scrolled {
+			box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		}
+
+		.nav-home2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			min-height: 44px; /* Touch-friendly minimum */
+		}
+
+		.nav-home2 .logo {
+			max-height: 45px;
+			width: auto;
+			display: block;
+			object-fit: contain;
+		}
+
+		.nav-home2 .nav-links {
+			display: flex;
+			gap: 2rem;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.nav-home2 .nav-links li {
+			display: flex;
+			align-items: center;
+		}
+
+		.nav-home2 .nav-links a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			transition: color 0.3s ease;
+			position: relative;
+		}
+
+		.nav-home2 .nav-links a::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: var(--gradient-primary);
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+		}
+
+		.nav-home2 .nav-links a:hover::after,
+		.nav-home2 .nav-links a.active::after {
+			transform: scaleX(1);
+		}
+
+		.nav-home2 .nav-links a:hover {
+			color: #667eea;
+		}
+
+		.language-toggle {
+			background: rgba(255,255,255,0.1);
+			border: 1px solid rgba(255,255,255,0.2);
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			font-size: 0.9rem;
+			font-weight: 600;
+			white-space: nowrap;
+		}
+
+		.language-toggle:hover {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.nav-home2 > a {
+			display: flex;
+			align-items: center;
+			flex-shrink: 0;
+		}
+
+		.mobile-menu-toggle {
+			display: none; /* Hidden by default, shown on mobile */
+			background: transparent;
+			border: none;
+			color: #fff;
+			font-size: 1.5rem;
+			cursor: pointer;
+			padding: 0.5rem;
+			min-width: 44px;
+			min-height: 44px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		/* Responsive */
+		@media (max-width: 991px) {
+			.header-home2 {
+				padding: 0.875rem 0;
+			}
+
+			.nav-home2 .logo {
+				max-height: 40px;
+			}
+
+			.hero-home2 {
+				padding: 100px 0 60px;
+			}
+
+			.hero-home2 h1 {
+				font-size: 2.5rem;
+				line-height: 1.2;
+			}
+
+			.hero-home2 .hero-subtitle {
+				font-size: 1.125rem;
+			}
+
+			.section-title {
+				font-size: 2rem;
+			}
+
+			.section-subtitle {
+				font-size: 1.125rem;
+			}
+
+			.nav-home2 .nav-links {
+				position: fixed;
+				top: 65px;
+				left: 0;
+				right: 0;
+				background: rgba(26, 32, 44, 0.98);
+				backdrop-filter: blur(10px);
+				flex-direction: column;
+				padding: 2rem 1.5rem;
+				gap: 1.5rem;
+				display: none;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+				max-height: calc(100vh - 65px);
+				overflow-y: auto;
+			}
+
+			.nav-home2 .nav-links.active {
+				display: flex;
+			}
+
+			.mobile-menu-toggle {
+				display: flex;
+			}
+
+			.stat-number {
+				font-size: 2.25rem;
+			}
+
+			.cta-section {
+				padding: 60px 0;
+			}
+
+			.cta-section h2 {
+				font-size: 1.875rem;
+				margin-bottom: 1rem;
+			}
+
+			.cta-section p {
+				font-size: 1.125rem;
+				margin-bottom: 2rem;
+				padding: 0 1rem;
+			}
+
+			.btn-cta {
+				padding: 1rem 2rem;
+				font-size: 1.125rem;
+				min-height: 54px; /* Better touch target */
+			}
+
+			.feature-item {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.feature-icon {
+				margin-left: 0;
+				margin-bottom: 1rem;
+			}
+
+			.feature-item:hover {
+				transform: translateY(-5px);
+			}
+
+			.category-card {
+				margin-bottom: 2rem;
+			}
+
+			.trust-section {
+				padding: 60px 0;
+			}
+
+			.categories-section {
+				padding: 60px 0;
+			}
+
+			.why-section {
+				padding: 60px 0;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			.categories-section .col-md-6 {
+				margin-bottom: 2rem;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.header-home2 {
+				padding: 0.75rem 0;
+			}
+
+			.nav-home2 {
+				padding: 0 1rem;
+			}
+
+			.nav-home2 .logo {
+				max-height: 36px;
+			}
+
+			.hero-home2 {
+				padding: 90px 0 50px;
+				min-height: auto;
+			}
+
+			.hero-home2 h1 {
+				font-size: 1.875rem;
+				line-height: 1.3;
+				margin-bottom: 1rem;
+			}
+
+			.hero-home2 .hero-subtitle {
+				font-size: 1rem;
+				margin-bottom: 2rem;
+			}
+
+			.hero-home2 .cta-buttons {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.btn-hero {
+				width: 100%;
+				text-align: center;
+				padding: 0.875rem 2rem;
+				font-size: 1rem;
+				min-height: 50px;
+			}
+
+			.section-title {
+				font-size: 1.75rem;
+				margin-bottom: 0.875rem;
+			}
+
+			.section-subtitle {
+				font-size: 1rem;
+				margin-bottom: 2.5rem;
+			}
+
+			.container {
+				padding-left: 1.25rem;
+				padding-right: 1.25rem;
+			}
+
+			.cta-section {
+				padding: 50px 0;
+			}
+
+			.cta-section h2 {
+				font-size: 1.625rem;
+				line-height: 1.3;
+			}
+
+			.cta-section p {
+				font-size: 1rem;
+				padding: 0 0.5rem;
+			}
+
+			.cta-buttons-group {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.btn-cta {
+				width: 100%;
+				justify-content: center;
+				padding: 0.875rem 1.5rem;
+				font-size: 1rem;
+				min-height: 50px;
+			}
+
+			.btn-cta i {
+				font-size: 1.25rem;
+			}
+
+			.category-card-image {
+				height: 220px;
+				min-height: 220px;
+			}
+
+			.category-title {
+				font-size: 1.35rem;
+			}
+
+			.category-description {
+				font-size: 0.95rem;
+			}
+
+			.trust-card {
+				padding: 2rem 1.5rem;
+			}
+
+			.trust-icon {
+				width: 70px;
+				height: 70px;
+				font-size: 1.75rem;
+			}
+
+			.trust-title {
+				font-size: 1.35rem;
+			}
+
+			.stat-number {
+				font-size: 2rem;
+			}
+
+			.stat-label {
+				font-size: 1.125rem;
+			}
+
+			.stats-section {
+				padding: 60px 0;
+			}
+
+			.footer-home2 {
+				padding: 50px 0 25px;
+			}
+		}
+
+		/* Extra Small Screens */
+		@media (max-width: 480px) {
+			.nav-home2 .logo {
+				max-height: 32px;
+			}
+
+			.hero-home2 h1 {
+				font-size: 1.625rem;
+			}
+
+			.section-title {
+				font-size: 1.5rem;
+			}
+
+			.cta-section h2 {
+				font-size: 1.5rem;
+			}
+
+			.btn-cta,
+			.btn-hero {
+				font-size: 0.95rem;
+				padding: 0.75rem 1.25rem;
+			}
+
+			.category-card-content {
+				padding: 1.5rem;
+			}
+
+			.trust-card {
+				padding: 1.75rem 1.25rem;
+			}
+
+			.container {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+
+		/* Animations */
+		.fade-in-up {
+			animation: fadeInUp 0.8s ease-out;
+		}
+
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.stagger-animation > * {
+			opacity: 0;
+			animation: fadeInUp 0.6s ease-out forwards;
+		}
+
+		.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+		.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+		.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+		.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+		.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+		.stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header-home2">
+		<div class="container">
+			<nav class="nav-home2">
+				<a href="index.html">
+					<img src="assets/images/logo.png" alt="Davidov Beauty & Care" class="logo">
+				</a>
+
+				<ul class="nav-links" id="navLinks">
+					<li><a href="index.html">בית</a></li>
+					<li><a href="index.html" class="active">דף הבית החדש</a></li>
+					<li><a href="pages/catalog-enhanced.html">קטלוג מוצרים</a></li>
+					<li><a href="pages/contact.html">צור קשר</a></li>
+					<li><button class="language-toggle">EN / HE</button></li>
+				</ul>
+
+				<button class="mobile-menu-toggle" id="mobileMenuToggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero-home2">
+		<div class="container">
+			<div class="hero-content fade-in-up">
+				<h1 class="mb-4">ציוד רפואי אסתטי<br>מהמתקדמים בעולם</h1>
+				<p class="hero-subtitle">פתרונות מקצועיים למרפאות ומכוני יופי - טכנולוגיה מתקדמת, תוצאות מוכחות</p>
+				<div class="cta-buttons">
+					<a href="pages/catalog-enhanced.html" class="btn-hero btn-hero-primary">
+						<i class="fas fa-th-large ms-2"></i>
+						צפו בקטלוג המלא
+					</a>
+					<a href="pages/contact.html" class="btn-hero btn-hero-outline">
+						<i class="fas fa-phone ms-2"></i>
+						בואו נדבר
+					</a>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<div class="body">
+	<!-- Categories Section -->
+	<section class="categories-section" id="categories">
+		<div class="container">
+			<h2 class="section-title">קטגוריות המוצרים שלנו</h2>
+			<p class="section-subtitle">בחרו מתוך מגוון רחב של מכשירים מקצועיים ומתקדמים</p>
 
-			<header id="header" class="header-transparent header-static">
-				<div class="header-body border-top-0">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-								<div class="header-row">
-									<div class="header-logo">
-										<a href="index.html" aria-label="Davidov Beauty Care - Professional Medical Equipment">
-											<img src="assets/images/logo.png" alt="Davidov Beauty Care - Professional Medical Equipment" class="img-fluid" style="max-height: 60px;">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="header-column justify-content-end">
-							<div class="header-row d-flex align-items-center">
-								<!-- Navigation Menu & Hamburger - Always First -->
-								<div class="header-nav header-nav-links order-1 ms-auto ms-lg-0">
-									<div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-										<nav class="collapse navbar-collapse show" id="navbarNav">
-											<ul class="nav nav-pills" id="mainNav">
-												<li>
-													<a href="index.html" data-i18n="nav.home">Home</a>
-												</li>
-												<li>
-													<a href="catalog-enhanced.html" data-i18n="nav.catalog">Catalog</a>
-												</li>
-												<li>
-													<a href="contact.html" data-i18n="nav.contact">Contact</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-									<button class="btn header-btn-collapse-nav d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle Navigation">
-										<i class="fas fa-bars"></i>
-									</button>
-								</div>
-
-								<!-- Language Switcher & Search - After Menu -->
-								<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-2 d-flex align-items-center">
-									<!-- Language Switcher -->
-									<div class="header-nav-feature language-switcher-header d-inline-flex me-2">
-										<div class="language-switcher-menu"></div>
-									</div>
-
-									<!-- Search -->
-									<div class="header-nav-feature header-nav-features-search d-inline-flex">
-										<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search">
-											<i class="fas fa-search header-nav-top-icon"></i>
-										</a>
-										<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
-											<form role="search" action="catalog-enhanced.html" method="get">
-												<div class="simple-search input-group">
-													<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search equipment, treatments..." data-i18n-placeholder="search.placeholder">
-													<button class="btn btn-medical" type="submit" aria-label="Search Equipment">
-														<i class="fas fa-search header-nav-top-icon"></i>
-													</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
+			<div class="row stagger-animation">
+				<!-- Category 1: Laser Hair Removal -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/02/3-2-2.png" alt="הסרת שיער בלייזר">
+							<div class="category-card-overlay">
+								<i class="fas fa-spa category-icon"></i>
 							</div>
 						</div>
-					</div>
-				</div>
-			</header>
-
-			<div role="main" class="main">
-				<section id="home" class="p-relative border-0 bg-light overflow-hidden m-0" style="background-image: url('assets/images/cards/clinic-professional-card.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-					<div class="container p-relative z-index-3 banner-style-one">
-						<div class="row min-vh-100 align-items-center pd-t-100 pd-b-100">
-							<div class="col-lg-8 text-center text-lg-start">
-								<div class="overflow-hidden mb-1">
-									<h1 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="hero.subtitle">Professional Beauty Equipment</h1>
-								</div>
-								<div class="overflow-hidden">
-									<h1 class="text-color-dark font-weight-bold custom-hero-font-1 pb-2 mb-4" data-i18n="hero.title">Advanced Technology for Your Clinic</h1>
-								</div>
-								<div class="main-content">
-									<p data-i18n="hero.description">Transform your clinic with professional beauty equipment. Transparent pricing, local support, and technology that grows with your business.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 offset-lg-0">
-								<div class="banner-style-one-right">
-									<!-- Professional Cards Grid -->
-									<div class="row g-3">
-										<!-- Clinic Card -->
-										<div class="col-12">
-											<div class="professional-card clinic-card position-relative overflow-hidden rounded-4 shadow-lg">
-												<span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">PROFESSIONAL</span>
-												<span class="badge bg-danger position-absolute bottom-0 end-0 m-3 px-2 py-1 small">4K READY</span>
-											</div>
-										</div>
-
-										<!-- Device Card -->
-										<div class="col-12">
-											<div class="professional-card device-card position-relative overflow-hidden rounded-4 shadow-lg">
-												<span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">PROFESSIONAL</span>
-												<img src="assets/images/cards/device-professional-card.png" alt="Professional Beauty Device" class="w-100 h-100 object-fit-cover" style="height: 300px;">
-												<span class="badge bg-danger position-absolute bottom-0 end-0 m-3 px-2 py-1 small">4K READY</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="parallax section section-text-light section-parallax section-center py-0 my-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 10, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}" data-image-src="assets/images/hero-clinic.jpg">
-					<div class="d-flex justify-content-center">
-						<div class="scrollable-parallax-wrapper">
-							<div class="container py-5 my-5">
-								<div class="row justify-content-center py-5 my-5">
-									<div class="col-lg-12 py-5 my-5">
-										<h1 class="mb-3 font-weight-bold custom-hero-font-2" data-i18n="cta.remarkable">Let's Make Something Remarkable Together</h1>
-										<h4 class="mb-0 font-weight-semi-bold custom-hero-font-5" data-i18n="cta.remarkableDesc">Your vision deserves world-class execution. Contact us now, and let's turn your ideas into unforgettable experiences.</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="pd-t-100 pd-b-100">
-					<div class="container">
-						<div class="row justify-content-end">
-							<div class="col-lg-10 col-xl-9 col-xxl-10">
-								<div class="dn-about-content text-left">
-									<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-										<h2 class="font-weight-semi-bold text-color-dark positive-ls-3 text-4-5 line-height-2 line-height-sm-7 mb-0" data-i18n="about.mainHeading">Great brands don't happen by accident they're built with intention. Whether you're launching a startup, refreshing your identity, or craving campaigns that actually convert, our team blends strategic thinking with boundary-pushing creativity to deliver results that matter. We're not just designers, writers, or marketers; we're your partners in crafting unforgettable experiences.</h2>
-									</div>
-									
-									<div class="dn-about-info mrt-60">
-										<p class="font-size-20 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850" data-i18n="about.description">Your brand is more than colors and logos it's the soul of your business. We specialize in crafting distinctive identities that tell your story, connect with your audience, and drive real results. From startups to established companies, we build brands that stand the test of time. Ready to make your mark? Let's begin your brand transformation today.</p>
-										<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-												<a class="dn-link-btn" href="about-us.html" data-i18n="about.moreAboutUs">More About Us <span>
-													<i class="fa-solid fa-arrow-right arry1"></i>
-													<i class="fa-solid fa-arrow-right arry2"></i>
-													</span>
-												</a>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<div class="row counters with-borders mrt-50">
-								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-									<div class="counter counter-primary">
-										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="12" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.yearsExperience">Years of experience</label>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-									<div class="counter counter-primary">
-										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="225" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.successfulProjects">Successfully projects</label>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-									<div class="counter counter-primary">
-										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="42" data-append="+">0</strong>
-										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.teamMembers">International team members</label>
-									</div>
-								</div>
-								<div class="col-sm-6 col-lg-3">
-									<div class="counter counter-with-unit counter-primary">
-										<strong class="font-weight-semi-bold text-color-dark font-unbounded" data-to="98">0</strong>
-										<strong class="font-weight-semi-bold text-color-dark font-unbounded">%</strong>
-										<label class="text-color-dark font-unbounded mrt-20" data-i18n="stats.clientSatisfaction">Clients satisfied & retention</label>
-									</div>
-								</div>
-						</div>
-					</div>
-				</section>
-				<section class="pd-t-100 pd-b-100 bg-color-dark project-section">
-					<div class="container">
-						<div class="row g-0 gy-4 gy-md-0 justify-content-between">
-							<div class="col-12 col-md-5 order-1 order-md-0">
-								<div class="row g-0">
-									<div class="col-md-12 project-row-gap">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/device-main.png" alt="Professional Diode Laser Equipment">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.kineticSandscapes">Kinetic Sandscapes</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															Branding
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-8 mx-auto project-row-gap">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-3.png" alt="project-2">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.brooklynBrewery">Brooklyn Brewery</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															Photography
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-5.png" alt="project-3">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.regenerative">Regenerative</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															Photography
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-md-6 order-0 order-md-1">
-								<div class="row">
-									<div class="col-12">
-										<div class="dn-header text-center text-md-end">
-                                            <a class="dn-link-btn btn-white" href="project-digital.html" data-i18n="cta.viewMoreWorks">View More Works <span>
-                                                <i class="fa-solid fa-arrow-right arry1"></i>
-                                                <i class="fa-solid fa-arrow-right arry2"></i>
-                                            	</span>
-                                        	</a>
-                                        </div>
-									</div>
-									<div class="col-md-10 ms-auto project-row-gap">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/treatment-room.jpg" alt="Modern Treatment Room">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.hopscotchPayments">Hopscotch Payments</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															Development
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-9 me-auto project-row-gap">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/service-consultation.jpg" alt="Professional Consultation">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.storiesWorthwhile">Stories Worthwhile</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															UI/UX Design
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-10 ms-auto">
-										<div class="dn-project-box overflow-hidden appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideLight blockSlideToRight" data-appear-animation-delay="0">
-											<div class="block-appear-animation-wrapper">
-												<a href="project-digital.html">
-													<div class="dn-project-thumb overflow-hidden">
-														<img class="w-100" src="assets/images/projects/project-6.png" alt="project-6">
-													</div>
-													<div class="dn-project-content">
-														<h4 class="text-color-light" data-i18n="portfolio.fintechAccelerator">Fintech Accelerator</h4>
-														<span class="dn-project-date text-color-light">
-															2025
-															<i class="bi bi-dash"></i>
-															App Development
-														</span>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="pd-t-100 pd-b-100 bg-color-grey service-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-9 col-xl-7 col-xxl-6">
-								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="services.mainHeading">Complete Medical Equipment Solutions</h3>
-								</div>
-							</div>
-						</div>
-						<div class="row g-4 pd-t-60">
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="0">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-tools"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.installation">Equipment Installation & Training</h4>
-													<p data-i18n="services.installationDesc">Professional installation and comprehensive staff training for all medical equipment. We ensure your team is fully qualified to operate safely and effectively.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-headset"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.technicalSupport">Technical Support & Maintenance</h4>
-													<p data-i18n="services.technicalSupportDesc">24/7 technical support and scheduled maintenance services. Our certified technicians ensure maximum uptime and optimal performance for your equipment.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-credit-card"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.financing">Equipment Financing Solutions</h4>
-													<p data-i18n="services.financingDesc">Flexible financing options and leasing programs to help clinics acquire professional equipment. Competitive rates with terms designed for medical practices.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-person-check"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.certification">Professional Certification Programs</h4>
-													<p data-i18n="services.certificationDesc">Comprehensive training and certification programs for medical aesthetics. Advance your skills with internationally recognized certifications.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-shield-check"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.warranty">Extended Warranty & Service Plans</h4>
-													<p data-i18n="services.warrantyDesc">Comprehensive warranty coverage and service plans that protect your investment. Peace of mind with guaranteed equipment performance and support.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6 col-lg-4 col-xxl-3">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft"
-									data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-service-box">
-											<div class="dn-iconbox-icon">
-												<i class="bi bi-clipboard-data"></i>
-											</div>
-											<div class="dn-iconbox-data">
-												<div class="dn-iconbox-data-wrapper">
-													<h4 data-i18n="services.consultation">Equipment Consultation & Planning</h4>
-													<p data-i18n="services.consultationDesc">Expert consultation to help you choose the right equipment for your clinic. Custom treatment room planning and workflow optimization services.</p>
-													<a class="dn-link-btn" href="services.html" data-i18n="cta.viewDetails">View Details <span>
-															<i class="fa-solid fa-arrow-right arry1"></i>
-															<i class="fa-solid fa-arrow-right arry2"></i>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="pd-t-100 pd-b-100 bg-color-dark testimonial-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-9 col-xl-8 col-xxl-6">
-								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-light font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="testimonials.mainHeading">Creativity Without the Pretentiousness</h3>
-								</div>
-							</div>
-						</div>
-
-						<div class="row mrt-50">
-							<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-
-								<div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-dark nav-style-2 mb-0" data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 100, 'autoHeight': true}">
-									<div>
-										<div class="testimonial testimonial-style-2 mb-0">
-											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial1">Working with this team was like finding the missing piece to our brand puzzle. They took our vague ideas and transformed them into a visual identity that feels unmistakably us. The website they built doesn't just look stunning it converts.</p>
-											</blockquote>
-											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client1">Jessica Doe</strong></p>
-											</div>
-										</div>
-									</div>
-									<div>
-										<div class="testimonial testimonial-style-2 mb-0">
-											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial2">Most agencies talk about innovation these folks actually deliver it. They challenged our assumptions, pushed us out of our comfort zone, and designed a campaign that made our competitors look outdated. The best part? They're ridiculously easy to work with. </p>
-											</blockquote>
-											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client2">John Doe</strong></p>
-											</div>
-										</div>
-									</div>
-									<div>
-										<div class="testimonial testimonial-style-2 mb-0">
-											<blockquote>
-												<p class="text-color-light text-5 line-height-5 mb-0" data-i18n="testimonials.testimonial3">We've hired four agencies over the years. This is the first time we've walked away thinking, Damn, that was worth every penny. From branding to web design, their attention to detail is obsessive in the best way. </p>
-											</blockquote>
-											<div class="testimonial-author">
-												<p><strong class="font-weight-extra-bold text-4 font-unbounded" data-i18n="testimonials.client3">Eric Smith</strong></p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<div class="container py-1">
-					<div class="row pt-5 mt-3">
-						<div class="col text-center">
-							<h3 class="text-7 text-transform-none font-weight-semibold my-4 pt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-i18n="companies.title">Trusted by great companies like</h3>
-						</div>
-					</div>
-				</div>
-				<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="350">
-					<div class="marquee custom-marquee-1 pt-4 d-flex" data-duration="40000" data-gap="10" data-duplicated="true" data-startVisible="true">
-						<div class="d-flex align-items-center" data-clone-element="2">
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-8.png" alt="logo-1" class="img-fluid" style="max-width: 90px;">
-							</div>
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-9.png" alt="logo-2" class="img-fluid" style="max-width: 140px;">
-							</div>
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-10.png" alt="logo-3" class="img-fluid" style="max-width: 140px;">
-							</div>
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-11.png" alt="logo-4" class="img-fluid" style="max-width: 140px;">
-							</div>
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-12.png" alt="logo-5" class="img-fluid" style="max-width: 100px;">
-							</div>
-							<div class="px-5 py-1">
-								<img src="assets/images/brands/logo-13.png" alt="logo-6" class="img-fluid" style="max-width: 100px;">
-							</div>
+						<div class="category-card-content">
+							<h3 class="category-title">הסרת שיער בלייזר</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								1 מכשיר
+							</span>
+							<p class="category-description">מכשירי לייזר מתקדמים להסרת שיער קבועה ויעילה, עם תוצאות מוכחות ובטיחות מקסימלית</p>
+							<a href="pages/category-laser-hair-removal.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 
-				<section class="pd-t-100 pd-b-100 blog-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-									<h3 class="text-color-dark font-weight-bold custom-hero-font-2 pb-2 mb-4" data-i18n="blog.title">Breaking Creative Boundaries Daily</h3>
-								</div>
+				<!-- Category 2: Body Contouring -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/08/6-800.png" alt="פיסול גוף">
+							<div class="category-card-overlay">
+								<i class="fas fa-heartbeat category-icon"></i>
 							</div>
 						</div>
-						<div class="row g-4 pd-t-60">
-							<div class="col-md-6 col-lg-4">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft" data-appear-animation-delay="1">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-blog-box">
-											<div class="dn-blog-thumb">
-												<a href="blogs.html">
-													<img src="assets/images/training-session.jpg" alt="Professional Training">
-												</a>
-											</div>
-											<div class="dn-blog-content">
-												<h4 class="text-color-dark">
-													<a href="blog-details.html" data-i18n="blog.article1">Ready to transform your brand into something extraordinary</a>
-												</h4>
-												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-4">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft" data-appear-animation-delay="2">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-blog-box">
-											<div class="dn-blog-thumb">
-												<a href="blogs.html">
-													<img src="assets/images/training-session.jpg" alt="blog-2">
-												</a>
-											</div>
-											<div class="dn-blog-content">
-												<h4 class="text-color-dark">
-													<a href="blog-details.html" data-i18n="blog.article2">Your vision deserves world-class execution</a>
-												</h4>
-												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-4">
-								<div class="appear-animation block-appear-animation" data-appear-animation="blockSlide blockSlideToLeft" data-appear-animation-delay="3">
-									<div class="block-appear-animation-wrapper">
-										<div class="dn-blog-box">
-											<div class="dn-blog-thumb">
-												<a href="blogs.html">
-													<img src="assets/images/training-session.jpg" alt="blog-3">
-												</a>
-											</div>
-											<div class="dn-blog-content">
-												<h4 class="text-color-dark">
-													<a href="blog-details.html" data-i18n="blog.article3">Don't just compete—dominate. Partner with our creative team</a>
-												</h4>
-												<span class="dn-blog-date" data-i18n="blog.date">June 2, 2025</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="category-card-content">
+							<h3 class="category-title">מכשירי פיסול גוף</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								5 מכשירים
+							</span>
+							<p class="category-description">טכנולוגיות מתקדמות לפיסול הגוף, הפחתת שומן ומיצוק העור - תוצאות דרמטיות ללא ניתוח</p>
+							<a href="pages/category-body-contouring.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
 						</div>
 					</div>
-				</section>
+				</div>
 
-				<footer class="pd-t-100 pd-b-100 bg-color-dark footer-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="footer-widgets-wrapper pd-b-60">
-									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-										<div class="footer-widgets contact text-color-light" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.contactTitle">Contact</h4>
-											<p class="address" data-i18n="footer.address">245 West 52nd Street, Apt 7B New York, NY 10019</p>
-											<div class="contacts">
-												<ul class="custom-ul">
-													<li>
-														<a class="email" href="mailto:hello@yoursite.com" data-i18n="footer.email">hello@yoursite.com</a>
-													</li>
-													<li>
-														<a class="mobile" href="tel:+18741467890" data-i18n="footer.phone">+1 874 414 7890</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-										<div class="footer-widgets" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.agency">Agency</h4>
-											<div class="widget-links">
-												<ul class="custom-ul">
-													<li>
-														<a href="index.html">Home</a>
-													</li>
-													<li>
-														<a href="project-details.html">Case Studies</a>
-													</li>
-													<li>
-														<a href="about-us.html">About Us</a>
-													</li>
-													<li>
-														<a href="services.html">Services</a>
-													</li>
-													<li>
-														<a href="blogs.html">Blogs</a>
-													</li>
-													<li>
-														<a href="contact.html" data-i18n="nav.contact">Contact</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									
-									<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-										<div class="footer-widgets" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<h4 class="widget-title text-color-light font-unbounded" data-i18n="footer.servicesFooter">Services</h4>
-											<div class="widget-links">
-												<ul class="custom-ul">
-													<li>
-														<a href="services-details.html">App Development</a>
-													</li>
-													<li>
-														<a href="services-details.html">Web Development</a>
-													</li>
-													<li>
-														<a href="services-details.html">UI/UX Design</a>
-													</li>
-													<li>
-														<a href="services-details.html">Digital Marketing</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
+				<!-- Category 3: Skin Resurfacing -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/08/IPLSHRE-LIGHT-Machine.png" alt="חידוש עור">
+							<div class="category-card-overlay">
+								<i class="fas fa-magic category-icon"></i>
+							</div>
+						</div>
+						<div class="category-card-content">
+							<h3 class="category-title">חידוש עור</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								6 מכשירים
+							</span>
+							<p class="category-description">מכשירי IPL ו-SHR לחידוש העור, טיפול בפיגמנטציה וסיווגים ושיפור מרקם העור</p>
+							<a href="pages/category-skin-resurfacing.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 
-									<div class="gsap-text-wrapper" data-gsap-text-anim-1 data-plugin-options="{'duration': 2.0, 'toggleActions': 'play none none none'}">
-										<div class="footer-widgets" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<div class="social-links">
-												<ul class="custom-ul">
-													<li>
-														<a href="#">
-															<i class="bi bi-twitter-x"></i>
-														</a>
-													</li>
-													<li>
-														<a href="https://www.facebook.com/profile.php?id=61580296752033" target="_blank" rel="noopener noreferrer">
-															<i class="bi bi-facebook"></i>
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															<i class="bi bi-linkedin"></i>
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															<i class="bi bi-behance"></i>
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															<i class="bi bi-dribbble"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
+				<!-- Category 4: Anti-Aging -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/08/Vertical-HIFU-Machine-1-2.png" alt="אנטי-אייג'ינג">
+							<div class="category-card-overlay">
+								<i class="fas fa-star category-icon"></i>
 							</div>
 						</div>
-					</div>
-					<div class="footer-bottom has-border">
-						<div class="container overflow-hidden">
-							<div class="row">
-								<div class="col-12">
-									<div class="footer-bottom-content pd-b-60">
-										<div class="gsap-text-wrapper overflow-hidden" data-gsap-text-anim-1 data-plugin-options="{'duration': 1.0, 'toggleActions': 'play none none none'}">
-											<div class="copyright-text text-color-light" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-i18n="footer.rightsReserved">All rights reserved — 2025 © DesignsNinja</div>									
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="category-card-content">
+							<h3 class="category-title">אנטי-אייג'ינג</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								1 מכשיר
+							</span>
+							<p class="category-description">טכנולוגיית HIFU מתקדמת להרמת עור ומיצוק, טיפול קמטים והאטת תהליכי ההזדקנות</p>
+							<a href="pages/category-anti-aging.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
 						</div>
 					</div>
-				</footer>
+				</div>
+
+				<!-- Category 5: Laser Treatment -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/02/1.1917.png" alt="טיפולי לייזר">
+							<div class="category-card-overlay">
+								<i class="fas fa-bolt category-icon"></i>
+							</div>
+						</div>
+						<div class="category-card-content">
+							<h3 class="category-title">טיפולי לייזר</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								2 מכשירים
+							</span>
+							<p class="category-description">מערכות לייזר מתקדמות למגוון טיפולים - הסרת כלי דם, טיפול בפיגמנטציה ועוד</p>
+							<a href="pages/category-laser-treatment.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Category 6: Skin Analysis -->
+				<div class="col-lg-4 col-md-6">
+					<div class="category-card">
+						<div class="category-card-image">
+							<img src="https://nubway.co.il/wp-content/uploads/2025/04/Soft-Green-Typography-Letter-N-Logo-1-1.jpg" alt="ניתוח עור">
+							<div class="category-card-overlay">
+								<i class="fas fa-microscope category-icon"></i>
+							</div>
+						</div>
+						<div class="category-card-content">
+							<h3 class="category-title">ניתוח עור</h3>
+							<span class="category-count">
+								<i class="fas fa-box ms-1"></i>
+								1 מכשיר
+							</span>
+							<p class="category-description">מכשירים מתקדמים לאבחון ואנליזה של העור - כלי חיוני לתכנון טיפולים מותאמים אישית</p>
+							<a href="pages/category-skin-analysis.html" class="btn-category">
+								צפו במכשירים
+								<i class="fas fa-arrow-left me-2"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
 
+	<!-- Stats Section -->
+	<section class="stats-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="stat-item fade-in-up">
+						<span class="stat-number">15+</span>
+						<span class="stat-label">שנות ניסיון</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="stat-item fade-in-up" style="animation-delay: 0.1s;">
+						<span class="stat-number">500+</span>
+						<span class="stat-label">מרפאות מרוצות</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="stat-item fade-in-up" style="animation-delay: 0.2s;">
+						<span class="stat-number">16</span>
+						<span class="stat-label">דגמי מכשירים</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="stat-item fade-in-up" style="animation-delay: 0.3s;">
+						<span class="stat-number">98%</span>
+						<span class="stat-label">שביעות רצון לקוחות</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<!-- JS -->
-		<script src="assets/js/plugins.min.js"></script>
-		<script src="assets/js/master.js"></script>
+	<!-- Trust Signals Section -->
+	<section class="trust-section">
+		<div class="container">
+			<h2 class="section-title">למה לבחור בנו?</h2>
+			<p class="section-subtitle">אנחנו מתחייבים למצוינות בכל שלב</p>
 
-		<!-- Initialize with static header -->
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				// Disable header sticky/shrink effects
-				const header = document.getElementById('header');
-				if (header) {
-					// Remove all dynamic data attributes
-					header.removeAttribute('data-plugin-options');
-					header.classList.remove('header-effect-shrink');
+			<div class="row">
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="trust-card">
+						<div class="trust-icon">
+							<i class="fas fa-shield-alt"></i>
+						</div>
+						<h3 class="trust-title">אחריות מורחבת</h3>
+						<p class="trust-description">אחריות של עד 10 שנים על כל המכשירים שלנו - אתם בידיים טובות</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="trust-card">
+						<div class="trust-icon">
+							<i class="fas fa-certificate"></i>
+						</div>
+						<h3 class="trust-title">תקינה בינלאומית</h3>
+						<p class="trust-description">כל המכשירים עומדים בתקני CE, FDA ו-ISO - איכות ובטיחות מובטחת</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="trust-card">
+						<div class="trust-icon">
+							<i class="fas fa-headset"></i>
+						</div>
+						<h3 class="trust-title">תמיכה מקומית</h3>
+						<p class="trust-description">שירות באותו יום באזור תל אביב - אנחנו כאן בשבילכם 24/7</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="trust-card">
+						<div class="trust-icon">
+							<i class="fas fa-dollar-sign"></i>
+						</div>
+						<h3 class="trust-title">מחירים שקופים</h3>
+						<p class="trust-description">ללא עלויות נסתרות - מה שאתם רואים זה מה שאתם מקבלים</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-					// Force static positioning
-					header.style.position = 'relative';
-					header.style.background = 'white';
+	<!-- Why Choose Us Section -->
+	<section class="why-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<h2 class="section-title text-end">למה דוידוב?</h2>
+					<p class="section-subtitle text-end">הסיבות שמרפאות בוחרות בנו שוב ושוב</p>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<i class="fas fa-stethoscope"></i>
+						</div>
+						<div class="feature-content">
+							<h4>ציוד מקצועי למרפאות</h4>
+							<p>מכשירים ברמה רפואית שעומדים בתקנים הגבוהים ביותר ומותאמים לשימוש יומיומי אינטנסיבי</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<i class="fas fa-user-md"></i>
+						</div>
+						<div class="feature-content">
+							<h4>ייעוץ מומחים</h4>
+							<p>צוות מומחים עם ניסיון של שנים שיעזור לכם לבחור את המכשירים המתאימים ביותר למרפאה שלכם</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<i class="fas fa-graduation-cap"></i>
+						</div>
+						<div class="feature-content">
+							<h4>הדרכה ותמיכה</h4>
+							<p>הדרכה מקיפה לצוות ותמיכה טכנית מתמשכת - אנחנו איתכם לאורך כל הדרך</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<i class="fas fa-rocket"></i>
+						</div>
+						<div class="feature-content">
+							<h4>טכנולוגיה מתקדמת</h4>
+							<p>המכשירים החדשים והמתקדמים ביותר בשוק - תמיד צעד אחד לפני המתחרים</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<!-- AI-Generated Image: Created with Ideogram API -->
+					<!-- Run: node generate-why-section-image.js to generate -->
+					<img src="assets/images/generated/why-section-equipment.png"
+						 alt="ציוד רפואי אסתטי מקצועי - מכשירים מתקדמים למרפאות"
+						 class="img-fluid rounded floating"
+						 style="box-shadow: 0 20px 60px rgba(0,0,0,0.15);"
+						 loading="lazy"
+						 onerror="this.src='https://source.unsplash.com/800x600/?medical,technology,clinic,healthcare'">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="cta-section">
+		<div class="container">
+			<h2>מעוניינים במידע נוסף?</h2>
+			<p>הצוות שלנו ישמח לענות על כל שאלה ולעזור לכם למצוא את הפתרון המושלם למרפאה שלכם</p>
+			<div class="cta-buttons-group">
+				<a href="https://wa.me/972123456789" class="btn-cta btn-cta-whatsapp" target="_blank">
+					<i class="fab fa-whatsapp"></i>
+					שלחו הודעה בווטסאפ
+				</a>
+				<a href="tel:+972123456789" class="btn-cta btn-cta-phone">
+					<i class="fas fa-phone"></i>
+					התקשרו עכשיו
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer-home2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 mb-4 mb-lg-0">
+					<img src="assets/images/logo.png" alt="Davidov Beauty & Care" class="footer-logo">
+					<p class="footer-description">
+						דוידוב ביוטי אנד קר - ספקית מובילה של ציוד רפואי אסתטי מקצועי למרפאות ומכוני יופי בישראל. אנו מספקים פתרונות טכנולוגיים מתקדמים עם שירות ותמיכה ללא פשרות.
+					</p>
+					<div class="social-icons">
+						<a href="#" class="social-icon" aria-label="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" class="social-icon" aria-label="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="social-icon" aria-label="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://wa.me/972123456789" class="social-icon" aria-label="WhatsApp">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+					<h4 class="footer-title">קישורים מהירים</h4>
+					<ul class="footer-links">
+						<li><a href="index.html">בית</a></li>
+						<li><a href="index.html">דף הבית החדש</a></li>
+						<li><a href="pages/catalog-enhanced.html">קטלוג מוצרים</a></li>
+						<li><a href="pages/contact.html">צור קשר</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+					<h4 class="footer-title">קטגוריות</h4>
+					<ul class="footer-links">
+						<li><a href="pages/category-laser-hair-removal.html">הסרת שיער בלייזר</a></li>
+						<li><a href="pages/category-body-contouring.html">פיסול גוף</a></li>
+						<li><a href="pages/category-skin-resurfacing.html">חידוש עור</a></li>
+						<li><a href="pages/category-anti-aging.html">אנטי-אייג'ינג</a></li>
+						<li><a href="pages/category-laser-treatment.html">טיפולי לייזר</a></li>
+						<li><a href="pages/category-skin-analysis.html">ניתוח עור</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<h4 class="footer-title">צור קשר</h4>
+					<ul class="footer-links">
+						<li>
+							<i class="fas fa-map-marker-alt ms-2"></i>
+							תל אביב, ישראל
+						</li>
+						<li>
+							<i class="fas fa-phone ms-2"></i>
+							<a href="tel:+972123456789">+972-12-345-6789</a>
+						</li>
+						<li>
+							<i class="fas fa-envelope ms-2"></i>
+							<a href="mailto:info@davidovbeauty.com">info@davidovbeauty.com</a>
+						</li>
+						<li>
+							<i class="fab fa-whatsapp ms-2"></i>
+							<a href="https://wa.me/972123456789">WhatsApp</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p class="mb-0">&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript -->
+	<script>
+		// Mobile Menu Toggle with Enhanced UX
+		const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+		const navLinks = document.getElementById('navLinks');
+		let menuOpen = false;
+
+		function toggleMenu() {
+			menuOpen = !menuOpen;
+			navLinks.classList.toggle('active');
+			const icon = mobileMenuToggle.querySelector('i');
+			icon.classList.toggle('fa-bars');
+			icon.classList.toggle('fa-times');
+
+			// Prevent body scroll when menu is open
+			document.body.style.overflow = menuOpen ? 'hidden' : '';
+
+			// Update ARIA attributes for accessibility
+			mobileMenuToggle.setAttribute('aria-expanded', menuOpen);
+			mobileMenuToggle.setAttribute('aria-label', menuOpen ? 'סגור תפריט' : 'פתח תפריט');
+		}
+
+		function closeMenu() {
+			if (menuOpen) {
+				toggleMenu();
+			}
+		}
+
+		mobileMenuToggle.addEventListener('click', toggleMenu);
+
+		// Close menu when clicking outside
+		document.addEventListener('click', (e) => {
+			if (menuOpen && !navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+				closeMenu();
+			}
+		});
+
+		// Close menu when clicking on menu links
+		navLinks.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', closeMenu);
+		});
+
+		// Close menu on escape key
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && menuOpen) {
+				closeMenu();
+			}
+		});
+
+		// Header Scroll Effect
+		const header = document.querySelector('.header-home2');
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 50) {
+				header.classList.add('scrolled');
+			} else {
+				header.classList.remove('scrolled');
+			}
+		});
+
+		// Smooth Scroll
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
 				}
-
-				console.log('Static header initialized - no dynamic effects');
-				console.log('i18n ready with language:', window.i18n ? window.i18n.getCurrentLanguage() : 'en');
 			});
-		</script>
-	</body>
+		});
+
+		// Language Toggle (placeholder)
+		const languageToggle = document.querySelector('.language-toggle');
+		languageToggle.addEventListener('click', () => {
+			alert('Language switching functionality - to be implemented with i18n system');
+		});
+
+		// Intersection Observer for animations
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1';
+					entry.target.style.transform = 'translateY(0)';
+				}
+			});
+		}, observerOptions);
+
+		// Observe category cards
+		document.querySelectorAll('.category-card').forEach(card => {
+			observer.observe(card);
+		});
+
+		// Observe feature items
+		document.querySelectorAll('.feature-item').forEach(item => {
+			observer.observe(item);
+		});
+
+		// Stats Counter Animation
+		const statsSection = document.querySelector('.stats-section');
+		let hasAnimated = false;
+
+		const statsObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting && !hasAnimated) {
+					hasAnimated = true;
+					animateStats();
+				}
+			});
+		}, { threshold: 0.5 });
+
+		statsObserver.observe(statsSection);
+
+		function animateStats() {
+			const stats = document.querySelectorAll('.stat-number');
+			stats.forEach(stat => {
+				const target = parseInt(stat.textContent);
+				const duration = 2000;
+				const increment = target / (duration / 16);
+				let current = 0;
+
+				const updateCounter = () => {
+					current += increment;
+					if (current < target) {
+						stat.textContent = Math.floor(current) + (stat.textContent.includes('+') ? '+' : stat.textContent.includes('%') ? '%' : '');
+						requestAnimationFrame(updateCounter);
+					} else {
+						stat.textContent = target + (stat.textContent.includes('+') ? '+' : stat.textContent.includes('%') ? '%' : '');
+					}
+				};
+
+				updateCounter();
+			});
+		}
+
+		// Parallax effect for hero section
+		window.addEventListener('scroll', () => {
+			const scrolled = window.pageYOffset;
+			const heroContent = document.querySelector('.hero-content');
+			if (heroContent) {
+				heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+			}
+		});
+
+		// Add loading animation
+		window.addEventListener('load', () => {
+			document.body.classList.add('loaded');
+		});
+	</script>
+
+</body>
 </html>
-
-
-
