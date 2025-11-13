@@ -1,0 +1,26 @@
+# robots.txt for Davidov Beauty & Care
+# Production SEO configuration
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://davidovbeauty.com/sitemap.xml
+
+# Exclude backup and old files
+Disallow: /backup/
+Disallow: /docs/
+Disallow: /*.old$
+Disallow: /*_old.*$
+
+# Exclude services and scripts (backend files)
+Disallow: /services/
+Disallow: /scripts/
+Disallow: /imageGen/
+
+# Allow important pages
+Allow: /pages/
+Allow: /assets/
+
+# Crawl delay (be polite)
+Crawl-delay: 1
