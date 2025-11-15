@@ -602,8 +602,11 @@
 			border-top: 1px solid rgba(255,255,255,0.1);
 			margin-top: 3rem;
 			padding-top: 2rem;
-			text-align: center;
 			color: #a0aec0;
+		}
+
+		.footer-bottom a:hover {
+			color: #fff !important;
 		}
 
 		/* Header Updates */
@@ -1396,7 +1399,8 @@
 	<footer class="footer-home2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 mb-4 mb-lg-0">
+				<!-- Company Info -->
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 					<img src="assets/images/logo-new.svg" alt="Davidov Beauty & Care" class="footer-logo">
 					<p class="footer-description">
 						דוידוב ביוטי אנד קר - ספקית מובילה של ציוד רפואי אסתטי מקצועי למרפאות ומכוני יופי בישראל. אנו מספקים פתרונות טכנולוגיים מתקדמים עם שירות ותמיכה ללא פשרות.
@@ -1417,18 +1421,21 @@
 					</div>
 				</div>
 
+				<!-- Quick Links -->
 				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
 					<h4 class="footer-title">קישורים מהירים</h4>
 					<ul class="footer-links">
 						<li><a href="index.html">בית</a></li>
-						<li><a href="index.html">דף הבית החדש</a></li>
+						<li><a href="pages/about.html">אודות</a></li>
 						<li><a href="pages/catalog-enhanced.html">קטלוג מוצרים</a></li>
+						<li><a href="pages/faq.html">שאלות נפוצות</a></li>
 						<li><a href="pages/contact.html">צור קשר</a></li>
 					</ul>
 				</div>
 
+				<!-- Product Categories -->
 				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-					<h4 class="footer-title">קטגוריות</h4>
+					<h4 class="footer-title">קטגוריות מוצרים</h4>
 					<ul class="footer-links">
 						<li><a href="pages/category-laser-hair-removal.html">הסרת שיער בלייזר</a></li>
 						<li><a href="pages/category-body-contouring.html">פיסול גוף</a></li>
@@ -1439,6 +1446,7 @@
 					</ul>
 				</div>
 
+				<!-- Contact Info -->
 				<div class="col-lg-3 col-md-6">
 					<h4 class="footer-title">צור קשר</h4>
 					<ul class="footer-links">
@@ -1463,7 +1471,19 @@
 			</div>
 
 			<div class="footer-bottom">
-				<p class="mb-0">&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+						<p class="mb-0">&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+					</div>
+					<div class="col-md-6 text-center text-md-end">
+						<a href="pages/privacy-policy.html" style="color: #a0aec0; text-decoration: none; margin-right: 1.5rem; transition: color 0.3s ease;">
+							מדיניות פרטיות
+						</a>
+						<a href="pages/terms.html" style="color: #a0aec0; text-decoration: none; transition: color 0.3s ease;">
+							תקנון האתר
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="תקנון האתר - דוידוב ביוטי אנד קר. תנאי שימוש, מדיניות מכירות, אחריות ותיקונים לציוד רפואי אסתטי">
+	<meta name="keywords" content="תקנון, תנאי שימוש, אחריות, ציוד רפואי, מכירות B2B">
+	<meta name="author" content="Davidov Beauty & Care">
+	<meta name="robots" content="INDEX,FOLLOW">
+
+	<title>תקנון האתר - Davidov Beauty & Care</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../assets/images/logo-new.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="../assets/images/logo-new.svg">
+
+	<!-- All CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<link rel="stylesheet" href="../assets/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="../assets/css/animate.compat.css">
+
+	<!-- Custom Styles -->
+	<style>
+		:root {
+			--gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			--gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+			--gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+			--gradient-success: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+		}
+
+		* {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+			direction: rtl;
+			text-align: right;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			overflow-x: hidden;
+			background: #f8f9fa;
+		}
+
+		/* Header */
+		.header-home2 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: rgba(26, 32, 44, 0.95);
+			backdrop-filter: blur(10px);
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.nav-home2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+		}
+
+		.nav-home2 .logo {
+			max-height: 45px;
+			width: auto;
+		}
+
+		.nav-home2 .nav-links {
+			display: flex;
+			gap: 2rem;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			align-items: center;
+		}
+
+		.nav-home2 .nav-links a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			transition: color 0.3s ease;
+			position: relative;
+		}
+
+		.nav-home2 .nav-links a::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: var(--gradient-primary);
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+		}
+
+		.nav-home2 .nav-links a:hover::after,
+		.nav-home2 .nav-links a.active::after {
+			transform: scaleX(1);
+		}
+
+		.nav-home2 .nav-links a:hover,
+		.nav-home2 .nav-links a.active {
+			color: #667eea;
+		}
+
+		.language-toggle {
+			background: rgba(255,255,255,0.1);
+			border: 1px solid rgba(255,255,255,0.2);
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border-radius: 50px;
+			cursor: pointer;
+			font-weight: 600;
+			transition: all 0.3s ease;
+		}
+
+		.language-toggle:hover {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.mobile-menu-toggle {
+			display: none;
+			background: transparent;
+			border: none;
+			color: #fff;
+			font-size: 1.5rem;
+			cursor: pointer;
+			padding: 0.5rem;
+		}
+
+		/* Hero Section */
+		.privacy-hero {
+			min-height: 50vh;
+			background: var(--gradient-primary);
+			display: flex;
+			align-items: center;
+			padding: 150px 0 80px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.privacy-hero::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+		}
+
+		.privacy-hero::after {
+			content: '';
+			position: absolute;
+			bottom: -50px;
+			right: -50px;
+			width: 300px;
+			height: 300px;
+			background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+			border-radius: 50%;
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 2;
+			text-align: center;
+		}
+
+		.privacy-hero h1 {
+			font-size: 3.5rem;
+			font-weight: 800;
+			color: #fff;
+			margin-bottom: 1rem;
+			text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+		}
+
+		.privacy-hero .hero-subtitle {
+			font-size: 1.35rem;
+			color: rgba(255,255,255,0.95);
+			margin-bottom: 1.5rem;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.last-updated {
+			display: inline-block;
+			background: rgba(255,255,255,0.2);
+			backdrop-filter: blur(10px);
+			padding: 0.75rem 1.5rem;
+			border-radius: 50px;
+			color: #fff;
+			font-size: 0.95rem;
+			font-weight: 600;
+			border: 1px solid rgba(255,255,255,0.3);
+		}
+
+		/* Content Section */
+		.privacy-content {
+			padding: 80px 0;
+			background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+			margin-top: -40px;
+			position: relative;
+			z-index: 10;
+		}
+
+		.content-container {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		/* Section Cards */
+		.privacy-section {
+			background: #fff;
+			padding: 3rem;
+			border-radius: 20px;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+			margin-bottom: 2.5rem;
+			transition: all 0.3s ease;
+			border: 2px solid transparent;
+		}
+
+		.privacy-section:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+			border-color: rgba(102, 126, 234, 0.3);
+		}
+
+		.section-icon {
+			width: 60px;
+			height: 60px;
+			background: var(--gradient-primary);
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.75rem;
+			color: #fff;
+			margin-bottom: 1.5rem;
+		}
+
+		.section-title {
+			font-size: 1.875rem;
+			font-weight: 800;
+			background: var(--gradient-primary);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			margin-bottom: 1.25rem;
+			display: inline-block;
+		}
+
+		.privacy-section h3 {
+			font-size: 1.35rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin: 1.75rem 0 0.875rem;
+		}
+
+		.privacy-section p {
+			color: #4a5568;
+			line-height: 1.9;
+			font-size: 1.05rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.privacy-section ul {
+			list-style: none;
+			padding: 0;
+			margin: 1.25rem 0;
+		}
+
+		.privacy-section ul li {
+			color: #4a5568;
+			line-height: 1.8;
+			font-size: 1.05rem;
+			margin-bottom: 0.875rem;
+			padding-right: 2rem;
+			position: relative;
+		}
+
+		.privacy-section ul li::before {
+			content: '\f00c';
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			position: absolute;
+			right: 0;
+			color: #667eea;
+			font-size: 0.875rem;
+		}
+
+		.highlight-box {
+			background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+			border-right: 4px solid #667eea;
+			padding: 1.5rem;
+			border-radius: 10px;
+			margin: 1.5rem 0;
+		}
+
+		.highlight-box p {
+			margin-bottom: 0;
+			color: #2d3748;
+			font-weight: 600;
+		}
+
+		.warning-box {
+			background: linear-gradient(135deg, rgba(245, 87, 108, 0.08) 0%, rgba(240, 147, 251, 0.08) 100%);
+			border-right: 4px solid #f5576c;
+			padding: 1.5rem;
+			border-radius: 10px;
+			margin: 1.5rem 0;
+		}
+
+		.warning-box p {
+			margin-bottom: 0;
+			color: #2d3748;
+			font-weight: 600;
+		}
+
+		/* Contact Section */
+		.privacy-contact {
+			background: var(--gradient-primary);
+			padding: 60px 0;
+			color: #fff;
+			text-align: center;
+			margin-top: 40px;
+		}
+
+		.privacy-contact h2 {
+			font-size: 2.5rem;
+			font-weight: 800;
+			margin-bottom: 1rem;
+			color: #fff;
+		}
+
+		.privacy-contact p {
+			font-size: 1.25rem;
+			margin-bottom: 2rem;
+			opacity: 0.95;
+		}
+
+		.contact-button {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.75rem;
+			background: #fff;
+			color: #667eea;
+			padding: 1.25rem 3rem;
+			border-radius: 50px;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+		}
+
+		.contact-button:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(255,255,255,0.3);
+			color: #667eea;
+		}
+
+		/* Footer */
+		.footer-home2 {
+			background: #1a202c;
+			color: #fff;
+			padding: 60px 0 30px;
+		}
+
+		.footer-logo {
+			max-width: 150px;
+			margin-bottom: 1.5rem;
+		}
+
+		.footer-description {
+			color: #a0aec0;
+			line-height: 1.8;
+		}
+
+		.footer-bottom {
+			border-top: 1px solid rgba(255,255,255,0.1);
+			margin-top: 3rem;
+			padding-top: 2rem;
+			text-align: center;
+			color: #a0aec0;
+		}
+
+		.footer-bottom a {
+			color: #a0aec0;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		.footer-bottom a:hover {
+			color: #fff;
+		}
+
+		/* WhatsApp Button */
+		.whatsapp-float {
+			position: fixed;
+			bottom: 30px;
+			left: 30px;
+			background: #25D366;
+			color: #fff;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2rem;
+			box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+			z-index: 999;
+			transition: transform 0.3s ease;
+			text-decoration: none;
+		}
+
+		.whatsapp-float:hover {
+			transform: scale(1.1);
+			color: #fff;
+		}
+
+		/* Animations */
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fade-in-up {
+			animation: fadeInUp 0.8s ease-out;
+		}
+
+		.stagger-animation > * {
+			opacity: 0;
+			animation: fadeInUp 0.6s ease-out forwards;
+		}
+
+		.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+		.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+		.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+		.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+		.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+		.stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
+		.stagger-animation > *:nth-child(7) { animation-delay: 0.7s; }
+		.stagger-animation > *:nth-child(8) { animation-delay: 0.8s; }
+		.stagger-animation > *:nth-child(9) { animation-delay: 0.9s; }
+		.stagger-animation > *:nth-child(10) { animation-delay: 1.0s; }
+		.stagger-animation > *:nth-child(11) { animation-delay: 1.1s; }
+		.stagger-animation > *:nth-child(12) { animation-delay: 1.2s; }
+
+		/* Responsive */
+		@media (max-width: 991px) {
+			.privacy-hero h1 {
+				font-size: 2.5rem;
+			}
+
+			.privacy-hero .hero-subtitle {
+				font-size: 1.125rem;
+			}
+
+			.privacy-section {
+				padding: 2rem;
+			}
+
+			.section-title {
+				font-size: 1.5rem;
+			}
+
+			.nav-home2 .nav-links {
+				position: fixed;
+				top: 65px;
+				left: 0;
+				right: 0;
+				background: rgba(26, 32, 44, 0.98);
+				backdrop-filter: blur(10px);
+				flex-direction: column;
+				padding: 2rem 1.5rem;
+				gap: 1.5rem;
+				display: none;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			}
+
+			.nav-home2 .nav-links.active {
+				display: flex;
+			}
+
+			.mobile-menu-toggle {
+				display: block;
+			}
+
+			.privacy-contact h2 {
+				font-size: 2rem;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.privacy-hero {
+				padding: 120px 0 60px;
+			}
+
+			.privacy-hero h1 {
+				font-size: 1.875rem;
+			}
+
+			.privacy-section {
+				padding: 1.5rem;
+			}
+
+			.section-title {
+				font-size: 1.35rem;
+			}
+
+			.privacy-section p,
+			.privacy-section ul li {
+				font-size: 0.95rem;
+			}
+
+			.contact-button {
+				padding: 1rem 2rem;
+				font-size: 1.05rem;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header-home2">
+		<div class="container">
+			<nav class="nav-home2">
+				<a href="../index.html">
+					<img src="../assets/images/logo-new.svg" alt="Davidov Beauty & Care" class="logo">
+				</a>
+
+				<ul class="nav-links" id="navLinks">
+					<li><a href="../index.html">בית</a></li>
+					<li><a href="contact.html">צור קשר</a></li>
+					<li><a href="privacy-policy.html">מדיניות פרטיות</a></li>
+					<li><a href="terms.html" class="active">תקנון האתר</a></li>
+					<li><button class="language-toggle">EN / HE</button></li>
+				</ul>
+
+				<button class="mobile-menu-toggle" id="mobileMenuToggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="privacy-hero">
+		<div class="container">
+			<div class="hero-content fade-in-up">
+				<h1>תקנון האתר</h1>
+				<p class="hero-subtitle">תנאי השימוש, המכירה והשירותים שלנו - שקיפות מלאה מול הלקוחות</p>
+				<span class="last-updated">
+					<i class="fas fa-calendar-alt ms-2"></i>
+					עדכון אחרון: ינואר 2025
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Content Section -->
+	<section class="privacy-content">
+		<div class="container">
+			<div class="content-container stagger-animation">
+
+				<!-- Introduction -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-file-contract"></i>
+					</div>
+					<h2 class="section-title">הקדמה</h2>
+					<p>
+						ברוכים הבאים לאתר דוידוב ביוטי אנד קר (להלן: "החברה", "אנחנו" או "שלנו"). תקנון זה מסדיר את תנאי השימוש באתר, רכישת מוצרים ושירותים, ואת היחסים המסחריים בין החברה לבין לקוחותיה.
+					</p>
+					<p>
+						החברה מתמחה בייבוא, שיווק ומכירה של ציוד רפואי אסתטי מתקדם למרפאות, מכוני יופי ועסקים בתחום הרפואה האסתטית בישראל. המוצרים והשירותים שלנו מיועדים ללקוחות עסקיים (B2B) בלבד.
+					</p>
+					<div class="highlight-box">
+						<p>
+							<i class="fas fa-exclamation-circle ms-2"></i>
+							השימוש באתר ורכישת מוצרים או שירותים מהווים הסכמה מלאה לתנאי תקנון זה. אנא קראו בעיון לפני ביצוע הזמנה או שימוש בשירותים.
+						</p>
+					</div>
+				</div>
+
+				<!-- Terms of Use -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-gavel"></i>
+					</div>
+					<h2 class="section-title">תנאי שימוש באתר</h2>
+
+					<h3>זכאות לשימוש</h3>
+					<p>
+						האתר מיועד לשימוש עסקי בלבד. השימוש באתר מותר רק לגורמים העומדים בתנאים הבאים:
+					</p>
+					<ul>
+						<li>בעלי רישיון עסק תקף במדינת ישראל</li>
+						<li>מטפלים מוסמכים, רופאים או בעלי הכשרה רפואית/אסתטית מתאימה</li>
+						<li>מכוני יופי, מרפאות אסתטיות, או עסקים בתחום הרפואה האסתטית</li>
+						<li>בני 18 ומעלה עם כשירות משפטית מלאה</li>
+					</ul>
+
+					<h3>שימוש אסור</h3>
+					<p>
+						אסור להשתמש באתר למטרות הבאות:
+					</p>
+					<ul>
+						<li>פעילות בלתי חוקית או הפרה של זכויות צדדים שלישיים</li>
+						<li>העברת וירוסים, תוכנות זדוניות או קוד מזיק</li>
+						<li>ניסיון לפגוע במערכות האתר או לגשת למידע לא מורשה</li>
+						<li>העתקה, שכפול או הפצה של תכנים ללא אישור</li>
+						<li>שימוש במידע מהאתר למטרות תחרותיות או פרסום מטעה</li>
+					</ul>
+
+					<h3>חשבון משתמש</h3>
+					<p>
+						לצורך רכישת מוצרים ושירותים, יש ליצור חשבון משתמש. אתם אחראים:
+					</p>
+					<ul>
+						<li>לספק מידע מדויק, מלא ועדכני</li>
+						<li>לשמור על סודיות פרטי ההתחברות שלכם</li>
+						<li>להודיע מיד על כל שימוש לא מורשה בחשבונכם</li>
+						<li>לעדכן מידע במקרה של שינויים (כתובת, פרטי חיוב וכו')</li>
+					</ul>
+				</div>
+
+				<!-- Products & Services -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-box-open"></i>
+					</div>
+					<h2 class="section-title">מוצרים ושירותים</h2>
+
+					<h3>תיאור המוצרים</h3>
+					<p>
+						החברה משווקת ציוד רפואי אסתטי מתקדם לרבות:
+					</p>
+					<ul>
+						<li>מכשירי לייזר להסרת שיער, טיפולי עור ומתיחת עור</li>
+						<li>מכשירי RF (תדר גבוה) למיצוק ועיצוב הגוף</li>
+						<li>מכשירי קריוליפוליזה (הקפאת שומן)</li>
+						<li>מכשירי אולטרסאונד ממוקד (HIFU)</li>
+						<li>ציוד נלווה, חלקי חילוף ואביזרים</li>
+					</ul>
+
+					<h3>מפרטים טכניים ודיוק</h3>
+					<p>
+						אנו עושים כל מאמץ להציג מידע מדויק על המוצרים, לרבות תמונות, מפרטים טכניים, יכולות ומגבלות. עם זאת:
+					</p>
+					<ul>
+						<li>תמונות ותיאורים הם להמחשה בלבד ועשויים להיות שונים במעט מהמוצר בפועל</li>
+						<li>מפרטים טכניים מבוססים על מידע היצרן ועשויים להשתנות</li>
+						<li>ביצועי המכשירים תלויים בשימוש נכון והכשרה מתאימה</li>
+						<li>החברה אינה אחראית לתוצאות הטיפול בפועל - אחריות זו על המטפל</li>
+					</ul>
+
+					<h3>זמינות המוצרים</h3>
+					<p>
+						זמינות המוצרים מתעדכנת באופן שוטף, אך החברה לא מתחייבת לזמינות מיידית. במקרה של אזילת מלאי:
+					</p>
+					<ul>
+						<li>נודיע ללקוח על אי-זמינות בהקדם האפשרי</li>
+						<li>נציע אלטרנטיבות דומות או פתרונות חלופיים</li>
+						<li>ניתן לבטל את ההזמנה ולקבל החזר מלא</li>
+					</ul>
+
+					<div class="warning-box">
+						<p>
+							<i class="fas fa-exclamation-triangle ms-2"></i>
+							כל המוצרים מיועדים לשימוש מקצועי בלבד על ידי מטפלים מוסמכים. השימוש הביתי במכשירים אלו עלול להיות מסוכן ואינו מכוסה באחריות.
+						</p>
+					</div>
+
+					<h3>שירותים נוספים</h3>
+					<p>
+						מעבר למכירת ציוד, החברה מספקת:
+					</p>
+					<ul>
+						<li>הכשרה והדרכה מקצועית על המכשירים</li>
+						<li>שירותי התקנה והפעלה ראשונית</li>
+						<li>תמיכה טכנית שוטפת ושירות לקוחות</li>
+						<li>אחריות מורחבת ומסלולי שירות מותאמים</li>
+						<li>ייעוץ עסקי ותמיכה בשיווק</li>
+					</ul>
+				</div>
+
+				<!-- Pricing & Payment -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-credit-card"></i>
+					</div>
+					<h2 class="section-title">מחירים ותשלומים</h2>
+
+					<h3>מדיניות תמחור</h3>
+					<p>
+						כל המחירים באתר מצוינים בשקלים חדשים (₪) וכוללים מע"מ, אלא אם צוין אחרת. מדיניות התמחור שלנו:
+					</p>
+					<ul>
+						<li>מחירים עשויים להשתנות ללא הודעה מוקדמת</li>
+						<li>המחיר התקף הוא זה המופיע בעת אישור ההזמנה הסופי</li>
+						<li>עשויים להיות הנחות ומבצעים למכירה כמותית או ללקוחות קבועים</li>
+						<li>ניתן לקבל הצעת מחיר מותאמת אישית ללקוחות עסקיים</li>
+					</ul>
+
+					<h3>אמצעי תשלום</h3>
+					<p>
+						החברה מקבלת תשלומים באמצעים הבאים:
+					</p>
+					<ul>
+						<li>כרטיסי אשראי (ויזה, מאסטרקארד, אמריקן אקספרס)</li>
+						<li>העברה בנקאית (לעסקים מאושרים)</li>
+						<li>מימון והלוואות (בשיתוף חברות אשראי)</li>
+						<li>שיקים (בכפוף לאישור)</li>
+					</ul>
+
+					<h3>תנאי תשלום</h3>
+					<ul>
+						<li>תשלום מלא נדרש בעת ביצוע ההזמנה, אלא אם סוכם אחרת</li>
+						<li>ניתן לפרוס תשלומים בכרטיס אשראי בהתאם למדיניות חברת האשראי</li>
+						<li>ללקוחות עסקיים קבועים ניתן אשראי של 30-60 יום (בכפוף לאישור)</li>
+						<li>במקרה של איחור בתשלום, עשויים להיות חויבים ריבית והוצאות גבייה</li>
+					</ul>
+
+					<h3>חשבוניות ומיסוי</h3>
+					<p>
+						לכל רכישה תונפק חשבונית מס או חשבונית עסקה (קבלה) כדין:
+					</p>
+					<ul>
+						<li>חשבונית תישלח בדואר אלקטרוני תוך 7 ימי עסקים</li>
+						<li>יש לדווח על כל טעות בחשבונית תוך 14 יום מקבלתה</li>
+						<li>ניתן לבקש חשבונית מס זיכוי במקרה של החזרה</li>
+					</ul>
+
+					<div class="highlight-box">
+						<p>
+							<i class="fas fa-shield-alt ms-2"></i>
+							כל התשלומים מאובטחים בהצפנת SSL ומעובדים דרך שערי תשלום מאושרים. החברה אינה שומרת פרטי כרטיס אשראי במערכותיה.
+						</p>
+					</div>
+				</div>
+
+				<!-- Shipping & Installation -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-truck"></i>
+					</div>
+					<h2 class="section-title">משלוח והתקנה</h2>
+
+					<h3>משלוחים בישראל</h3>
+					<p>
+						החברה מספקת שירותי משלוח והובלה לכל רחבי ישראל:
+					</p>
+					<ul>
+						<li>משלוח רגיל - 3-7 ימי עסקים לאזורים מרכזיים</li>
+						<li>משלוח מהיר - 1-3 ימי עסקים (בכפוף לזמינות)</li>
+						<li>משלוח לאזורים מרוחקים עשוי לקחת עד 14 יום</li>
+						<li>עלות המשלוח תחושב בהתאם למשקל, נפח ויעד</li>
+					</ul>
+
+					<h3>התקנה והפעלה</h3>
+					<p>
+						למכשירים גדולים ומורכבים, החברה מספקת:
+					</p>
+					<ul>
+						<li>התקנה מקצועית על ידי טכנאים מוסמכים</li>
+						<li>הפעלה והדגמה ראשונית של המכשיר</li>
+						<li>הכשרת צוות (בסיסית או מתקדמת)</li>
+						<li>בדיקת תקינות ואיכות לפני מסירה</li>
+					</ul>
+
+					<h3>אחריות הלקוח בקבלת המשלוח</h3>
+					<p>
+						בעת קבלת המשלוח, על הלקוח:
+					</p>
+					<ul>
+						<li>לבדוק את המוצר ואריזתו לנזקים חיצוניים</li>
+						<li>לוודא שכל הפריטים שהוזמנו התקבלו במלואם</li>
+						<li>לדווח מיד על נזקים או חוסרים</li>
+						<li>לחתום על תעודת המסירה רק לאחר בדיקה</li>
+					</ul>
+
+					<div class="warning-box">
+						<p>
+							<i class="fas fa-info-circle ms-2"></i>
+							דיווח על נזקים או חוסרים יש לבצע תוך 24 שעות מקבלת המשלוח. דיווח מאוחר עשוי שלא להיות מכוסה.
+						</p>
+					</div>
+
+					<h3>משלוחים בינלאומיים</h3>
+					<p>
+						במקרים מיוחדים, ניתן לארגן משלוחים לחו"ל. במקרה זה:
+					</p>
+					<ul>
+						<li>עלויות המשלוח, ביטוח ומכס חלות על הלקוח</li>
+						<li>זמני אספקה משתנים בהתאם ליעד</li>
+						<li>הלקוח אחראי לבדוק דרישות ייבוא והסמכה במדינתו</li>
+					</ul>
+				</div>
+
+				<!-- Warranty & Repairs -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-tools"></i>
+					</div>
+					<h2 class="section-title">אחריות ותיקונים</h2>
+
+					<h3>תקופת האחריות</h3>
+					<p>
+						כל המוצרים מגיעים עם אחריות יצרן סטנדרטית:
+					</p>
+					<ul>
+						<li>מכשירים חדשים - אחריות יצרן של 12-36 חודשים (בהתאם למוצר)</li>
+						<li>חלקי חילוף - אחריות של 6-12 חודשים</li>
+						<li>מכשירים מחודשים (Refurbished) - 6-12 חודשים</li>
+						<li>ניתן לרכוש אחריות מורחבת לתקופה של עד 5 שנים</li>
+					</ul>
+
+					<h3>מה מכוסה באחריות?</h3>
+					<p>
+						האחריות מכסה:
+					</p>
+					<ul>
+						<li>תקלות ייצור או חומרים פגומים</li>
+						<li>ליקויים שנובעים משימוש סביר ותקין</li>
+						<li>תיקון או החלפת חלקים פגומים</li>
+						<li>שירות טכנאי (בהתאם לתנאי האחריות)</li>
+					</ul>
+
+					<h3>מה לא מכוסה באחריות?</h3>
+					<ul>
+						<li>נזקים כתוצאה משימוש לא נכון או הזנחה</li>
+						<li>שינויים, תיקונים או התקנות שבוצעו שלא על ידי החברה</li>
+						<li>נזקי מים, חום, מתח חשמלי לא תקין</li>
+						<li>בלאי טבעי של חלקים מתכלים (פילטרים, אביזרים חד פעמיים)</li>
+						<li>נזקים במהלך הובלה או אחסון לא נכון</li>
+						<li>שימוש מסחרי אינטנסיבי מעבר למפרט היצרן</li>
+					</ul>
+
+					<h3>תהליך תביעת אחריות</h3>
+					<p>
+						לקבלת שירות אחריות:
+					</p>
+					<ul>
+						<li>צרו קשר עם שירות הלקוחות בטלפון או בדוא"ל</li>
+						<li>ספקו את מספר הסידורי, תיאור התקלה ותאריך הרכישה</li>
+						<li>אם נדרש, הסכימו לביקור טכנאי או משלוח המכשיר לתיקון</li>
+						<li>זמן טיפול משוער: 7-14 ימי עסקים</li>
+					</ul>
+
+					<h3>שירות טכני מחוץ לאחריות</h3>
+					<p>
+						עבור מכשירים שאינם מכוסים באחריות:
+					</p>
+					<ul>
+						<li>ניתן לקבל הצעת מחיר לתיקון</li>
+						<li>עלויות עבודה ותחלופים יחולו על הלקוח</li>
+						<li>נציע תמיד פתרונות חסכוניים ואלטרנטיבות</li>
+					</ul>
+
+					<div class="highlight-box">
+						<p>
+							<i class="fas fa-check-circle ms-2"></i>
+							המלצה: שמרו על האריזה והתיעוד המקוריים, בצעו תחזוקה שוטפת והשתתפו בהדרכות החברה - זה יאריך את חיי המכשיר ויבטיח כיסוי אחריות מלא.
+						</p>
+					</div>
+				</div>
+
+				<!-- Cancellations & Returns -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-undo-alt"></i>
+					</div>
+					<h2 class="section-title">ביטולים והחזרות</h2>
+
+					<h3>מדיניות ביטול עסקאות (B2B)</h3>
+					<p>
+						כיוון שהמוצרים מיועדים ללקוחות עסקיים, חוק הגנת הצרכן אינו חל. עם זאת, החברה מאפשרת ביטול בתנאים הבאים:
+					</p>
+
+					<h3>ביטול לפני משלוח</h3>
+					<ul>
+						<li>ניתן לבטל הזמנה עד 48 שעות לאחר אישורה</li>
+						<li>לאחר 48 שעות ולפני משלוח - ביטול בכפוף לדמי ביטול של 10%</li>
+						<li>אם המוצר כבר יובא במיוחד עבורכם - דמי ביטול של 25%</li>
+					</ul>
+
+					<h3>החזרה לאחר קבלת המוצר</h3>
+					<p>
+						החזרת מוצרים מותרת רק במקרים הבאים:
+					</p>
+					<ul>
+						<li>המוצר התקבל פגום או לא תקין</li>
+						<li>המוצר שהתקבל שונה באופן מהותי מהמוצר שהוזמן</li>
+						<li>הפרה מהותית של תנאי העסקה מצד החברה</li>
+					</ul>
+
+					<h3>תנאי החזרה</h3>
+					<p>
+						כדי שהחזרה תתקבל, יש לעמוד בכל התנאים הבאים:
+					</p>
+					<ul>
+						<li>דיווח על הבעיה תוך 7 ימים מקבלת המוצר</li>
+						<li>המוצר באריזתו המקורית, ללא שימוש ובמצב חדש</li>
+						<li>כל האביזרים, התיעוד והאריזה המקורית מצורפים</li>
+						<li>אישור מראש מהחברה לביצוע ההחזרה</li>
+					</ul>
+
+					<h3>תהליך ההחזרה</h3>
+					<p>
+						לביצוע החזרה:
+					</p>
+					<ul>
+						<li>צרו קשר עם שירות הלקוחות תוך 7 ימים</li>
+						<li>תקבלו טופס החזרה ומספר RMA (Return Merchandise Authorization)</li>
+						<li>ארזו את המוצר באריזה המקורית עם מספר RMA</li>
+						<li>שלחו את המוצר לכתובת שתימסר לכם</li>
+					</ul>
+
+					<h3>החזר כספי</h3>
+					<ul>
+						<li>לאחר קבלת המוצר והחזרתו בעירום, יבוצע החזר תוך 14 יום</li>
+						<li>ההחזר יבוצע לאמצעי התשלום המקורי</li>
+						<li>עלויות משלוח אינן מוחזרות (אלא אם הטעות הייתה מצד החברה)</li>
+						<li>במקרה של פגם - ניתן לבחור בין החזר לבין מוצר חלופי</li>
+					</ul>
+
+					<div class="warning-box">
+						<p>
+							<i class="fas fa-ban ms-2"></i>
+							מוצרים שנפתחו, נעשה בהם שימוש, או הותקנו - לא ניתנים להחזרה, למעט במקרים של פגם או אי התאמה מהותית.
+						</p>
+					</div>
+				</div>
+
+				<!-- Intellectual Property -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-copyright"></i>
+					</div>
+					<h2 class="section-title">קניין רוחני</h2>
+
+					<h3>זכויות יוצרים וסימנים מסחריים</h3>
+					<p>
+						כל התכנים באתר, לרבות טקסטים, תמונות, גרפיקה, לוגואים, סרטונים, עיצוב האתר וקוד המקור, הם בבעלות החברה או מורשים לשימוש על ידה ומוגנים על פי דיני קניין רוחני.
+					</p>
+
+					<h3>הגבלות שימוש</h3>
+					<p>
+						אסור לבצע את הפעולות הבאות ללא אישור מפורש בכתב:
+					</p>
+					<ul>
+						<li>העתקה, שכפול או הפצה של תכני האתר</li>
+						<li>שימוש בתמונות, טקסטים או חומרי שיווק לצרכים מסחריים</li>
+						<li>יצירת עבודות נגזרות מתוכן האתר</li>
+						<li>שימוש בסימנים המסחריים של החברה או השותפים שלה</li>
+					</ul>
+
+					<h3>שימוש מותר</h3>
+					<p>
+						ניתן להשתמש בתכני האתר למטרות הבאות בלבד:
+					</p>
+					<ul>
+						<li>צפייה ושימוש אישי ולא מסחרי</li>
+						<li>הדפסת מידע למטרות עזר פנימיות בעסק</li>
+						<li>שיתוף קישורים לדפים באתר (לא העתקת תוכן)</li>
+					</ul>
+
+					<h3>תכנים שנוצרו על ידי משתמשים</h3>
+					<p>
+						במידה ותשלחו לנו תוכן (כגון המלצות, ביקורות, תמונות):
+					</p>
+					<ul>
+						<li>אתם מעניקים לחברה רישיון לא בלעדי, עולמי ובלתי מוגבל לשימוש בתוכן</li>
+						<li>אתם מאשרים שיש לכם את הזכויות לתוכן שנשלח</li>
+						<li>החברה אינה חייבת להשתמש או לפרסם תוכן שנשלח</li>
+					</ul>
+				</div>
+
+				<!-- Limitation of Liability -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-balance-scale"></i>
+					</div>
+					<h2 class="section-title">הגבלת אחריות</h2>
+
+					<h3>אחריות החברה</h3>
+					<p>
+						החברה אחראית לאספקת מוצרים ושירותים איכותיים ותקינים בהתאם למפרטים. עם זאת, החברה אינה אחראית ל:
+					</p>
+					<ul>
+						<li>תוצאות הטיפולים שמבוצעים באמצעות המכשירים - האחריות על המטפל</li>
+						<li>נזקים עקיפים, אובדן רווחים או הפסד עסקי</li>
+						<li>נזקים שנגרמו עקב שימוש לא נכון, הזנחה או אי ביצוע תחזוקה</li>
+						<li>נזקים שנגרמו על ידי צדדים שלישיים (שליחים, טכנאים חיצוניים)</li>
+						<li>הפרעות או הפסקות בפעילות האתר מסיבות טכניות</li>
+					</ul>
+
+					<h3>מגבלת האחריות הכספית</h3>
+					<p>
+						האחריות הכוללת של החברה בכל מקרה מוגבלת לסכום ששולם בפועל עבור המוצר או השירות הספציפי שגרם לנזק.
+					</p>
+
+					<h3>אחריות הלקוח</h3>
+					<p>
+						הלקוח אחראי ל:
+					</p>
+					<ul>
+						<li>שימוש נכון ומקצועי במכשירים בהתאם להוראות היצרן</li>
+						<li>הכשרת הצוות המפעיל את המכשירים</li>
+						<li>השגת אישורים והיתרים הנדרשים לפעילות העסקית</li>
+						<li>ביטוח אחריות מקצועית מתאים</li>
+						<li>קיום כל החוקים והתקנות הרלוונטיים</li>
+					</ul>
+
+					<div class="highlight-box">
+						<p>
+							<i class="fas fa-user-shield ms-2"></i>
+							המלצה: ודאו שיש לכם ביטוח אחריות מקצועית המכסה טיפולים אסתטיים ושימוש בציוד רפואי. פנו לסוכן הביטוח שלכם לפרטים.
+						</p>
+					</div>
+				</div>
+
+				<!-- Governing Law -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-landmark"></i>
+					</div>
+					<h2 class="section-title">דין וסמכות שיפוט</h2>
+
+					<h3>הדין החל</h3>
+					<p>
+						תקנון זה, השימוש באתר ורכישת מוצרים ושירותים, כפופים לדיני מדינת ישראל בלבד. כל סכסוך יוכרע על פי החוק הישראלי.
+					</p>
+
+					<h3>סמכות שיפוט</h3>
+					<p>
+						הסמכות השיפוטית הבלעדית לדון בכל עניין הנוגע לתקנון זה או לפעילות החברה נתונה לבתי המשפט המוסמכים באזור תל אביב, ישראל.
+					</p>
+
+					<h3>פתרון סכסוכים</h3>
+					<p>
+						אנו מעודדים פתרון סכסוכים בדרכי שלום:
+					</p>
+					<ul>
+						<li>ראשית, צרו קשר עם שירות הלקוחות לפתרון הבעיה</li>
+						<li>במידת הצורך, ניתן לפנות לגישור או בוררות</li>
+						<li>רק במקרה של כשלון המו"מ - הליכים משפטיים</li>
+					</ul>
+
+					<h3>שפה</h3>
+					<p>
+						תקנון זה נכתב בעברית. במקרה של סתירה או אי התאמה בין גרסה עברית לגרסאות בשפות אחרות, הגרסה העברית תגבר.
+					</p>
+				</div>
+
+				<!-- Contact -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<h2 class="section-title">יצירת קשר</h2>
+					<p>
+						לשאלות, הבהרות או בקשות בנוגע לתקנון זה, אנא צרו איתנו קשר:
+					</p>
+
+					<h3>פרטי התקשרות</h3>
+					<ul>
+						<li><strong>אימייל:</strong> info@davidov.co.il</li>
+						<li><strong>טלפון:</strong> 03-1234567 (ימים א'-ה' 09:00-18:00)</li>
+						<li><strong>WhatsApp:</strong> +972-50-123-4567</li>
+						<li><strong>כתובת:</strong> תל אביב, ישראל</li>
+					</ul>
+
+					<h3>מחלקות ספציפיות</h3>
+					<ul>
+						<li><strong>מכירות:</strong> sales@davidov.co.il</li>
+						<li><strong>שירות לקוחות:</strong> support@davidov.co.il</li>
+						<li><strong>תמיכה טכנית:</strong> tech@davidov.co.il</li>
+						<li><strong>מחלקת כספים:</strong> finance@davidov.co.il</li>
+					</ul>
+
+					<p>
+						אנו זמינים לסייע לכם ומחויבים למתן שירות מקצועי ואיכותי. זמן מענה משוער: עד 24 שעות בימי עסקים.
+					</p>
+				</div>
+
+				<!-- Updates -->
+				<div class="privacy-section">
+					<div class="section-icon">
+						<i class="fas fa-edit"></i>
+					</div>
+					<h2 class="section-title">עדכוני תקנון</h2>
+					<p>
+						החברה שומרת לעצמה את הזכות לעדכן ולשנות תקנון זה מעת לעת, כדי לשקף שינויים בשירותים, במוצרים, בפרקטיקות העסקיות או בדרישות החוק.
+					</p>
+
+					<h3>הודעה על שינויים</h3>
+					<ul>
+						<li>שינויים מהוותיים יפורסמו באתר בצורה בולטת</li>
+						<li>שינויים ייכנסו לתוקף 14 יום לאחר הפרסום</li>
+						<li>ללקוחות רשומים תישלח הודעה בדוא"ל על שינויים מהותיים</li>
+						<li>המשך השימוש באתר לאחר השינויים מהווה הסכמה לתקנון המעודכן</li>
+					</ul>
+
+					<h3>עדכונים קלים</h3>
+					<p>
+						שינויים קלים (תיקוני שגיאות, עדכוני פרטי קשר, הבהרות) ייכנסו לתוקף מיד עם פרסומם.
+					</p>
+
+					<div class="highlight-box">
+						<p>
+							<i class="fas fa-calendar-check ms-2"></i>
+							<strong>תקנון זה עודכן לאחרונה בתאריך: 15 בינואר 2025</strong>
+						</p>
+					</div>
+
+					<p style="margin-top: 2rem; color: #667eea; font-weight: 600; font-size: 1.1rem;">
+						תודה על האמון שלכם בדוידוב ביוטי אנד קר. אנו מחויבים לספק לכם את השירות והמוצרים האיכותיים ביותר בתחום הרפואה האסתטית.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact CTA Section -->
+	<section class="privacy-contact">
+		<div class="container">
+			<h2>יש לכם שאלות על התקנון?</h2>
+			<p>הצוות שלנו זמין לענות על כל שאלה ולספק הבהרות נוספות</p>
+			<a href="contact.html" class="contact-button">
+				<i class="fas fa-envelope"></i>
+				צרו איתנו קשר
+			</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer-home2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 mb-4">
+					<img src="../assets/images/logo-new.svg" alt="Davidov Beauty & Care" class="footer-logo">
+					<p class="footer-description">
+						דוידוב ביוטי אנד קר - ספקית מובילה של ציוד רפואי אסתטי מקצועי למרפאות ומכוני יופי בישראל.
+					</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+						<p class="mb-0">&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+					</div>
+					<div class="col-md-6 text-center text-md-end">
+						<a href="privacy-policy.html" style="color: #a0aec0; text-decoration: none; margin-right: 1.5rem;">
+							מדיניות פרטיות
+						</a>
+						<a href="terms.html" style="color: #fff; text-decoration: none;">
+							תקנון האתר
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- WhatsApp Float Button -->
+	<a href="https://wa.me/972123456789" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="שלח הודעה בווטסאפ">
+		<i class="fab fa-whatsapp"></i>
+	</a>
+
+	<!-- JavaScript -->
+	<script>
+		// Mobile Menu Toggle
+		const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+		const navLinks = document.getElementById('navLinks');
+		let menuOpen = false;
+
+		function toggleMenu() {
+			menuOpen = !menuOpen;
+			navLinks.classList.toggle('active');
+			const icon = mobileMenuToggle.querySelector('i');
+			icon.classList.toggle('fa-bars');
+			icon.classList.toggle('fa-times');
+		}
+
+		mobileMenuToggle.addEventListener('click', toggleMenu);
+
+		document.addEventListener('click', (e) => {
+			if (menuOpen && !navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+				toggleMenu();
+			}
+		});
+
+		// Language Toggle
+		document.querySelector('.language-toggle').addEventListener('click', () => {
+			alert('Language switching functionality - to be implemented');
+		});
+
+		// Smooth scroll
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// Intersection Observer for animations
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1';
+					entry.target.style.transform = 'translateY(0)';
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.stagger-animation > *').forEach(item => {
+			observer.observe(item);
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="אודות דוידוב ביוטי אנד קר - 15+ שנות מצוינות בהפצת ציוד רפואי אסתטי מתקדם. המובילים בישראל.">
+	<meta name="keywords" content="אודות דוידוב, ציוד רפואי אסתטי, היסטוריה, ערכים, חזון">
+	<meta name="author" content="Davidov Beauty & Care">
+	<meta name="robots" content="INDEX,FOLLOW">
+
+	<title>אודות - Davidov Beauty & Care</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../assets/images/logo-new.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="../assets/images/logo-new.svg">
+
+	<!-- All CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="../assets/css/all.min.css">
+	<link rel="stylesheet" href="../assets/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="../assets/css/animate.compat.css">
+
+	<!-- Custom Styles -->
+	<style>
+		:root {
+			--gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			--gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+			--gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+			--gradient-success: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+			--gradient-gold: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+		}
+
+		* {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+			direction: rtl;
+			text-align: right;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			overflow-x: hidden;
+			background: #f8f9fa;
+		}
+
+		/* Header */
+		.header-home2 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: rgba(26, 32, 44, 0.95);
+			backdrop-filter: blur(10px);
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.nav-home2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+		}
+
+		.nav-home2 .logo {
+			max-height: 45px;
+			width: auto;
+		}
+
+		.nav-home2 .nav-links {
+			display: flex;
+			gap: 2rem;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			align-items: center;
+		}
+
+		.nav-home2 .nav-links a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			transition: color 0.3s ease;
+			position: relative;
+		}
+
+		.nav-home2 .nav-links a::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: var(--gradient-primary);
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+		}
+
+		.nav-home2 .nav-links a:hover::after,
+		.nav-home2 .nav-links a.active::after {
+			transform: scaleX(1);
+		}
+
+		.nav-home2 .nav-links a:hover,
+		.nav-home2 .nav-links a.active {
+			color: #667eea;
+		}
+
+		.language-toggle {
+			background: rgba(255,255,255,0.1);
+			border: 1px solid rgba(255,255,255,0.2);
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border-radius: 50px;
+			cursor: pointer;
+			font-weight: 600;
+			transition: all 0.3s ease;
+		}
+
+		.language-toggle:hover {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.mobile-menu-toggle {
+			display: none;
+			background: transparent;
+			border: none;
+			color: #fff;
+			font-size: 1.5rem;
+			cursor: pointer;
+			padding: 0.5rem;
+		}
+
+		/* Hero Section */
+		.about-hero {
+			min-height: 70vh;
+			background: var(--gradient-primary);
+			display: flex;
+			align-items: center;
+			padding: 150px 0 80px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.about-hero::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background:
+				radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 50%),
+				radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);
+		}
+
+		.about-hero::after {
+			content: '';
+			position: absolute;
+			bottom: -100px;
+			left: -100px;
+			width: 400px;
+			height: 400px;
+			background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+			border-radius: 50%;
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.about-hero h1 {
+			font-size: 4.5rem;
+			font-weight: 800;
+			color: #fff;
+			margin-bottom: 1.5rem;
+			text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+			line-height: 1.2;
+		}
+
+		.about-hero .hero-subtitle {
+			font-size: 1.75rem;
+			color: rgba(255,255,255,0.95);
+			margin-bottom: 2rem;
+			font-weight: 300;
+			line-height: 1.6;
+		}
+
+		.hero-tagline {
+			display: inline-block;
+			background: rgba(255,255,255,0.2);
+			backdrop-filter: blur(10px);
+			padding: 1rem 2rem;
+			border-radius: 50px;
+			border: 1px solid rgba(255,255,255,0.3);
+			font-size: 1.25rem;
+			color: #fff;
+			font-weight: 600;
+			margin-top: 1rem;
+		}
+
+		/* Stats Section */
+		.stats-section {
+			background: var(--gradient-primary);
+			padding: 80px 0;
+			position: relative;
+			margin-top: -40px;
+		}
+
+		.stats-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 3rem;
+		}
+
+		.stat-card {
+			text-align: center;
+			color: #fff;
+			position: relative;
+		}
+
+		.stat-card::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 150px;
+			height: 150px;
+			background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+			border-radius: 50%;
+			z-index: 0;
+		}
+
+		.stat-number {
+			font-size: 4rem;
+			font-weight: 800;
+			display: block;
+			margin-bottom: 0.5rem;
+			position: relative;
+			z-index: 1;
+		}
+
+		.stat-label {
+			font-size: 1.125rem;
+			font-weight: 600;
+			opacity: 0.95;
+			position: relative;
+			z-index: 1;
+		}
+
+		.stat-description {
+			font-size: 0.9rem;
+			opacity: 0.8;
+			margin-top: 0.5rem;
+			position: relative;
+			z-index: 1;
+		}
+
+		/* Story Section */
+		.story-section {
+			padding: 100px 0;
+			background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+		}
+
+		.section-title {
+			font-size: 3rem;
+			font-weight: 800;
+			color: #2d3748;
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+
+		.section-subtitle {
+			font-size: 1.25rem;
+			color: #718096;
+			text-align: center;
+			margin-bottom: 4rem;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.story-content {
+			display: flex;
+			align-items: center;
+			gap: 4rem;
+			margin-bottom: 4rem;
+		}
+
+		.story-text {
+			flex: 1;
+		}
+
+		.story-text h3 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 1.5rem;
+		}
+
+		.story-text p {
+			font-size: 1.125rem;
+			color: #4a5568;
+			line-height: 1.8;
+			margin-bottom: 1.5rem;
+		}
+
+		.story-image {
+			flex: 1;
+			position: relative;
+		}
+
+		.story-image-wrapper {
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+			background: var(--gradient-primary);
+			min-height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 3rem;
+			position: relative;
+		}
+
+		.story-image-wrapper::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 70%);
+		}
+
+		/* Values Section */
+		.values-section {
+			padding: 100px 0;
+			background: #fff;
+		}
+
+		.values-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2.5rem;
+			margin-top: 3rem;
+		}
+
+		.value-card {
+			background: #fff;
+			padding: 3rem 2rem;
+			border-radius: 20px;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+			text-align: center;
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+			border: 2px solid transparent;
+		}
+
+		.value-card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 5px;
+			background: var(--gradient-primary);
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
+		}
+
+		.value-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+			border-color: #667eea;
+		}
+
+		.value-card:hover::before {
+			transform: scaleX(1);
+		}
+
+		.value-icon {
+			width: 90px;
+			height: 90px;
+			background: var(--gradient-primary);
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 1.5rem;
+			font-size: 2.5rem;
+			color: #fff;
+			transition: transform 0.3s ease;
+		}
+
+		.value-card:hover .value-icon {
+			transform: scale(1.1) rotate(5deg);
+		}
+
+		.value-card h4 {
+			font-size: 1.75rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+
+		.value-card p {
+			color: #718096;
+			line-height: 1.8;
+			font-size: 1.05rem;
+		}
+
+		/* What We Do Section */
+		.what-we-do-section {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		}
+
+		.service-cards {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 2.5rem;
+			margin-top: 3rem;
+		}
+
+		.service-card {
+			background: #fff;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+			transition: all 0.3s ease;
+		}
+
+		.service-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+		}
+
+		.service-image {
+			height: 200px;
+			background: var(--gradient-primary);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 4rem;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.service-image::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 0%, transparent 70%);
+		}
+
+		.service-content {
+			padding: 2.5rem;
+		}
+
+		.service-content h4 {
+			font-size: 1.75rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+
+		.service-content p {
+			color: #718096;
+			line-height: 1.8;
+			font-size: 1.05rem;
+		}
+
+		.service-features {
+			list-style: none;
+			padding: 0;
+			margin-top: 1.5rem;
+		}
+
+		.service-features li {
+			padding: 0.75rem 0;
+			color: #4a5568;
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			border-bottom: 1px solid #e2e8f0;
+		}
+
+		.service-features li:last-child {
+			border-bottom: none;
+		}
+
+		.service-features i {
+			color: #667eea;
+			font-size: 1.125rem;
+		}
+
+		/* Why Choose Us */
+		.why-choose-section {
+			padding: 100px 0;
+			background: #fff;
+		}
+
+		.reasons-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2rem;
+			margin-top: 3rem;
+		}
+
+		.reason-card {
+			background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+			padding: 2.5rem;
+			border-radius: 15px;
+			border: 2px solid #e2e8f0;
+			transition: all 0.3s ease;
+		}
+
+		.reason-card:hover {
+			border-color: #667eea;
+			background: #fff;
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+		}
+
+		.reason-number {
+			width: 50px;
+			height: 50px;
+			background: var(--gradient-primary);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+		}
+
+		.reason-card h5 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+
+		.reason-card p {
+			color: #718096;
+			line-height: 1.8;
+		}
+
+		/* Certifications Section */
+		.certifications-section {
+			padding: 80px 0;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		}
+
+		.cert-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 2rem;
+			margin-top: 3rem;
+		}
+
+		.cert-badge {
+			background: #fff;
+			padding: 2.5rem 1.5rem;
+			border-radius: 15px;
+			text-align: center;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+			transition: all 0.3s ease;
+		}
+
+		.cert-badge:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+		}
+
+		.cert-icon {
+			width: 80px;
+			height: 80px;
+			background: var(--gradient-gold);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 1rem;
+			font-size: 2rem;
+			color: #fff;
+		}
+
+		.cert-badge h5 {
+			font-size: 1.25rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 0.5rem;
+		}
+
+		.cert-badge p {
+			color: #718096;
+			font-size: 0.9rem;
+		}
+
+		/* Team Commitment Section */
+		.commitment-section {
+			padding: 100px 0;
+			background: #fff;
+		}
+
+		.commitment-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2.5rem;
+			margin-top: 3rem;
+		}
+
+		.commitment-card {
+			display: flex;
+			gap: 1.5rem;
+			align-items: start;
+			padding: 2rem;
+			background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+			border-radius: 15px;
+			transition: all 0.3s ease;
+		}
+
+		.commitment-card:hover {
+			background: #fff;
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+		}
+
+		.commitment-icon {
+			width: 70px;
+			height: 70px;
+			background: var(--gradient-primary);
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 1.75rem;
+			flex-shrink: 0;
+		}
+
+		.commitment-content h5 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #2d3748;
+			margin-bottom: 0.75rem;
+		}
+
+		.commitment-content p {
+			color: #718096;
+			line-height: 1.8;
+		}
+
+		/* Timeline Section */
+		.timeline-section {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		}
+
+		.timeline {
+			position: relative;
+			max-width: 900px;
+			margin: 3rem auto 0;
+		}
+
+		.timeline::before {
+			content: '';
+			position: absolute;
+			right: 50%;
+			top: 0;
+			bottom: 0;
+			width: 4px;
+			background: var(--gradient-primary);
+			border-radius: 2px;
+		}
+
+		.timeline-item {
+			position: relative;
+			margin-bottom: 3rem;
+			display: flex;
+			align-items: center;
+		}
+
+		.timeline-item:nth-child(odd) {
+			flex-direction: row-reverse;
+		}
+
+		.timeline-content {
+			flex: 1;
+			background: #fff;
+			padding: 2rem;
+			border-radius: 15px;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+			margin: 0 2rem;
+		}
+
+		.timeline-content h5 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #667eea;
+			margin-bottom: 0.5rem;
+		}
+
+		.timeline-content h6 {
+			font-size: 1.125rem;
+			font-weight: 600;
+			color: #2d3748;
+			margin-bottom: 1rem;
+		}
+
+		.timeline-content p {
+			color: #718096;
+			line-height: 1.8;
+		}
+
+		.timeline-marker {
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			border: 4px solid #667eea;
+			border-radius: 50%;
+			position: absolute;
+			right: 50%;
+			transform: translateX(50%);
+			z-index: 10;
+		}
+
+		/* CTA Section */
+		.cta-section {
+			background: var(--gradient-primary);
+			padding: 100px 0;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.cta-section::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background:
+				radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+				radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+		}
+
+		.cta-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.cta-section h2 {
+			font-size: 3.5rem;
+			font-weight: 800;
+			margin-bottom: 1.5rem;
+			color: #fff;
+		}
+
+		.cta-section p {
+			font-size: 1.5rem;
+			margin-bottom: 2.5rem;
+			opacity: 0.95;
+		}
+
+		.cta-buttons {
+			display: flex;
+			gap: 1.5rem;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.btn-cta {
+			padding: 1.25rem 3rem;
+			border-radius: 50px;
+			font-size: 1.25rem;
+			font-weight: 600;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.75rem;
+		}
+
+		.btn-cta-primary {
+			background: #fff;
+			color: #667eea;
+		}
+
+		.btn-cta-primary:hover {
+			background: #f8f9fa;
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+			color: #667eea;
+		}
+
+		.btn-cta-secondary {
+			background: rgba(255,255,255,0.2);
+			border: 2px solid #fff;
+			color: #fff;
+		}
+
+		.btn-cta-secondary:hover {
+			background: rgba(255,255,255,0.3);
+			transform: translateY(-3px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+			color: #fff;
+		}
+
+		/* Footer */
+		.footer-home2 {
+			background: #1a202c;
+			color: #fff;
+			padding: 60px 0 30px;
+		}
+
+		.footer-logo {
+			max-width: 150px;
+			margin-bottom: 1.5rem;
+		}
+
+		.footer-description {
+			color: #a0aec0;
+			line-height: 1.8;
+		}
+
+		.footer-bottom {
+			border-top: 1px solid rgba(255,255,255,0.1);
+			margin-top: 3rem;
+			padding-top: 2rem;
+			text-align: center;
+			color: #a0aec0;
+		}
+
+		/* WhatsApp Button */
+		.whatsapp-float {
+			position: fixed;
+			bottom: 30px;
+			left: 30px;
+			background: #25D366;
+			color: #fff;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2rem;
+			box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+			z-index: 999;
+			transition: transform 0.3s ease;
+			text-decoration: none;
+		}
+
+		.whatsapp-float:hover {
+			transform: scale(1.1);
+			color: #fff;
+		}
+
+		/* Animations */
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fade-in-up {
+			animation: fadeInUp 0.8s ease-out;
+		}
+
+		.stagger-animation > * {
+			opacity: 0;
+			animation: fadeInUp 0.6s ease-out forwards;
+		}
+
+		.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+		.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+		.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+		.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+		.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+		.stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
+
+		/* Responsive */
+		@media (max-width: 991px) {
+			.about-hero h1 {
+				font-size: 3rem;
+			}
+
+			.about-hero .hero-subtitle {
+				font-size: 1.25rem;
+			}
+
+			.story-content {
+				flex-direction: column;
+			}
+
+			.timeline::before {
+				right: 20px;
+			}
+
+			.timeline-item,
+			.timeline-item:nth-child(odd) {
+				flex-direction: row;
+			}
+
+			.timeline-marker {
+				right: 20px;
+				transform: translateX(0);
+			}
+
+			.timeline-content {
+				margin-right: 60px;
+				margin-left: 0;
+			}
+
+			.nav-home2 .nav-links {
+				position: fixed;
+				top: 65px;
+				left: 0;
+				right: 0;
+				background: rgba(26, 32, 44, 0.98);
+				backdrop-filter: blur(10px);
+				flex-direction: column;
+				padding: 2rem 1.5rem;
+				gap: 1.5rem;
+				display: none;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			}
+
+			.nav-home2 .nav-links.active {
+				display: flex;
+			}
+
+			.mobile-menu-toggle {
+				display: block;
+			}
+
+			.section-title {
+				font-size: 2rem;
+			}
+
+			.cta-section h2 {
+				font-size: 2.5rem;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.about-hero {
+				padding: 120px 0 60px;
+			}
+
+			.about-hero h1 {
+				font-size: 2rem;
+			}
+
+			.stat-number {
+				font-size: 3rem;
+			}
+
+			.values-grid,
+			.service-cards,
+			.reasons-grid,
+			.cert-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.cta-buttons {
+				flex-direction: column;
+			}
+
+			.btn-cta {
+				width: 100%;
+				justify-content: center;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header-home2">
+		<div class="container">
+			<nav class="nav-home2">
+				<a href="../index.html">
+					<img src="../assets/images/logo-new.svg" alt="Davidov Beauty & Care" class="logo">
+				</a>
+
+				<ul class="nav-links" id="navLinks">
+					<li><a href="../index.html">בית</a></li>
+					<li><a href="about.html" class="active">אודות</a></li>
+					<li><a href="contact.html">צור קשר</a></li>
+					<li><button class="language-toggle">EN / HE</button></li>
+				</ul>
+
+				<button class="mobile-menu-toggle" id="mobileMenuToggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="about-hero">
+		<div class="container">
+			<div class="hero-content fade-in-up">
+				<h1>אודות דוידוב ביוטי אנד קר</h1>
+				<p class="hero-subtitle">15+ שנות מצוינות בהפצת ציוד רפואי אסתטי מתקדם.<br>המובילים בישראל באיכות, חדשנות ושירות.</p>
+				<span class="hero-tagline">שותפים להצלחה שלכם</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Stats Section -->
+	<section class="stats-section">
+		<div class="container">
+			<div class="stats-grid">
+				<div class="stat-card fade-in-up">
+					<span class="stat-number">15+</span>
+					<div class="stat-label">שנות ניסיון</div>
+					<div class="stat-description">מובילים את השוק</div>
+				</div>
+
+				<div class="stat-card fade-in-up" style="animation-delay: 0.1s;">
+					<span class="stat-number">500+</span>
+					<div class="stat-label">קליניקות ומכוני יופי</div>
+					<div class="stat-description">סומכים עלינו</div>
+				</div>
+
+				<div class="stat-card fade-in-up" style="animation-delay: 0.2s;">
+					<span class="stat-number">16</span>
+					<div class="stat-label">מכשירים מתקדמים</div>
+					<div class="stat-description">טכנולוגיות חדישות</div>
+				</div>
+
+				<div class="stat-card fade-in-up" style="animation-delay: 0.3s;">
+					<span class="stat-number">98%</span>
+					<div class="stat-label">שביעות רצון</div>
+					<div class="stat-description">מלקוחותינו</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Story Section -->
+	<section class="story-section">
+		<div class="container">
+			<h2 class="section-title">הסיפור שלנו</h2>
+			<p class="section-subtitle">מחזון לציון דרך בתעשיית הציוד הרפואי האסתטי בישראל</p>
+
+			<div class="story-content">
+				<div class="story-text">
+					<h3>מתחילת הדרך להובלת השוק</h3>
+					<p>
+						דוידוב ביוטי אנד קר נוסדה לפני למעלה מ-15 שנה עם חזון ברור - להפוך את הטכנולוגיות הרפואיות האסתטיות המתקדמות ביותר בעולם לנגישות עבור מרפאות ומכוני יופי בישראל.
+					</p>
+					<p>
+						מה שהתחיל כחברת הפצה קטנה עם מוצר אחד, התפתח לאורך השנים לאחת מהחברות המובילות בתחום, עם תיק מוצרים מקיף של 16 מכשירים מתקדמים ורשת של למעלה מ-500 לקוחות מרוצים.
+					</p>
+					<p>
+						היום, אנחנו משמשים כגשר בין היצרנים המובילים בעולם לבין קהילת המקצוענים הישראלית, ומביאים איתנו לא רק מוצרים, אלא ידע, ניסיון ומחויבות למצוינות.
+					</p>
+				</div>
+				<div class="story-image">
+					<div class="story-image-wrapper">
+						<i class="fas fa-building"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Values Section -->
+	<section class="values-section">
+		<div class="container">
+			<h2 class="section-title">המשימה והערכים שלנו</h2>
+			<p class="section-subtitle">העקרונות שמנחים אותנו בכל מה שאנחנו עושים</p>
+
+			<div class="values-grid stagger-animation">
+				<div class="value-card">
+					<div class="value-icon">
+						<i class="fas fa-lightbulb"></i>
+					</div>
+					<h4>חדשנות</h4>
+					<p>אנחנו תמיד צעד אחד קדימה - מחפשים, בוחנים ומביאים את הטכנולוגיות המתקדמות ביותר בתעשייה. החדשנות שלנו מאפשרת ללקוחותינו להישאר תחרותיים ולהציע טיפולים בחזית הטכנולוגיה.</p>
+				</div>
+
+				<div class="value-card">
+					<div class="value-icon">
+						<i class="fas fa-award"></i>
+					</div>
+					<h4>איכות ללא פשרות</h4>
+					<p>כל מוצר שאנו מפיצים עובר בחינה קפדנית ועומד בתקנים הבינלאומיים המחמירים ביותר. איכות היא לא מטרה אלא דרך חיים, והיא משתקפת בכל אינטראקציה עם לקוחותינו.</p>
+				</div>
+
+				<div class="value-card">
+					<div class="value-icon">
+						<i class="fas fa-handshake"></i>
+					</div>
+					<h4>שותפות אמיתית</h4>
+					<p>אנחנו לא רק ספקים - אנחנו שותפים להצלחה שלכם. מהייעוץ הראשוני דרך ההתקנה וההדרכה ועד התמיכה השוטפת, אנחנו לצידכם בכל שלב.</p>
+				</div>
+
+				<div class="value-card">
+					<div class="value-icon">
+						<i class="fas fa-headset"></i>
+					</div>
+					<h4>שירות יוצא דופן</h4>
+					<p>השירות שלנו לא נגמר עם המכירה. אנחנו מספקים תמיכה טכנית זמינה, הדרכות מתמשכות, ומענה מהיר לכל צורך. שביעות רצון הלקוחות שלנו היא המדד להצלחה שלנו.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- What We Do Section -->
+	<section class="what-we-do-section">
+		<div class="container">
+			<h2 class="section-title">מה אנחנו עושים</h2>
+			<p class="section-subtitle">חבילת שירות מלאה מהייעוץ ועד התמיכה השוטפת</p>
+
+			<div class="service-cards stagger-animation">
+				<div class="service-card">
+					<div class="service-image">
+						<i class="fas fa-microscope"></i>
+					</div>
+					<div class="service-content">
+						<h4>הפצת ציוד רפואי אסתטי</h4>
+						<p>אנו מפיצים 16 מכשירים רפואיים אסתטיים מתקדמים מהיצרנים המובילים בעולם, הכוללים טכנולוגיות לייזר, RF, אולטרסאונד וטיפולי עור מתקדמים.</p>
+						<ul class="service-features">
+							<li><i class="fas fa-check-circle"></i> מגוון רחב של טכנולוגיות</li>
+							<li><i class="fas fa-check-circle"></i> תקני CE, FDA ו-ISO</li>
+							<li><i class="fas fa-check-circle"></i> אחריות מורחבת עד 10 שנים</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="service-card">
+					<div class="service-image" style="background: var(--gradient-accent);">
+						<i class="fas fa-tools"></i>
+					</div>
+					<div class="service-content">
+						<h4>התקנה ואינטגרציה</h4>
+						<p>צוות הטכנאים המנוסה שלנו מבצע התקנה מקצועית של כל מכשיר, מוודא תפעול תקין ומתאים את המכשיר לצרכים הספציפיים של הקליניקה.</p>
+						<ul class="service-features">
+							<li><i class="fas fa-check-circle"></i> התקנה מקצועית על ידי מומחים</li>
+							<li><i class="fas fa-check-circle"></i> כיול ובדיקות איכות</li>
+							<li><i class="fas fa-check-circle"></i> אינטגרציה עם מערכות קיימות</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="service-card">
+					<div class="service-image" style="background: var(--gradient-success);">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<div class="service-content">
+						<h4>הדרכה והכשרה</h4>
+						<p>אנו מספקים הדרכה מקיפה לצוות שלכם על השימוש היעיל והבטוח במכשירים, טכניקות טיפול מתקדמות ופרוטוקולים קליניים.</p>
+						<ul class="service-features">
+							<li><i class="fas fa-check-circle"></i> הדרכות מעשיות מקיפות</li>
+							<li><i class="fas fa-check-circle"></i> חומרי לימוד וסרטוני הדרכה</li>
+							<li><i class="fas fa-check-circle"></i> סדנאות ועדכונים שוטפים</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="service-card">
+					<div class="service-image" style="background: var(--gradient-secondary);">
+						<i class="fas fa-life-ring"></i>
+					</div>
+					<div class="service-content">
+						<h4>תמיכה ותחזוקה</h4>
+						<p>שירות תמיכה טכנית זמין 24/7, תחזוקה מונעת קבועה, חלפים מקוריים ותיקונים מהירים - כל מה שצריך כדי שהמכשירים יעבדו בצורה מיטבית.</p>
+						<ul class="service-features">
+							<li><i class="fas fa-check-circle"></i> תמיכה טכנית 24/7</li>
+							<li><i class="fas fa-check-circle"></i> תחזוקה מונעת ושוטפת</li>
+							<li><i class="fas fa-check-circle"></i> חלפים מקוריים במלאי</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us -->
+	<section class="why-choose-section">
+		<div class="container">
+			<h2 class="section-title">למה לבחור בדוידוב?</h2>
+			<p class="section-subtitle">6 סיבות שהופכות אותנו לבחירה הראשונה עבור מקצועני האסתטיקה בישראל</p>
+
+			<div class="reasons-grid stagger-animation">
+				<div class="reason-card">
+					<div class="reason-number">1</div>
+					<h5>15+ שנות ניסיון מוכח</h5>
+					<p>למעלה מעשור וחצי של מנהיגות בשוק הישראלי. אנחנו מכירים את הצרכים, את האתגרים ואת הפתרונות המדויקים.</p>
+				</div>
+
+				<div class="reason-card">
+					<div class="reason-number">2</div>
+					<h5>רשת של 500+ לקוחות מרוצים</h5>
+					<p>מאות מרפאות, קליניקות ומכוני יופי ברחבי הארץ סומכים עלינו. השם שלנו מדבר בעד עצמו.</p>
+				</div>
+
+				<div class="reason-card">
+					<div class="reason-number">3</div>
+					<h5>שותפויות בלעדיות עם יצרנים מובילים</h5>
+					<p>אנו משתפי פעולה רשמיים עם המותגים המובילים בעולם, מה שמבטיח מוצרים מקוריים ואיכותיים במחירים תחרותיים.</p>
+				</div>
+
+				<div class="reason-card">
+					<div class="reason-number">4</div>
+					<h5>תקנים בינלאומיים מחמירים</h5>
+					<p>כל המכשירים שלנו עומדים בתקני CE, FDA ו-ISO. איכות ובטיחות הן קודש עבורנו.</p>
+				</div>
+
+				<div class="reason-card">
+					<div class="reason-number">5</div>
+					<h5>חבילת שירות מלאה</h5>
+					<p>לא רק מכירה - אנחנו מספקים ייעוץ, התקנה, הדרכה, תמיכה ותחזוקה. הכל במקום אחד.</p>
+				</div>
+
+				<div class="reason-card">
+					<div class="reason-number">6</div>
+					<h5>תמיכה טכנית זמינה ומהירה</h5>
+					<p>צוות התמיכה שלנו זמין 24/7 לכל שאלה או בעיה. תגובה מהירה ופתרונות יעילים מובטחים.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Certifications -->
+	<section class="certifications-section">
+		<div class="container">
+			<h2 class="section-title">תקנים ואישורים</h2>
+			<p class="section-subtitle">כל המכשירים שלנו עומדים בסטנדרטים הבינלאומיים המחמירים ביותר</p>
+
+			<div class="cert-grid stagger-animation">
+				<div class="cert-badge">
+					<div class="cert-icon">
+						<i class="fas fa-certificate"></i>
+					</div>
+					<h5>CE Mark</h5>
+					<p>תקן אירופאי למכשירים רפואיים</p>
+				</div>
+
+				<div class="cert-badge">
+					<div class="cert-icon">
+						<i class="fas fa-shield-alt"></i>
+					</div>
+					<h5>FDA Approved</h5>
+					<p>אישור מנהל המזון והתרופות האמריקאי</p>
+				</div>
+
+				<div class="cert-badge">
+					<div class="cert-icon">
+						<i class="fas fa-check-double"></i>
+					</div>
+					<h5>ISO Certified</h5>
+					<p>תקן בינלאומי לניהול איכות</p>
+				</div>
+
+				<div class="cert-badge">
+					<div class="cert-icon">
+						<i class="fas fa-user-md"></i>
+					</div>
+					<h5>Clinical Tested</h5>
+					<p>נבדק קלינית ומדעית</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Team Commitment -->
+	<section class="commitment-section">
+		<div class="container">
+			<h2 class="section-title">המחויבות שלנו אליכם</h2>
+			<p class="section-subtitle">אנחנו לא רק ספקים - אנחנו שותפים להצלחה שלכם</p>
+
+			<div class="commitment-grid stagger-animation">
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-user-tie"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>ייעוץ מקצועי ומותאם אישית</h5>
+						<p>צוות היועצים המומחים שלנו יעזור לכם לבחור את המכשירים המתאימים ביותר לצרכים הספציפיים של הקליניקה שלכם ולסוג הטיפולים שאתם מציעים.</p>
+					</div>
+				</div>
+
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-chalkboard-teacher"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>הדרכה מקיפה ומתמשכת</h5>
+						<p>לא מספיק לקנות מכשיר - צריך לדעת להפיק ממנו את המיטב. אנחנו מספקים הדרכה מעמיקה ותמיכה שוטפת כדי להבטיח שתשיגו את התוצאות הטובות ביותר.</p>
+					</div>
+				</div>
+
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-phone-volume"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>תמיכה טכנית זמינה תמיד</h5>
+						<p>שאלה? בעיה? צריכים עזרה? אנחנו פה. 24 שעות ביממה, 7 ימים בשבוע. תגובה מהירה ומקצועית מובטחת.</p>
+					</div>
+				</div>
+
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-wrench"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>תחזוקה מונעת ושירות מהיר</h5>
+						<p>תחזוקה מונעת קבועה שומרת על המכשירים שלכם במצב מיטבי. ואם בכל זאת משהו קורה - אנחנו כאן עם פתרון מהיר.</p>
+					</div>
+				</div>
+
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-sync-alt"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>עדכונים והתפתחות מתמשכת</h5>
+						<p>הטכנולוגיה לא עומדת במקום, וגם אנחנו לא. אנחנו מעדכנים אתכם בטכנולוגיות חדשות, טכניקות מתקדמות וטרנדים בשוק.</p>
+					</div>
+				</div>
+
+				<div class="commitment-card">
+					<div class="commitment-icon">
+						<i class="fas fa-handshake"></i>
+					</div>
+					<div class="commitment-content">
+						<h5>שותפות ארוכת טווח</h5>
+						<p>אנחנו מאמינים ביצירת קשרים ארוכי טווח. הצלחה שלכם היא הצלחה שלנו, ואנחנו מחויבים ללוות אתכם לאורך כל הדרך.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Timeline -->
+	<section class="timeline-section">
+		<div class="container">
+			<h2 class="section-title">המסע שלנו</h2>
+			<p class="section-subtitle">אבני דרך משמעותיות בהיסטוריה שלנו</p>
+
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2008</h5>
+						<h6>הקמת החברה</h6>
+						<p>דוידוב ביוטי אנד קר נוסדה עם חזון להביא את הטכנולוגיות הרפואיות האסתטיות המתקדמות ביותר לישראל.</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2012</h5>
+						<h6>הרחבת תיק המוצרים</h6>
+						<p>הוספנו 6 מכשירים מתקדמים נוספים ותחילת שותפות עם יצרנים בינלאומיים מובילים.</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2016</h5>
+						<h6>100 לקוחות מרוצים</h6>
+						<p>הגענו לאבן דרך משמעותית של 100 מרפאות ומכוני יופי ברחבי הארץ הסומכים על המוצרים והשירות שלנו.</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2020</h5>
+						<h6>פריצת דרך טכנולוגית</h6>
+						<p>הצגת דור חדש של מכשירים מבוססי AI וטכנולוגיות אולטרסאונד מיקוד HIFU מתקדמות.</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2023</h5>
+						<h6>הובלת השוק</h6>
+						<p>500+ קליניקות ומכוני יופי, 16 מכשירים מובילים, ומעמד של אחת מחברות ההפצה המובילות בישראל.</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<h5>2025</h5>
+						<h6>העתיד מתחיל עכשיו</h6>
+						<p>המשך חדשנות, הרחבת השירותים והשקת טכנולוגיות מהדור הבא לקהילת המקצוענים הישראלית.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="cta-section">
+		<div class="container">
+			<div class="cta-content">
+				<h2>מוכנים להצטרף למשפחת דוידוב?</h2>
+				<p>בואו נדבר על איך אנחנו יכולים לעזור לכם להצליח</p>
+
+				<div class="cta-buttons">
+					<a href="contact.html" class="btn-cta btn-cta-primary">
+						<i class="fas fa-phone-alt"></i>
+						צור קשר עכשיו
+					</a>
+					<a href="../index.html#devices" class="btn-cta btn-cta-secondary">
+						<i class="fas fa-microscope"></i>
+						גלה את המכשירים שלנו
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer-home2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 mb-4">
+					<img src="../assets/images/logo-new.svg" alt="Davidov Beauty & Care" class="footer-logo">
+					<p class="footer-description">
+						דוידוב ביוטי אנד קר - ספקית מובילה של ציוד רפואי אסתטי מקצועי למרפאות ומכוני יופי בישראל.
+					</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p class="mb-0">&copy; 2025 Davidov Beauty & Care. כל הזכויות שמורות.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- WhatsApp Float Button -->
+	<a href="https://wa.me/972123456789" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="שלח הודעה בווטסאפ">
+		<i class="fab fa-whatsapp"></i>
+	</a>
+
+	<!-- JavaScript -->
+	<script>
+		// Mobile Menu Toggle
+		const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+		const navLinks = document.getElementById('navLinks');
+		let menuOpen = false;
+
+		function toggleMenu() {
+			menuOpen = !menuOpen;
+			navLinks.classList.toggle('active');
+			const icon = mobileMenuToggle.querySelector('i');
+			icon.classList.toggle('fa-bars');
+			icon.classList.toggle('fa-times');
+		}
+
+		mobileMenuToggle.addEventListener('click', toggleMenu);
+
+		document.addEventListener('click', (e) => {
+			if (menuOpen && !navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+				toggleMenu();
+			}
+		});
+
+		// Language Toggle
+		document.querySelector('.language-toggle').addEventListener('click', () => {
+			alert('Language switching functionality - to be implemented');
+		});
+
+		// Smooth scroll
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// Intersection Observer for animations
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1';
+					entry.target.style.transform = 'translateY(0)';
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.stagger-animation > *').forEach(item => {
+			observer.observe(item);
+		});
+
+		// Animate stats on scroll
+		const statsObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const statNumber = entry.target.querySelector('.stat-number');
+					if (statNumber && !statNumber.classList.contains('animated')) {
+						statNumber.classList.add('animated');
+						const finalNumber = statNumber.textContent;
+						animateNumber(statNumber, finalNumber);
+					}
+				}
+			});
+		}, { threshold: 0.5 });
+
+		document.querySelectorAll('.stat-card').forEach(card => {
+			statsObserver.observe(card);
+		});
+
+		function animateNumber(element, finalText) {
+			const hasPlus = finalText.includes('+');
+			const hasPercent = finalText.includes('%');
+			const number = parseInt(finalText.replace(/[^0-9]/g, ''));
+			const duration = 2000;
+			const steps = 60;
+			const increment = number / steps;
+			let current = 0;
+
+			const timer = setInterval(() => {
+				current += increment;
+				if (current >= number) {
+					current = number;
+					clearInterval(timer);
+				}
+
+				let display = Math.floor(current).toString();
+				if (hasPlus) display += '+';
+				if (hasPercent) display += '%';
+
+				element.textContent = display;
+			}, duration / steps);
+		}
+	</script>
+
+</body>
+</html>
