@@ -4,6 +4,7 @@
   "description": "Davidov Beauty & Care - Professional Medical Equipment Website",
   "scripts": {
     "generate-image": "node generate-why-section-image.js",
+    "generate-logo": "node scripts/generate-logo.js",
     "help": "cat README-IMAGE-GENERATION.md"
   },
   "keywords": [
